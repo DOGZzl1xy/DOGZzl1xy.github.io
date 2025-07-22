@@ -7,5 +7,3 @@ gem "jekyll"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"       # Adds SEO meta tags & JSON-LD
-gem "jekyll-picture-tag"   # Responsive images & WebP/AVIF
-gem "jekyll-archives" 
