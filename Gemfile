@@ -1,17 +1,12 @@
 source "https://rubygems.org"
 
-#
-# This specifies the Jekyll version.
-# It's a good practice to lock it to the version you use locally.
-# For GitHub Pages compatibility, you might use the 'github-pages' gem.
-gem "jekyll", "~> 4.3.1"
-
-#
-# This is the missing plugin. Add it here.
+gem "jekyll", "~> 4.3.4" # 保持和你日志中一致的版本
 gem "jekyll-feed"
 
 #
-# Add any other plugins listed in your _config.yml here.
-# For example:
-# gem "jekyll-seo-tag"
-# gem "jekyll-sitemap"
+# 解决 Ruby 3.4+ 环境下缺失标准库的问题
+#
+gem "csv"
+
+# 日志中也提到了 logger 的警告，为了以防万一，最好也加上
+gem "logger"
