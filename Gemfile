@@ -5,3 +5,7 @@ gem "jekyll"
 
 # 其他你需要的插件
 gem "jekyll-feed"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"       # Adds SEO meta tags & JSON-LD
+gem "jekyll-picture-tag"   # Responsive images & WebP/AVIF
+gem "jekyll-archives" 
