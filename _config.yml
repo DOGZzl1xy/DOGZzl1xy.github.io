@@ -17,7 +17,7 @@ owner:
   avatar: My_logo.JPG
   # bio: Dream big, stay positive, work hard, and enjoy the journey.
   # email: xuanyu.zhou@zju.edu.cn
-  cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
+  cv: https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf
 
 
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
@@ -57,8 +57,6 @@ links:
     url: /awards/
   - title: Hobbies
     url: /hobbies/
-  - title: Blogs
-    url: /blogs/
   - title: 中文
     url: /cn/
 
