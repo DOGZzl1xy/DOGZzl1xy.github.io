@@ -94,19 +94,34 @@ a:hover{border-bottom:1px solid #b3b3b1;}
   display: block;
 }
 
-/* --- Academic Link Style Customization --- */
+/* New Link Style: Dashed Underline */
 .article-wrap a,
 .article-wrap a:visited {
-    color: #555555; /* 将链接默认颜色设置为一个柔和的深灰色 */
-    text-decoration: none; /* 移除默认的下划线 */
-    border-bottom: none; /* 移除原有的点状下划线 */
-    -webkit-transition: all 0.2s; /* 添加平滑过渡效果 */
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
+    color: inherit; /* 继承父元素颜色，使其与普通文本颜色一致 */
+    text-decoration: none; /* 移除浏览器默认的下划线 */
+    border-bottom: 1px dashed #cccccc; /* 添加一条1像素的淡灰色虚线下划线 */
+    transition: border-bottom 0.2s ease-in-out; /* 添加平滑过渡效果 */
 }
 
 .article-wrap a:hover {
-    color: #000000; /* 鼠标悬停时，链接颜色变为纯黑色 */
-    text-decoration: underline; /* 鼠标悬停时，显示下划线以提示可点击 */
-    border-bottom: none; /* 确保不显示边框式下划线 */
+    border-bottom: 1px solid #555555; /* 鼠标悬停时，虚线变为颜色更深的实线 */
+}
+
+/* Text Wrapping (Float) Classes for Images */
+.img-float-right {
+  float: right;
+  margin-top: 5px;
+  margin-left: 1.5em; /* 图片左侧和文字的间距 */
+  margin-bottom: 1em; /* 图片下方的间距 */
+  width: 45%; /* 图片宽度占容器的45% */
+  max-width: 350px; /* 图片最大宽度不超过350px */
+}
+
+.img-float-left {
+  float: left;
+  margin-top: 5px;
+  margin-right: 1.5em; /* 图片右侧和文字的间距 */
+  margin-bottom: 1em; /* 图片下方的间距 */
+  width: 45%; /* 图片宽度占容器的45% */
+  max-width: 350px; /* 图片最大宽度不超过350px */
 }

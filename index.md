@@ -2,20 +2,20 @@
 layout: page
 ---
 
-# About Me
+# About me
 
-<img src="https://caihanlin.com/caihanlin.jpg" class="floatpic">
+<img src="https://caihanlin.com/caihanlin.jpg" alt="My Photo" class="img-float-right">
 
 <br>Here is **Xuanyu Zhou**.
 
-<br>I am an undergraduate student in the **Urban and Rural Planning** at the Zhejiang University. I'm also an exchange student in the **College of Environmetal Design (CED)** in University of California, Berkeley (UCB). My research focus on Urban Equity, Urban Mobility, Big data and Machine Learning in Urban Planning. I'm exploring LLM in Urban Planning and Urban AI.  
+I am an undergraduate student in the **Urban and Rural Planning** at the Zhejiang University. I'm also an exchange student in the **College of Environmetal Design (CED)** in University of California, Berkeley (UCB). My research focus on Urban Equity, Urban Mobility, Big data and Machine Learning in Urban Planning. I'm exploring LLM in Urban Planning and Urban AI.  
 
 I have publish some of my work in leading journals, including Transaction in Urban Data, Science, and Technology. 
 
-<br>If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at — **xuanyu.zhou [at] zju.edu.cn** or **xuanyu.zhou [at] berkeley.edu**
+If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at — **xuanyu.zhou [at] zju.edu.cn** or **xuanyu.zhou [at] berkeley.edu**
 
 
-[**Download my CV**](https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf) (Update May 2025).
+[**Download my CV (Update May 2025)**](https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf)
 ---
 
 ## Research Interests
