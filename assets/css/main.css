@@ -86,3 +86,27 @@ a:hover{border-bottom:1px solid #b3b3b1;}
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+/* --- Responsive Images Fix --- */
+.article-wrap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Academic Link Style Customization --- */
+.article-wrap a,
+.article-wrap a:visited {
+    color: #555555; /* 将链接默认颜色设置为一个柔和的深灰色 */
+    text-decoration: none; /* 移除默认的下划线 */
+    border-bottom: none; /* 移除原有的点状下划线 */
+    -webkit-transition: all 0.2s; /* 添加平滑过渡效果 */
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.article-wrap a:hover {
+    color: #000000; /* 鼠标悬停时，链接颜色变为纯黑色 */
+    text-decoration: underline; /* 鼠标悬停时，显示下划线以提示可点击 */
+    border-bottom: none; /* 确保不显示边框式下划线 */
+}
