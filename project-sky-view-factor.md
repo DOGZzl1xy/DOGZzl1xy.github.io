@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /project-overview/index.html
-title: Project Overview
+permalink: /sky-view-factor/index.html
+title: Sky View Factor
 ---
 
 # Research Projects

@@ -5,14 +5,17 @@
 	<div class="top-navigation">
 		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		    <ul>
-		        {% for link in site.links %}
-              {% if link.title == "Projects" %}
-                  <li class="dropdown">
-                      <a href="{{ site.url }}{{ link.url }}" {% if page.url contains '/projects/' or page.url contains '/project-overview/' %}class="top-navigation-current"{% endif %}>{{ link.title }} <i class="arrow down"></i></a>
-                      <ul class="dropdown-content">
-                          <li><a href="{{ site.url }}/project-overview/">Project Overview</a></li>
-                          </ul>
-                  </li>
+		    {% for link in site.links %}
+              	{% if link.title == "Projects" %}
+                  	<li class="dropdown">
+    				<a href="{{ site.url }}/projects/" {% if page.url contains '/projects/' %}class="top-navigation-current"{% endif %}>Projects <i class="arrow down"></i></a>
+    				<ul class="dropdown-content">
+        				<li><a href="/urban-air-mobility/">Urban Air Mobility</a></li>
+						<li><a href="#">Sky View Factor</a></li>
+        				<li><a href="#">Urban Green Space</a></li>
+        				<li><a href="#">Urban Built Environment</a></li>
+    				</ul>
+				</li>
               {% else %}
                   <li><a href="{{ site.url }}{{ link.url }}" {% if url == link.url %}class="top-navigation-current"{% endif %}>{{ link.title }}</a></li>
               {% endif %}
