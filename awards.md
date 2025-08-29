@@ -6,23 +6,20 @@ title: Awards
 
 ## Scholarships
 
-- May 2025：**Cambridge CSC Trust Scholarship** (totally £190,000 for tuition waiver and stipend)
-- June 2024：**KDD-24 Undergraduate Scholarship** ($1000)<br>Only 21 undergraduates are selected around the world
-- Dec 2023：**AAAI-24 Undergraduate Scholarship** ($5000)<br>Only 18 undergraduates are selected around the world
-- Aug 2023：Innovation Scholarship ($1400)<br>One of the highest undergraduate awards
-- May 2023：XiamenAir Scholarship ($600)<br>
-- June 2024：Best Final Year Project Award of Maynooth (€500)
-- Oct 2023：Best Academic Performance of Maynooth (€100)
-- Oct 2022：Best Course Project Award of Maynooth (€100)
-- First Prize Scholarship of MIEC ($2100, Five times)<br>Combined degree scholarship between FZU and Maynooth<br>
+- **Zhejiang Provincial Gonvernment Scholarship**, Zhejiang Province (2024)
+- **Second-Prize Scholarship**, Zhejiang University (2023, 2024)
+- **Third-Prize Scholarship**, Zhejiang University (2022)
+- **Jincheng Academic Scholarship**, College of Civil Engineering and Architecture, Zhejiang University (2023)
 
-## Competitions
 
-- Jan 2024：Finalist of China International College Students’ Innovation Competition (Top 3%)
-- Aug 2023：**Best Technology Award** in National Youth Science Innovation Project Competition (Top 1%)
-- Aug 2023：Second Prize in National Collegiate Internet of Things Technology and Application Competition (Top 5%)
-- May 2023：Finalist Award in Mathematical Contest In Modeling (Top 1% of all 20508 paper)
-- Nov 2022：First Prize in China Undergraduate Mathematical Contest in Modeling
-- June 2022：**Championship** of 100-meter Freestyle Swimming Competition of Fuzhou University<br>
+## Honor
 
-<br>
+- **Academic Excellence Award**, Zhejiang University (2022, 2023, 2024)
+- **Student Leadership Award**, Zhejiang University (2023, 2024)
+- **Outstanding Member of the Chinese Communist Youth League**， The Communist Youth League Committee of Zhejiang University（2024）
+- **Distinguished Investigator**, Innovation Center of Yangtze River Delta, Zhejiang University (2023)
+
+
+## Research Fund
+
+- **Qizhenwenxue Undergraduate Research Program (Grant: ¥10,000)**, Group Lead (2022-2023)

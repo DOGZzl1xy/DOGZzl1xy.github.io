@@ -18,7 +18,13 @@
 
 {% if site.owner.instagram %}<p style="text-indent:0;"><a href="https://instagram.com/{{ site.owner.instagram }}"><i class="icon-instagram"></i> Instagram</a></p>{% endif %}
 
-{% if site.owner.github %}<p style="text-indent:0;"><a href="https://github.com/{{ site.owner.github }}"><i class="icon-github"></i> Github</a></p>{% endif %}
+{% if site.owner.github %}
+<p style="text-indent:0;">
+  <a href="https://github.com/{{ site.owner.github }}" target="_blank">
+    <i class="icon-github" style="font-size: 1.1em; vertical-align: middle;"></i>&nbsp;Github
+  </a>
+</p>
+{% endif %}
 
 {% if site.owner.lastfm %}<p style="text-indent:0;"><a href="https://lastfm.com/{{ site.owner.lastfm }}"><i class="icon-lastfm"></i> Last.fm</a></p>{% endif %}
 
