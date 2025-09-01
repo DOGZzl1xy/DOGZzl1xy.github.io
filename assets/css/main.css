@@ -37,43 +37,57 @@ h4{font-size:1.3333rem;}
 a{text-decoration:none;border-bottom:1px dotted #b3b3b1;}
 a:hover{border-bottom:1px solid #b3b3b1;}
 
-/* --- Dropdown Menu Styles (APPENDED) --- */
+/* --- Dropdown Menu Accessibility Fix --- */
+
+/* 1. 设置主菜单项为相对定位的容器 */
 .top-navigation li.dropdown {
     position: relative;
     display: inline-block;
 }
+
 .top-navigation li.dropdown .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 220px; /* 增加了宽度以容纳更长的项目名 */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 100;
     list-style: none;
-    padding: 0;
-    margin-top: 5px;
+    padding: 0; /* 重置内边距 */
+    margin: 0; /* 重置外边距 */
     border-radius: 4px;
-    text-transform: none; /* Keep dropdown text normal case */
+    border: 1px solid #ddd;
+    text-transform: none;
+
+    /* 关键：增加一个透明的上内边距，鼠标可以滑过这个区域 */
+    padding-top: 15px; 
+    margin-top: -5px; /* 向上移动一点，减少视觉上的空隙 */
 }
+
+/* 3. 当鼠标悬停在主菜单项上时，显示下拉菜单 */
 .top-navigation li.dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* 4. 下拉菜单内链接的样式 */
 .top-navigation li.dropdown .dropdown-content li {
     display: block;
     margin: 0;
 }
 .top-navigation li.dropdown .dropdown-content li a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px 20px; /* 调整内边距使条目更易点击 */
     text-decoration: none;
     display: block;
     text-align: left;
     border-bottom: none;
 }
+
 .top-navigation li.dropdown .dropdown-content li a:hover {
     background-color: #f1f1f1;
-    border-bottom: none;
 }
+
+/* 5. 下拉箭头样式 (保持不变) */
 .arrow {
   border: solid #343434;
   border-width: 0 2px 2px 0;

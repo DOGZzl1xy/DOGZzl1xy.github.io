@@ -8,7 +8,7 @@ layout: page
 
 Here is **Xuanyu Zhou**.
 
-I am an undergraduate student in the **Urban and Rural Planning** at the Zhejiang University. I'm also an exchange student in the **College of Environmetal Design (CED)** in University of California, Berkeley (UCB). My research focus on Urban Equity, Urban Mobility, Big data and Machine Learning in Urban Planning. I'm exploring LLM in Urban Planning and Urban AI.  
+I am an undergraduate student in the **Urban and Rural Planning** at **Zhejiang University**. I'm also an exchange student in the **College of Environmetal Design (CED)** in University of California, Berkeley (UCB). My research focus on Urban Equity, Urban Mobility, Big data and Machine Learning in Urban Planning. I'm exploring LLM in Urban Planning and Urban AI.  
 
 I have publish some of my work in leading journals, including Transaction in Urban Data, Science, and Technology. 
 
