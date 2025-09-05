@@ -12,7 +12,7 @@ title: Publication
 
 - Greening the Gap: Examining Urban Greenery Equity in Shrinking Cities<br>**Xuanyu Zhou**, Mingze Chen~<br>*Urban Forestery & Urban Greening (Under Review)*<br>
   
-- Future life expectancy extension under bike ride, air pollution exposure, and traffic accidents through modifying the built environment and climate: An integrated modelling study.<br>Shuang Ma, Wanshi, Li, **Xuanyu Zhou**, Tao Ma, ~<br>*Transportation Research Part D: Transport and Environment (Under Review)*<br>
+- Future life expectancy extension under bike ride, air pollution exposure, and traffic accidents through modifying the built environment and climate: An integrated modelling study.<br>Shuang Ma, Wanshi, Li, **Xuanyu Zhou**, Tao Ma, Yinbin He, Shuangjin Li~<br>*Transportation Research Part D: Transport and Environment (Under Review)*<br>
   
 
 ## Conference Paper

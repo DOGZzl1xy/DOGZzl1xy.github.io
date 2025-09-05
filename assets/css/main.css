@@ -61,7 +61,7 @@ a:hover{border-bottom:1px solid #b3b3b1;}
 
     /* 关键：增加一个透明的上内边距，鼠标可以滑过这个区域 */
     padding-top: 15px; 
-    margin-top: -5px; /* 向上移动一点，减少视觉上的空隙 */
+    margin-top: 0px; /* 向上移动一点，减少视觉上的空隙 */
 }
 
 /* 3. 当鼠标悬停在主菜单项上时，显示下拉菜单 */

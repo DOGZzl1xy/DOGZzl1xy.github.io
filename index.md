@@ -21,8 +21,8 @@ If you are interested in any aspect of me, I am always open to discussions and c
 ## Research Interests
 My research interests mainly focus on Data-driven Urban Planning, including: 
 - Urban Equility: Applying demographic and visitation data to explore the equity of urban infrustructure. 
-- Urban AI
-- LLM for Urban Planning
+- Urban AI: 
+- LLM for Urban Planning: 
 - Urban Mobility: 
   
 
@@ -30,7 +30,7 @@ My research interests mainly focus on Data-driven Urban Planning, including:
 
 ## News and Updates
 
-- **May 2025**：Participate in MIT-UF-NEU Summer Research Camp, mentored by Xuan Jiang (Ph.D. Candidate)
+- **May 2025**：Participate in MIT-UF-NEU Summer Research Camp, mentored by Xuan Jian, Ph.D.
 - **November 2024**：Very excited to participate in Association of Collegiate Schools of Planning (ACSP) annual meeting in Seattle. I'll talk about my recent research on urban green space in shrinking cities.  
 
 
