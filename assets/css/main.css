@@ -167,3 +167,57 @@ a:hover{border-bottom:1px solid #b3b3b1;}
 .icon-mail:before{
     content:"\e006";
 }
+
+/* --- Project Feature Layout --- */
+.project-feature {
+  display: flex;
+  align-items: center; /* 垂直居中文本和图片 */
+  gap: 2em; /* 文本和图片之间的间距 */
+  margin-bottom: 3em; /* 每个项目块之间的下边距 */
+  padding-bottom: 2em; /* 每个项目块下方的内边距 */
+  border-bottom: 1px solid #eee; /* 每个项目块下方的分隔线 */
+}
+
+/* 在小屏幕上（如手机），将左右布局变为上下堆叠 */
+@media (max-width: 768px) {
+  .project-feature {
+    flex-direction: column;
+  }
+}
+
+.project-text {
+  flex: 1; /* 文本部分占据可用空间 */
+}
+
+.project-image {
+  flex: 1; /* 图片部分占据可用空间 */
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* 给图片添加圆角 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 给图片添加细微阴影 */
+}
+
+/* "Learn More" 按钮的样式 */
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 10px 20px;
+  border: 2px solid #333; /* 边框颜色 */
+  color: #333; /* 文字颜色 */
+  background-color: #fff; /* 背景颜色 */
+  text-decoration: none; /* 移除默认下划线 */
+  border-radius: 5px; /* 按钮圆角 */
+  font-weight: bold;
+  transition: all 0.2s ease-in-out; /* 平滑过渡效果 */
+}
+
+.learn-more-btn:hover {
+  background-color: #333; /* 鼠标悬停时背景变黑 */
+  color: #fff; /* 鼠标悬停时文字变白 */
+  text-decoration: none;
+  border-color: #333;
+}
