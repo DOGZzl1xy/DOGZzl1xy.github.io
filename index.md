@@ -20,10 +20,10 @@ If you are interested in any aspect of me, I am always open to discussions and c
 
 ## Research Interests
 My research interests mainly focus on Data-driven Urban Planning, including: 
-- Urban Equility: Applying demographic and visitation data to explore the equity of urban infrustructure. 
-- Urban AI: 
-- LLM for Urban Planning: 
-- Urban Mobility: 
+- Urban Equility: Applying demographic and visitation data to explore the equity of urban infrastructure, particularly through spatio-temporal analysis of urban green space (UGS) access and its impact on community resilience in shrinking cities. 
+- Urban AI: Leveraging machine learning techniques, such as Geographically Weighted Random Forest (GWRF), to model complex urban phenomena—from post-pandemic resilience to the relationship between the built environment and public health outcomes.
+- LLM for Urban Planning: Exploring the application of Large Language Models to analyze urban policy documents, public sentiment, and qualitative data to generate insights for more responsive and inclusive planning strategies.
+- Urban Mobility: Developing advanced modeling frameworks for next-generation transportation systems, including shared mobility and Urban Air Mobility (UAM), integrating dynamic demand patterns and heterogeneous fleets to optimize for efficiency and equity.
   
 
 ---
