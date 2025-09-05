@@ -4,7 +4,7 @@ layout: page
 
 # About me
 
-<img src="https://caihanlin.com/caihanlin.jpg" alt="My Photo" class="img-float-right">
+<!-- <img src="https://caihanlin.com/caihanlin.jpg" alt="My Photo" class="img-float-right"> -->
 
 Here is **Xuanyu Zhou**.
 
