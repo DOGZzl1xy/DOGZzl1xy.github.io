@@ -6,7 +6,7 @@ title: Urban Built Environment
 
 <div class="project-feature">
   <div class="project-text">
-    <h2>COVID-19 Recovery</h2>
+    <h3>COVID-19 Recovery</h3>
     <p>
       Evaluating the social-economic recovery impacts of the built environment post-pandemic: A case study of COVID-19 in Nagoya, Japan
     </p>
@@ -19,7 +19,7 @@ title: Urban Built Environment
 
 <div class="project-feature">
   <div class="project-text">
-    <h2>Cohealth Effect of Bike-sharing</h2>
+    <h3>Cohealth Effect of Bike-sharing</h3>
     <p>
       Synergistic health effects of bike ride in built environment and climate transformation, with a specific focus on the case study of Shenzhen, China.
     </p>
@@ -32,7 +32,7 @@ title: Urban Built Environment
 
 <div class="project-feature">
   <div class="project-text">
-    <h2>Built Environment and emotion</h2>
+    <h3>Built Environment and Emotion</h3>
     <p>
       Using Weibo data to study the relationship between built environment and user's emotion, with a specific focus on the case study of Beijing, China.
     </p>
