@@ -10,10 +10,10 @@ title: Urban Built Environment
     <p>
       Evaluating the social-economic recovery impacts of the built environment post-pandemic: A case study of COVID-19 in Nagoya, Japan
     </p>
-    <a href="/link/to/your/detail-page-1.html" class="learn-more-btn">Learn More</a>
+    <a href="https://doi.org/10.1177/27541231251314132" class="learn-more-btn">Learn More</a>
   </div>
   <div class="project-image">
-    <img src="mypaper/urban-built-env/Nagoya_recovery/Recovery_level.png" alt="Recovery Level">
+    <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Nagoya_recovery/Recovery_level.png" alt="Recovery Level">
   </div>
 </div>
 
@@ -23,22 +23,22 @@ title: Urban Built Environment
     <p>
       Synergistic health effects of bike ride in built environment and climate transformation, with a specific focus on the case study of Shenzhen, China.
     </p>
-    <a href="/link/to/your/detail-page-2.html" class="learn-more-btn">Learn More</a>
+    
   </div>
   <div class="project-image">
-    <img src="mypaper/urban-built-env/Shenzhen_bikesharing/Cohealth_spatial distribution.png" alt="Spatial Distribution">
+    <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Shenzhen_bikesharing/Cohealth_spatial distribution.png" alt="Spatial Distribution">
   </div>
 </div>
 
 <div class="project-feature">
   <div class="project-text">
-    <h2>项目标题 3</h2>
+    <h2>Built Environment and emotion</h2>
     <p>
-      这里是您的第三个项目简介。
+      Using Weibo data to study the relationship between built environment and user's emotion, with a specific focus on the case study of Beijing, China.
     </p>
-    <a href="/link/to/your/detail-page-3.html" class="learn-more-btn">Learn More</a>
+    
   </div>
   <div class="project-image">
-    <img src="/images/your-project-image-3.jpg" alt="项目3的描述性图片">
+    <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Beijing_emotion/Beijing_BE_emotion.png" alt="project framework">
   </div>
 </div>
