@@ -30,9 +30,10 @@ My research interests mainly focus on Data-driven Urban Planning, including:
 
 ## News and Updates
 
+- **Sep 2025**: Work accepted by Transportation Research Board (TRB) Annual Meeting, see you in Washington, D.C.!
 - **May 2025**：Participate in MIT-UF-NEU Summer Research Camp, mentored by Xuan Jian, Ph.D.
 - **November 2024**：Very excited to participate in Association of Collegiate Schools of Planning (ACSP) annual meeting in Seattle. I'll talk about my recent research on urban green space in shrinking cities.  
-
+- **Aug 2024**: Work accepted by ACSP Conference, see you in Seattle!
 
 <br>
 
