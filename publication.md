@@ -16,7 +16,7 @@ title: Publication
 
 - Exploring the relationship between resident emotions and built environment in Beijing based on a geographical weighted random forest approach<br>Shuangjin Li, Wei Cai, Changlong Wu, Xin Zhang, **Xuanyu Zhou**, Yinbin He, Shuang Ma~<br>*Urban Studies (Under Review)*<br>
 
-- From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Advanced Air Mobility<br>Xuan Jiang, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Haoze He, Jinhua Zhao, Mark Hansen, Raja Sengupta~<br>*IEEE Transactions on Intelligent Transportation Systems (Under Review)*
+- From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Advanced Air Mobility<br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Haoze He, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>*IEEE Transactions on Intelligent Transportation Systems (Under Review)*
   
 
 ## Conference Paper
