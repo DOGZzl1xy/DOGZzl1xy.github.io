@@ -12,11 +12,11 @@ Our equilibrium search algorithm is extended to accurately forecast demand and d
 
 **This work is part of MIT-UF-NEU joint summer research camp, and has been accepted by the Transportation Research Board Annual Meeting, and is under review at IEEE Transactions on Intelligent Transportation Systems. Preprint paper can be found [here](https://arxiv.org/abs/2510.04186).**
 
-<img src="https://xuanyuzhou.org/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1.jpg" alt="Elevator Pitch" class="img-float-right"> 
+<img src="https://xuanyuzhou.org/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1.jpg" alt="Elevator Pitch" class="img-full-width"> 
 
 <br>
 
-<img src="https://xuanyuzhou.org/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_2.jpg" alt="Poster" class="img-float-right"> 
+<img src="https://xuanyuzhou.org/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_2.jpg" alt="Poster" class="img-full-width"> 
 
 
 <br>

@@ -221,3 +221,12 @@ a:hover{border-bottom:1px solid #b3b3b1;}
   text-decoration: none;
   border-color: #333;
 }
+/* 全宽图片样式 */
+.img-full-width {
+  width: 90%;
+  max-width: none;
+  display: block;
+  margin: 1.5em auto; /* 上下边距1.5em，左右自动居中 */
+  float: none; /* 清除浮动 */
+  clear: both; /* 确保换行 */
+}
