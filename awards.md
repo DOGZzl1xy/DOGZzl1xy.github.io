@@ -9,6 +9,7 @@ title: Awards
 - **Zhejiang Provincial Gonvernment Scholarship**, Zhejiang Province (2024, 2025)
 - **Second-Prize Scholarship**, Zhejiang University (2023, 2024, 2025)
 - **Third-Prize Scholarship**, Zhejiang University (2022)
+- **Ningbo Future Star Scholarship**, Human Resources and Social Security Bureau of Ningbo (2025)
 - **Jincheng Academic Scholarship**, College of Civil Engineering and Architecture, Zhejiang University (2023)
 
 

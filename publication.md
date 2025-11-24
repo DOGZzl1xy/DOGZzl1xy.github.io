@@ -29,7 +29,12 @@ title: Publication
 
 ## Degree Thesis
 
-Peoject on going...
+**Title: A Study on the Coupling Coordination Relationship between Ecosystem Services and Ecological Resilience in the Yangtze River Delta Urban Agglomeration**
+Supervisor: [Prof. Yonghua Li](https://person.zju.edu.cn/en/yonghuali)
+
+This thesis investigates the coupling coordination degree (CCD) between ecosystem services (ES) and ecological resilience (ER) to assess regional development quality and sustainability. It first evaluates comprehensive ES and ER scores for cities in the Yangtze River Delta—measuring ES through provisioning, regulating, and supporting services, and assessing ER based on resistance, recovery, and adaptability indicators. 
+
+Using methods such as entropy weight analysis and a CCD model, the study classifies cities into different coordination levels, analyzes their spatial patterns, and proposes targeted strategies for enhancing ecological resilience across city types.
 
 
 <br>
