@@ -23,7 +23,7 @@ title: Urban Built Environment
     <p>
       Synergistic health effects of bike ride in built environment and climate transformation, with a specific focus on the case study of Shenzhen, China.
     </p>
-    <a href="https://xuanyuzhou.org/" class="learn-more-btn">On Going</a>
+    <a href="https://xuanyuzhou.org//urban-built-environment/" class="learn-more-btn">Under Review</a>
   </div>
   <div class="project-image">
     <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Shenzhen_bikesharing/Cohealth_spatial distribution.png" alt="Spatial Distribution">
@@ -36,7 +36,7 @@ title: Urban Built Environment
     <p>
       Using Weibo data to study the relationship between built environment and user's emotion, with a specific focus on the case study of Beijing, China.
     </p>
-    <a href="https://xuanyuzhou.org/" class="learn-more-btn">On Going</a>
+    <a href="https://xuanyuzhou.org//urban-built-environment/" class="learn-more-btn">Under Review</a>
   </div>
   <div class="project-image">
     <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Beijing_emotion/Beijing_BE_emotion.png" alt="project framework">
