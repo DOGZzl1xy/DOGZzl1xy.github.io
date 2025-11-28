@@ -4,13 +4,6 @@ permalink: /sky-view-factor/index.html
 title: Sky View Factor
 ---
 
-# Research Projects
-
-P.S., click the hyperlink title to access the source.<br>
-
-#### [OpenIoT: Industrial Inspection System](https://fzuiot.site/)
-
-<center>
-<img src="/images/openiot-system.png">
-</center>
+The project is still on going
+I'll update all information once we finised it. 
 <br>

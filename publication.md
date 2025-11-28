@@ -21,7 +21,7 @@ title: Publication
 
 ## Conference Paper
 
-- FROM PATCHWORK TO NETWORK: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility<br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>Transportation Research Board Annual Meeting<br>Washington, D.C January, 2026. <br>
+- [FROM PATCHWORK TO NETWORK: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility](https://arxiv.org/abs/2510.04186v1)<br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>Transportation Research Board Annual Meeting<br>Washington, D.C January, 2026. <br>
   
 - Greening the Gap: Examining Urban Greenery Equity in Shrinking Cities<br>**Xuanyu Zhou**, Mingze Chen~<br>Association of Collegiate Schools of Planning Annual Meeting<br>Seattle, USA. November, 2024.<br>
 
