@@ -25,6 +25,7 @@ Here is a collection of my major course works. Click on a project to learn more.
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #fff; /* Ensure background is white */
 }
 
 .coursework-item:hover {
@@ -32,18 +33,24 @@ Here is a collection of my major course works. Click on a project to learn more.
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.coursework-item:hover .learn-more-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .coursework-item img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain; /* Ensure image fits without cropping */
   border-radius: 4px;
   margin-bottom: 15px;
+  background-color: #fff; /* Optional: background for empty space */
 }
 
 .coursework-item h3 {
   font-size: 1.2em;
   margin-bottom: 15px;
-  min-height: 3em; /* Align titles */
+  min-height: 3em;
 }
 
 .learn-more-btn {
@@ -54,6 +61,9 @@ Here is a collection of my major course works. Click on a project to learn more.
   text-decoration: none;
   border-radius: 4px;
   margin-top: auto;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .learn-more-btn:hover {
