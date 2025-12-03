@@ -13,3 +13,7 @@ This study addresses these gaps by examining Pittsburgh, a city experiencing sev
 This paper has been accepted and presented at ACSP 2024 at Seattle, WA. And it is now under review ar Urban Forestry & Urban Greening.
 
 <img src="https://xuanyuzhou.org/mypaper/urban-green-space/framework.png" alt="Elevator Pitch" class="img-full-width"> 
+
+<div class="project-links">
+    <a href="/mypaper/urban-green-space/PDF_ASCP2024_Xuanyu_Zhou.pdf" class="learn-more-btn">Presentation</a>
+</div>
