@@ -51,17 +51,19 @@ Here is a collection of my major course works. Click on a project to learn more.
 .learn-more-btn {
   display: inline-block;
   padding: 8px 20px;
-  background-color: #333;
-  color: white;
+  background-color: #333 !important; /* Force black background */
+  color: white !important; /* Force white text */
   text-decoration: none;
   border-radius: 4px;
   margin-top: auto;
-  /* Removed opacity/transform to make it always visible */
+  opacity: 1 !important; /* Ensure visible */
+  transform: none !important;
+  border: none !important; /* Override main.css border */
 }
 
 .learn-more-btn:hover {
-  background-color: #555;
-  color: white;
+  background-color: #555 !important;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -78,14 +80,14 @@ Here is a collection of my major course works. Click on a project to learn more.
   <div class="coursework-item">
     <h3>[CY PLAN 110] Introduction to City Planning</h3>
     <img src="/courseworks_file/course-BayWheel/BayWheel_Map.png" alt="Bay Wheels GIS Analysis">
-    <a href="/project-cy-plan-110.html" class="learn-more-btn">View Project</a>
+    <a href="/course-cy-plan-110.html" class="learn-more-btn">View Project</a>
   </div>
 
   <!-- Project 2 -->
   <div class="coursework-item">
     <h3>[WUPENiCity] Field Research on Optimization of P+R Systems</h3>
     <img src="/courseworks_file/course-wupen/06.png" alt="Hangzhou P+R System Analysis">
-    <a href="/project-wupen-icity.html" class="learn-more-btn">View Project</a>
+    <a href="/course-wupen-icity.html" class="learn-more-btn">View Project</a>
   </div>
 
 </div>

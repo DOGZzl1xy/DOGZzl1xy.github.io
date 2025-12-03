@@ -3,9 +3,9 @@ layout: page
 title: "[CY PLAN 110] Introduction to City Planning"
 ---
 
-# [CY PLAN 110] Introduction to City Planning
+## [CY PLAN 110] Introduction to City Planning
 
-#### Instructor: Yanin Alexa Kramsky, TA: Xixi Jiang
+#### Instructor: Yanin Alexa Kramsky <br>TA: Xixi Jiang
 
 Investigated the spatial inequality of the Bay Wheels bike-share system in Berkeley, identifying a specific "mobility gap" in low-income West Berkeley despite citywide expansion efforts. Utilized GIS kernel density analysis to overlay station distribution with Census income data, revealing that infrastructure heavily clusters around affluent corridors and the university campus. Proposed policy reforms to replace flat percentage quotas with quantitative siting standards based on transit gaps and grassroots community data to better address "last-mile" connectivity.
 
