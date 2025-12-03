@@ -786,3 +786,28 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
+
+/* Vertical Stacked Project Layout */
+.project-feature-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+
+.project-feature-stacked .project-text {
+  width: 100%;
+}
+
+.project-feature-stacked .project-image {
+  width: 100%;
+  text-align: left;
+  /* Or center, user didn't specify, but usually left or center. Let's keep it default or left for now. */
+}
+
+.project-feature-stacked .project-links {
+  width: 100%;
+  margin-top: 1em;
+}
