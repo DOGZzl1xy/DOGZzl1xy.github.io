@@ -10,13 +10,17 @@ Here is a collection of my major course works. You can click the URL to download
 
 <div class="project-feature">
   <div class="project-text">
-    <h3>COVID-19 Recovery</h3>
+    <h3>[CY PLAN 110] Introduction to City Planning</h3> 
+    <h4>Spatial Equity Analysis: Bay Wheels Bike Share</h4>
     <p>
-      Evaluating the social-economic recovery impacts of the built environment post-pandemic: A case study of COVID-19 in Nagoya, Japan
+      Investigated the spatial inequality of the Bay Wheels bike-share system in Berkeley, identifying a specific "mobility gap" in low-income West Berkeley despite citywide expansion efforts. Utilized GIS kernel density analysis to overlay station distribution with Census income data, revealing that infrastructure heavily clusters around affluent corridors and the university campus. Proposed policy reforms to replace flat percentage quotas with quantitative siting standards based on transit gaps and grassroots community data to better address "last-mile" connectivity.
     </p>
-    <a href="https://doi.org/10.1177/27541231251314132" class="learn-more-btn">Learn More</a>
+    <p><strong>Tech Stack:</strong> GIS, US Census Data, Field Observation, Policy Analysis</p>
+    <div class="project-links">
+        <a href="/mypaper/course-BayWheel/CYPLAN110_report.pdf" class="learn-more-btn">Read Report</a>
+    </div>
   </div>
   <div class="project-image">
-    <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Nagoya_recovery/Recovery_level.png" alt="Recovery Level">
+    <img src="/mypaper/course-BayWheel/BayWheel_Map.png" alt="Bay Wheels GIS Analysis">
   </div>
 </div>
