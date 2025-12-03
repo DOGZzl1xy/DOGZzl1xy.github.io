@@ -719,12 +719,15 @@ a:hover {
 }
 
 /* "Learn More" 按钮的样式 */
-.learn-more-btn {
+.learn-more-btn,
+.article-wrap .learn-more-btn {
+  /* Increase specificity */
   display: inline-block;
   margin-top: 1em;
   padding: 10px 20px;
   border: 2px solid #333 !important;
-  /* Override global dashed border */
+  border-bottom: 2px solid #333 !important;
+  /* Explicitly override border-bottom */
   /* 边框颜色 */
   color: #333;
   /* 文字颜色 */
