@@ -1,101 +1,583 @@
 /* Original Theme Styles from backup/css/main-230810.css */
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}
-audio,canvas,video{display:inline-block;}
-audio:not([controls]){display:none;height:0;}
-[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0;margin-bottom:1.5em}
-html{background-color:#ffffff;font-family:'PT Serif',serif;color:#333332;font-size:90%;}
-.navigation-wrapper{margin:0 auto;width:100%;padding:2em 0 3em;font-family:'PT Sans Narrow',sans-serif;font-weight:700;text-transform:uppercase;}
-.site-name{margin:0 auto;width:100%;display:inline;float:left;width:83.33333333333334%;margin-left:8.333333333333334%;margin-right:8.333333333333334%;margin-bottom:1em;}
-.top-navigation{margin:0 auto;width:100%;display:inline;float:left;width:83.33333333333334%;margin-left:8.333333333333334%;margin-right:8.333333333333334%;margin-bottom:1em;}
-.top-navigation ul{list-style:none;margin:0;padding:0;}
-.top-navigation li{list-style-type:none;display:inline;margin-right:25px;}.top-navigation li a{text-decoration:none;border-bottom:0 solid transparent;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-ms-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;color:#343434;}
-.top-navigation-current{text-decoration: overline;}
-#main{counter-reset:captions;margin:0 auto;width:100%;display: flow-root;clear:both;margin-top:1em;}#main:before,#main:after{display:table;content:"";}
-#main:after{clear:both;}
-#main:before,#main:after{content:"";display:table;}
-#main:after{clear:both;}
-#main article{margin:0 auto;width:100%;display:inline;float:left;width:83.33333333333334%;margin-left:8.333333333333334%;margin-right:8.333333333333334%;margin-bottom:2em;}
-.article-author-top{display:none;}
-.footer-wrap{margin:0 auto;width:100%;clear:both;margin-top:1em;padding-top:2em;padding-bottom:3em;background-color:#000000;}.footer-wrap:before,.footer-wrap:after{display:table;content:"";}
-.footer-wrap:after{clear:both;}
-.footer-wrap:before,.footer-wrap:after{content:"";display:table;}
-.footer-wrap:after{clear:both;}
-.footer-wrap a,.footer-wrap a:active,.footer-wrap a:visited,.footer-wrap p,.footer-wrap h4,.footer-wrap h5,.footer-wrap h6{color:#bfbfbf;}
-.footer-wrap a{border-bottom:0 solid transparent;}.footer-wrap a:hover{color:#ffffff;border-bottom:0 solid transparent;}
-.footer-wrap footer{display:inline;float:left;width:83.33333333333334%;margin-left:8.333333333333334%;margin-right:8.333333333333334%;}
-@media only screen and (min-width:37.5em){html{font-size:95%;} .site-name{display:inline;float:left;width:16.666666666666668%;margin-left:4.166666666666667%;margin-right:4.166666666666667%;} .top-navigation{display:inline;float:left;width:75%;margin-left:0%;margin-right:0%;} #main article{display:inline;float:left;width:50%;margin-left:0%;margin-right:0%;} .footer-wrap footer{display:inline;float:left;width:50%;margin-left:25%;margin-right:25%;} .article-author-top{display:block;display:inline;float:left;width:16.666666666666668%;margin-left:4.166666666666667%;margin-right:4.166666666666667%;}}
-@media only screen and (min-width:48em){html{font-size:100%;}}
-@media only screen and (min-width:62em){html{font-size:112.5%;}}
-@media only screen and (min-width:86.375em){.site-name{display:inline;float:left;width:12.5%;margin-left:16.666666666666668%;} .top-navigation{display:inline;float:left;width:66.66666666666667%;} #main article{display:inline;float:left;width:37.5%;} .footer-wrap footer{display:inline;float:left;width:37.5%;margin-left:33.333333333333336%;margin-right:29.166666666666668%;} .article-author-top{display:inline;float:left;width:12.5%;margin-left:16.666666666666668%;}}
-p{margin:0 0 1.5em;}
-p+p{text-indent:1.5em;margin-top:-1.5em;}
-h1,h2,h3,h4,h5,h6{font-family:'PT Sans Narrow',sans-serif;font-weight:700;}
-h1{font-size:3.3333rem;}
-h2{font-size:2.6666rem;}
-h3{font-size:2rem;}
-h4{font-size:1.3333rem;}
-a{text-decoration:none;border-bottom:1px dotted #b3b3b1;}
-a:hover{border-bottom:1px solid #b3b3b1;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+a {
+  background: transparent
+}
+
+a:focus {
+  outline: thin dotted
+}
+
+a:active,
+a:hover {
+  outline: 0
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+abbr[title] {
+  border-bottom: 1px dotted
+}
+
+b,
+strong {
+  font-weight: 700
+}
+
+dfn {
+  font-style: italic
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0
+}
+
+mark {
+  background: #ff0;
+  color: #000
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em
+}
+
+pre {
+  white-space: pre-wrap
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sup {
+  top: -.5em
+}
+
+sub {
+  bottom: -.25em
+}
+
+img {
+  border: 0
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+figure {
+  margin: 0
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em
+}
+
+legend {
+  border: 0;
+  padding: 0
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0
+}
+
+button,
+input {
+  line-height: normal
+}
+
+button,
+select {
+  text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.5em
+}
+
+html {
+  background-color: #ffffff;
+  font-family: 'PT Serif', serif;
+  color: #333332;
+  font-size: 90%;
+}
+
+.navigation-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding: 2em 0 3em;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.site-name {
+  margin: 0 auto;
+  width: 100%;
+  display: inline;
+  float: left;
+  width: 83.33333333333334%;
+  margin-left: 8.333333333333334%;
+  margin-right: 8.333333333333334%;
+  margin-bottom: 1em;
+}
+
+.top-navigation {
+  margin: 0 auto;
+  width: 100%;
+  display: inline;
+  float: left;
+  width: 83.33333333333334%;
+  margin-left: 8.333333333333334%;
+  margin-right: 8.333333333333334%;
+  margin-bottom: 1em;
+}
+
+.top-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-navigation li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 25px;
+}
+
+.top-navigation li a {
+  text-decoration: none;
+  border-bottom: 0 solid transparent;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #343434;
+}
+
+.top-navigation-current {
+  text-decoration: overline;
+}
+
+#main {
+  counter-reset: captions;
+  margin: 0 auto;
+  width: 100%;
+  display: flow-root;
+  clear: both;
+  margin-top: 1em;
+}
+
+#main:before,
+#main:after {
+  display: table;
+  content: "";
+}
+
+#main:after {
+  clear: both;
+}
+
+#main:before,
+#main:after {
+  content: "";
+  display: table;
+}
+
+#main:after {
+  clear: both;
+}
+
+#main article {
+  margin: 0 auto;
+  width: 100%;
+  display: inline;
+  float: left;
+  width: 83.33333333333334%;
+  margin-left: 8.333333333333334%;
+  margin-right: 8.333333333333334%;
+  margin-bottom: 2em;
+}
+
+.article-author-top {
+  display: none;
+}
+
+.footer-wrap {
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+  margin-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  background-color: #000000;
+}
+
+.footer-wrap:before,
+.footer-wrap:after {
+  display: table;
+  content: "";
+}
+
+.footer-wrap:after {
+  clear: both;
+}
+
+.footer-wrap:before,
+.footer-wrap:after {
+  content: "";
+  display: table;
+}
+
+.footer-wrap:after {
+  clear: both;
+}
+
+.footer-wrap a,
+.footer-wrap a:active,
+.footer-wrap a:visited,
+.footer-wrap p,
+.footer-wrap h4,
+.footer-wrap h5,
+.footer-wrap h6 {
+  color: #bfbfbf;
+}
+
+.footer-wrap a {
+  border-bottom: 0 solid transparent;
+}
+
+.footer-wrap a:hover {
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
+}
+
+.footer-wrap footer {
+  display: inline;
+  float: left;
+  width: 83.33333333333334%;
+  margin-left: 8.333333333333334%;
+  margin-right: 8.333333333333334%;
+}
+
+@media only screen and (min-width:37.5em) {
+  html {
+    font-size: 95%;
+  }
+
+  .site-name {
+    display: inline;
+    float: left;
+    width: 16.666666666666668%;
+    margin-left: 4.166666666666667%;
+    margin-right: 4.166666666666667%;
+  }
+
+  .top-navigation {
+    display: inline;
+    float: left;
+    width: 75%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  #main article {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .footer-wrap footer {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .article-author-top {
+    display: block;
+    display: inline;
+    float: left;
+    width: 16.666666666666668%;
+    margin-left: 4.166666666666667%;
+    margin-right: 4.166666666666667%;
+  }
+}
+
+@media only screen and (min-width:48em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width:62em) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+@media only screen and (min-width:86.375em) {
+  .site-name {
+    display: inline;
+    float: left;
+    width: 12.5%;
+    margin-left: 16.666666666666668%;
+  }
+
+  .top-navigation {
+    display: inline;
+    float: left;
+    width: 66.66666666666667%;
+  }
+
+  #main article {
+    display: inline;
+    float: left;
+    width: 37.5%;
+  }
+
+  .footer-wrap footer {
+    display: inline;
+    float: left;
+    width: 37.5%;
+    margin-left: 33.333333333333336%;
+    margin-right: 29.166666666666668%;
+  }
+
+  .article-author-top {
+    display: inline;
+    float: left;
+    width: 12.5%;
+    margin-left: 16.666666666666668%;
+  }
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+p+p {
+  text-indent: 1.5em;
+  margin-top: -1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.3333rem;
+}
+
+h2 {
+  font-size: 2.6666rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.3333rem;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #b3b3b1;
+}
+
+a:hover {
+  border-bottom: 1px solid #b3b3b1;
+}
 
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/icomoon.woff') format('woff'),
-         url('../fonts/icomoon.ttf') format('truetype'),
-         url('../fonts/icomoon.svg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* --- Dropdown Menu Accessibility Fix --- */
 
 /* 1. 设置主菜单项为相对定位的容器 */
 .top-navigation li.dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .top-navigation li.dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 220px; /* 增加了宽度以容纳更长的项目名 */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 100;
-    list-style: none;
-    padding: 0; /* 重置内边距 */
-    margin: 0; /* 重置外边距 */
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    text-transform: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 220px;
+  /* 增加了宽度以容纳更长的项目名 */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  /* 重置内边距 */
+  margin: 0;
+  /* 重置外边距 */
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  text-transform: none;
 
-    /* 关键：增加一个透明的上内边距，鼠标可以滑过这个区域 */
-    padding-top: 15px; 
-    margin-top: 0px; /* 向上移动一点，减少视觉上的空隙 */
+  /* 关键：增加一个透明的上内边距，鼠标可以滑过这个区域 */
+  padding-top: 15px;
+  margin-top: 0px;
+  /* 向上移动一点，减少视觉上的空隙 */
 }
 
 /* 3. 当鼠标悬停在主菜单项上时，显示下拉菜单 */
 .top-navigation li.dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* 4. 下拉菜单内链接的样式 */
 .top-navigation li.dropdown .dropdown-content li {
-    display: block;
-    margin: 0;
+  display: block;
+  margin: 0;
 }
+
 .top-navigation li.dropdown .dropdown-content li a {
-    color: black;
-    padding: 10px 20px; /* 调整内边距使条目更易点击 */
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    border-bottom: none;
+  color: black;
+  padding: 10px 20px;
+  /* 调整内边距使条目更易点击 */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-bottom: none;
 }
 
 .top-navigation li.dropdown .dropdown-content li a:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 /* 5. 下拉箭头样式 (保持不变) */
@@ -107,6 +589,7 @@ a:hover{border-bottom:1px solid #b3b3b1;}
   margin-left: 5px;
   margin-bottom: 2px;
 }
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -122,60 +605,90 @@ a:hover{border-bottom:1px solid #b3b3b1;}
 /* New Link Style: Dashed Underline */
 .article-wrap a,
 .article-wrap a:visited {
-    color: inherit; /* 继承父元素颜色，使其与普通文本颜色一致 */
-    text-decoration: none; /* 移除浏览器默认的下划线 */
-    border-bottom: 1px dashed #cccccc; /* 添加一条1像素的淡灰色虚线下划线 */
-    transition: border-bottom 0.2s ease-in-out; /* 添加平滑过渡效果 */
+  color: inherit;
+  /* 继承父元素颜色，使其与普通文本颜色一致 */
+  text-decoration: none;
+  /* 移除浏览器默认的下划线 */
+  border-bottom: 1px dashed #cccccc;
+  /* 添加一条1像素的淡灰色虚线下划线 */
+  transition: border-bottom 0.2s ease-in-out;
+  /* 添加平滑过渡效果 */
 }
 
 .article-wrap a:hover {
-    border-bottom: 1px solid #555555; /* 鼠标悬停时，虚线变为颜色更深的实线 */
+  border-bottom: 1px solid #555555;
+  /* 鼠标悬停时，虚线变为颜色更深的实线 */
 }
 
 /* Text Wrapping (Float) Classes for Images */
 .img-float-right {
   float: right;
   margin-top: 5px;
-  margin-left: 1.5em; /* 图片左侧和文字的间距 */
-  margin-bottom: 1em; /* 图片下方的间距 */
-  width: 45%; /* 图片宽度占容器的45% */
-  max-width: 350px; /* 图片最大宽度不超过350px */
+  margin-left: 1.5em;
+  /* 图片左侧和文字的间距 */
+  margin-bottom: 1em;
+  /* 图片下方的间距 */
+  width: 45%;
+  /* 图片宽度占容器的45% */
+  max-width: 350px;
+  /* 图片最大宽度不超过350px */
 }
 
 .img-float-left {
   float: left;
   margin-top: 5px;
-  margin-right: 1.5em; /* 图片右侧和文字的间距 */
-  margin-bottom: 1em; /* 图片下方的间距 */
-  width: 45%; /* 图片宽度占容器的45% */
-  max-width: 350px; /* 图片最大宽度不超过350px */
+  margin-right: 1.5em;
+  /* 图片右侧和文字的间距 */
+  margin-bottom: 1em;
+  /* 图片下方的间距 */
+  width: 45%;
+  /* 图片宽度占容器的45% */
+  max-width: 350px;
+  /* 图片最大宽度不超过350px */
 }
 
 /* --- Fix for Missing Icons --- */
-.icon-instagram, .icon-facebook, .icon-twitter, .icon-google-plus, .icon-feed, .icon-feed-2, .icon-linkedin, .icon-tumblr, .icon-lastfm, .icon-mail, .icon-github {
-    font-family: 'icomoon';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
+.icon-instagram,
+.icon-facebook,
+.icon-twitter,
+.icon-google-plus,
+.icon-feed,
+.icon-feed-2,
+.icon-linkedin,
+.icon-tumblr,
+.icon-lastfm,
+.icon-mail,
+.icon-github {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
+
 .icon-github:before {
-    content: "\e000";
+  content: "\e000";
 }
-.icon-mail:before{
-    content:"\e006";
+
+.icon-mail:before {
+  content: "\e006";
 }
 
 /* --- Project Feature Layout --- */
 .project-feature {
   display: flex;
-  align-items: center; /* 垂直居中文本和图片 */
-  gap: 2em; /* 文本和图片之间的间距 */
-  margin-bottom: 3em; /* 每个项目块之间的下边距 */
-  padding-bottom: 2em; /* 每个项目块下方的内边距 */
-  border-bottom: 1px solid #eee; /* 每个项目块下方的分隔线 */
+  align-items: center;
+  /* 垂直居中文本和图片 */
+  gap: 2em;
+  /* 文本和图片之间的间距 */
+  margin-bottom: 3em;
+  /* 每个项目块之间的下边距 */
+  padding-bottom: 2em;
+  /* 每个项目块下方的内边距 */
+  border-bottom: 1px solid #eee;
+  /* 每个项目块下方的分隔线 */
 }
 
 /* 在小屏幕上（如手机），将左右布局变为上下堆叠 */
@@ -186,19 +699,23 @@ a:hover{border-bottom:1px solid #b3b3b1;}
 }
 
 .project-text {
-  flex: 1; /* 文本部分占据可用空间 */
+  flex: 1;
+  /* 文本部分占据可用空间 */
 }
 
 .project-image {
-  flex: 1; /* 图片部分占据可用空间 */
+  flex: 1;
+  /* 图片部分占据可用空间 */
   text-align: center;
 }
 
 .project-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* 给图片添加圆角 */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 给图片添加细微阴影 */
+  border-radius: 8px;
+  /* 给图片添加圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 给图片添加细微阴影 */
 }
 
 /* "Learn More" 按钮的样式 */
@@ -206,27 +723,66 @@ a:hover{border-bottom:1px solid #b3b3b1;}
   display: inline-block;
   margin-top: 1em;
   padding: 10px 20px;
-  border: 2px solid #333; /* 边框颜色 */
-  color: #333; /* 文字颜色 */
-  background-color: #fff; /* 背景颜色 */
-  text-decoration: none; /* 移除默认下划线 */
-  border-radius: 5px; /* 按钮圆角 */
+  border: 2px solid #333;
+  /* 边框颜色 */
+  color: #333;
+  /* 文字颜色 */
+  background-color: #fff;
+  /* 背景颜色 */
+  text-decoration: none;
+  /* 移除默认下划线 */
+  border-radius: 5px;
+  /* 按钮圆角 */
   font-weight: bold;
-  transition: all 0.2s ease-in-out; /* 平滑过渡效果 */
+  transition: all 0.2s ease-in-out;
+  /* 平滑过渡效果 */
 }
 
 .learn-more-btn:hover {
-  background-color: #333; /* 鼠标悬停时背景变黑 */
-  color: #fff; /* 鼠标悬停时文字变白 */
+  background-color: #333;
+  /* 鼠标悬停时背景变黑 */
+  color: #fff;
+  /* 鼠标悬停时文字变白 */
   text-decoration: none;
   border-color: #333;
 }
+
 /* 全宽图片样式 */
 .img-full-width {
   width: 90%;
   max-width: none;
   display: block;
-  margin: 1.5em auto; /* 上下边距1.5em，左右自动居中 */
-  float: none; /* 清除浮动 */
-  clear: both; /* 确保换行 */
+  margin: 1.5em auto;
+  /* 上下边距1.5em，左右自动居中 */
+  float: none;
+  /* 清除浮动 */
+  clear: both;
+  /* 确保换行 */
+}
+
+/* Full Width Project Layout */
+.project-feature-full {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  gap: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2em;
+}
+
+.project-map-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-text-full {
+  width: 100%;
+}
+
+.project-header h3,
+.project-header h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
