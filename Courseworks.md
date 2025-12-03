@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /course-works/index.html
+permalink: /courseworks/index.html
 title: Course Works
 ---
 
