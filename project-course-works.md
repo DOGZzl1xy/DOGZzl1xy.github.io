@@ -23,4 +23,8 @@ Here is a collection of my major course works. You can click the URL to download
   <div class="project-image">
     <img src="/mypaper/course-BayWheel/BayWheel_Map.png" alt="Bay Wheels GIS Analysis">
   </div>
+  <div class="project-image">
+    <img src="/mypaper/course-BayWheel/BayWheel_income.png" alt="Bay Wheels Income Analysis">
+  </div>
 </div>
+
