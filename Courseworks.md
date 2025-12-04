@@ -102,4 +102,13 @@ Here is a collection of my major course works. Click on a project to learn more.
     <img src="/courseworks_file/landscape-design/landscape_cover_2.png" alt="Landscape Design of Qiushi Road">
     <a href="/course-landscape-design-2.html" class="learn-more-btn">View Project</a>
   </div>
+  
+
+  <div class="coursework-item">
+    <h3>[Regulatory Detailed Planning] Tangbei Block, Hangzhou</h3>
+    <img src="/courseworks_file/regulatory-planning/regulatory_planning_cover.jpg" alt="Regulatory Detailed Planning of Tangbei ">
+    <a href="/course-regulatory-planning.html" class="learn-more-btn">View Project</a>
+  </div>
+
+
 </div>

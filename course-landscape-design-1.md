@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "[Landscape Design] Landscape Design of Island of Lake of Zijingang Campus"
+title: "[Landscape Design] Island of Lake of Zijingang Campus"
 ---
 
-## [Landscape Design] Landscape Design of Island of Lake of Zijingang Campus
+## [Landscape Design] Island of Lake of Zijingang Campus
 
 **Project Description:**
 
@@ -14,5 +14,5 @@ This project focuses on the landscape design of the Island of Lake on the Zijing
 </div>
 
 <div class="project-links">
-    <a href="/courseworks_file/landscape-design/Landscape_work1.pdf" class="learn-more-btn">Read Report</a>
+    <a href="/courseworks_file/landscape-design/Landscape_work1.pdf" class="learn-more-btn">Final Work</a>
 </div>

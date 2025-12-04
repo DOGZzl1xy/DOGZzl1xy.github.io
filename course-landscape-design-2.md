@@ -14,5 +14,5 @@ This project presents the landscape design for Qiushi Road. The design aims to i
 </div>
 
 <div class="project-links">
-    <a href="/courseworks_file/landscape-design/Landscape_work2_2.pdf" class="learn-more-btn">Read Report</a>
+    <a href="/courseworks_file/landscape-design/Landscape_work2_2.pdf" class="learn-more-btn">Final Work</a>
 </div>
