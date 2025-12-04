@@ -91,14 +91,14 @@ Here is a collection of my major course works. Click on a project to learn more.
   </div>
 
   <div class="coursework-item">
-    <h3>[Landscape Design] Landscape Design of Island of Lake of Zijingang Campus</h3>
+    <h3>[Landscape Design] Island of Lake of Zijingang Campus</h3>
     <img src="/courseworks_file/landscape-design/landscape_cover_1.jpg" alt="Landscape Design of Island of Lake of Zijingang Campus">
     <a href="/course-landscape-design-1.html" class="learn-more-btn">View Project</a>
   </div>
 
 
   <div class="coursework-item">
-    <h3>[Landscape Design] Landscape Design of Qiushi Road</h3>
+    <h3>[Landscape Design] Qiushi Road</h3>
     <img src="/courseworks_file/landscape-design/landscape_cover_2.png" alt="Landscape Design of Qiushi Road">
     <a href="/course-landscape-design-2.html" class="learn-more-btn">View Project</a>
   </div>
