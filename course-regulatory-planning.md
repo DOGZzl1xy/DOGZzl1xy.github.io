@@ -14,5 +14,5 @@ This project focuses on the regulatory detailed planning of the Tangbei Block. I
 </div>
 
 <div class="project-links">
-    <a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Regulatory_detailed_planning.pdf?Expires=1764834438&OSSAccessKeyId=TMP.3Kraw8dsbNEr3f8Ae4XsHPLtDznUwsWCP4zYRRPxQyUVyMmyCkjRb21WKx8XHMDWDkStLTz8dKiYBUSMVS6tZyNnUVucje&Signature=S8ux7mizqj27jSANoMYx9jnXBx4%3D" class="learn-more-btn">Download Report</a>
+    <a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Regulatory_detailed_planning.pdf" class="learn-more-btn">Download Report</a>
 </div>
