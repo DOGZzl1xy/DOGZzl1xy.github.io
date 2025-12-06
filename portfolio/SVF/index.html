@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidewalk Sky View Factor Visualization</title>
+    <title>Sidewalk Sky View Factor</title>
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,40 +16,45 @@
 
 <body>
 
-    <div id="map"></div>
+    <div id="layout-container">
+        <div id="ui-container">
+            <header>
+                <h1>Sidewalk Sky View Factor</h1>
+                <p class="subtitle">Spatial Distribution of Urban Sky Visibility in San Francisco</p>
+            </header>
 
-    <div id="ui-container">
-        <header>
-            <h1>Sidewalk Sky View Factor</h1>
-            <p class="subtitle">Spatial Distribution of Urban Sky Visibility</p>
-        </header>
+            <div class="controls">
+                <label for="svf-source">Select Data Source:</label>
+                <select id="svf-source">
+                    <option value="difference" selected>Difference</option>
+                    <option value="lidar_svf">Airborne LiDAR SVF</option>
+                    <option value="gsv_svf">Google Street View SVF</option>
+                    <option value="KR_PC_SVF">Generated Point Cloud SVF</option>
+                </select>
+            </div>
 
-        <div class="controls">
-            <label for="svf-source">Select Data Source:</label>
-            <select id="svf-source">
-                <option value="difference" selected>Difference</option>
-                <option value="lidar_svf">Airborne LiDAR SVF</option>
-                <option value="gsv_svf">Google Street View SVF</option>
-                <option value="KR_PC_SVF">Generated Point Cloud SVF</option>
-            </select>
+            <div id="info-panel">
+                <h3>Project Info</h3>
+                <p>
+                    Traditional SVF calculation uses Google Street View as a measurement tool. However, the spot is
+                    located at the driverway instead of the sidewalk. We introduce a human-centric method to move the
+                    measurement spot to the sidewalk.
+                </p>
+                <div id="project-description">
+                    <!-- Project description will go here -->
+                </div>
+                <hr>
+                <div class="legend-item">
+                    <span class="color-box high"></span> High SVF (Open Sky)
+                </div>
+                <div class="legend-item">
+                    <span class="color-box low"></span> Low SVF (Obstructed)
+                </div>
+                <p class="instruction">Hover over points to see details.</p>
+            </div>
         </div>
 
-        <div id="info-panel">
-            <h3>Project Info</h3>
-            <p>
-                Traditional SVF calculation uses Google Street View as a measurement tool. However, the spot is located
-                at the driverway instead of the sidewalk. We introduce a human-centric method to move the measurement
-                spot to the sidewalk.
-            </p>
-            <hr>
-            <div class="legend-item">
-                <span class="color-box high"></span> High SVF (Open Sky)
-            </div>
-            <div class="legend-item">
-                <span class="color-box low"></span> Low SVF (Obstructed)
-            </div>
-            <p class="instruction">Hover over points to see details.</p>
-        </div>
+        <div id="map"></div>
     </div>
 
     <div id="tooltip" class="hidden">
