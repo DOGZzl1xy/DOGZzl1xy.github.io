@@ -1,0 +1,147 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #00bcd4;
+    --panel-bg: rgba(20, 20, 20, 0.85);
+    --border-color: #333;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#ui-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    z-index: 1000;
+    background-color: var(--panel-bg);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin: 0 0 20px 0;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+#info-panel {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+#info-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 15px 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.color-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.color-box.high {
+    background-color: #00ffff;
+    box-shadow: 0 0 5px #00ffff;
+}
+
+.color-box.low {
+    background-color: #003366;
+}
+
+.instruction {
+    margin-top: 15px;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+
+/* Tooltip Styling */
+#tooltip {
+    position: absolute;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 0.8rem;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    transform: translate(15px, 15px);
+    transition: opacity 0.2s;
+}
+
+#tooltip.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#tooltip-content strong {
+    color: var(--accent-color);
+}

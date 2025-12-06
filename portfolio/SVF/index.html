@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidewalk Sky View Factor Visualization</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+    <div id="ui-container">
+        <header>
+            <h1>Sidewalk Sky View Factor</h1>
+            <p class="subtitle">Spatial Distribution of Urban Sky Visibility</p>
+        </header>
+
+        <div class="controls">
+            <label for="svf-source">Select Data Source:</label>
+            <select id="svf-source">
+                <option value="lidar_svf">Airborne LiDAR SVF</option>
+                <option value="gsv_svf">Google Street View SVF</option>
+                <option value="KR_PC_SVF">Generated Point Cloud SVF</option>
+            </select>
+        </div>
+
+        <div id="info-panel">
+            <h3>Project Info</h3>
+            <p>
+            Traditional SVF calculation uses Google Street View as a measurement tool. However, the spot is located at the driverway instead of the sidewalk. We introduce a human-centric method to move the measurement spot to the sidewalk.
+            </p>
+            <hr>
+            <div class="legend-item">
+                <span class="color-box high"></span> High SVF (Open Sky)
+            </div>
+            <div class="legend-item">
+                <span class="color-box low"></span> Low SVF (Obstructed)
+            </div>
+            <p class="instruction">Hover over points to see details.</p>
+        </div>
+    </div>
+
+    <div id="tooltip" class="hidden">
+        <div id="tooltip-content"></div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- PapaParse for CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+    <!-- Main Application -->
+    <script src="main.js"></script>
+</body>
+
+</html>
