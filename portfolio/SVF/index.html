@@ -31,7 +31,7 @@
                     <option value="gsv_svf">Google Street View SVF</option>
                     <option value="KR_PC_SVF">Generated Point Cloud SVF</option>
                 </select>
-                
+
             </div>
 
             <div id="info-panel">
@@ -46,10 +46,13 @@
                 </div>
                 <hr>
                 <div class="legend-item">
-                    <span class="color-box high"></span> High SVF (Open Sky)
+                    <span class="color-box" style="background: red;"></span> Positive Difference (Red)
                 </div>
                 <div class="legend-item">
-                    <span class="color-box low"></span> Low SVF (Obstructed)
+                    <span class="color-box" style="background: blue;"></span> Negative Difference (Blue)
+                </div>
+                <div class="legend-item">
+                    <span class="color-box high"></span> High SVF (Cyan)
                 </div>
                 <p class="instruction">Hover over points to see details.</p>
             </div>
@@ -70,7 +73,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
     <!-- Main Application -->
-    <script src="main.js"></script>
+    <script src="main.js?v=2"></script>
 </body>
 
 </html>
