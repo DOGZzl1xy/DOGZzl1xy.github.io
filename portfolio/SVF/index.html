@@ -27,6 +27,7 @@
         <div class="controls">
             <label for="svf-source">Select Data Source:</label>
             <select id="svf-source">
+                <option value="difference" selected>Difference</option>
                 <option value="lidar_svf">Airborne LiDAR SVF</option>
                 <option value="gsv_svf">Google Street View SVF</option>
                 <option value="KR_PC_SVF">Generated Point Cloud SVF</option>
@@ -36,7 +37,9 @@
         <div id="info-panel">
             <h3>Project Info</h3>
             <p>
-            Traditional SVF calculation uses Google Street View as a measurement tool. However, the spot is located at the driverway instead of the sidewalk. We introduce a human-centric method to move the measurement spot to the sidewalk.
+                Traditional SVF calculation uses Google Street View as a measurement tool. However, the spot is located
+                at the driverway instead of the sidewalk. We introduce a human-centric method to move the measurement
+                spot to the sidewalk.
             </p>
             <hr>
             <div class="legend-item">

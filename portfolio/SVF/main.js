@@ -12,7 +12,7 @@ const CONFIG = {
 let map;
 let canvasLayer;
 let dataPoints = [];
-let currentMetric = 'lidar_svf';
+let currentMetric = 'difference';
 let canvas;
 let ctx;
 let animationId;
@@ -133,6 +133,11 @@ function processData(rawData) {
         lidar_svf: row.lidar_svf,
         gsv_svf: row.gsv_svf,
         KR_PC_SVF: row.KR_PC_SVF,
+        SVF_Left: row.SVF_Left,
+        SVF_Right: row.SVF_Right,
+        difference: (row.KR_PC_SVF !== undefined && row.SVF_Left !== undefined && row.SVF_Right !== undefined)
+            ? row.KR_PC_SVF - ((row.SVF_Left + row.SVF_Right) / 2)
+            : null,
         // Pre-calculate random phase for animation
         phase: Math.random() * Math.PI * 2
     }));
@@ -178,6 +183,29 @@ function setupControls() {
 }
 
 function getPointColor(value) {
+    if (currentMetric === 'difference') {
+        // Divergent color scale for difference
+        // Red (negative) <-> Grey (zero) <-> Cyan (positive)
+        // Sensitivity: fit range approx -0.3 to 0.3
+        const sensitivity = 3.0;
+        let r = 120, g = 120, b = 120; // Base grey
+
+        if (value > 0) {
+            // Positive -> Cyan/Teal
+            const intensity = Math.min(1, value * sensitivity);
+            r = 120 - (120 * intensity);
+            g = 120 + (135 * intensity);
+            b = 120 + (135 * intensity);
+        } else {
+            // Negative -> Red/Orange
+            const intensity = Math.min(1, Math.abs(value) * sensitivity);
+            r = 120 + (135 * intensity);
+            g = 120 - (100 * intensity);
+            b = 120 - (120 * intensity);
+        }
+        return `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.8)`;
+    }
+
     // Map 0-1 to a color gradient
     // Low SVF (0) -> Dark Blue/Purple
     // High SVF (1) -> Bright Cyan/White
@@ -313,11 +341,17 @@ function updateTooltip(x, y) {
             <div><strong>Lat:</strong> ${hoveredPoint.lat.toFixed(5)}</div>
             <div><strong>Lon:</strong> ${hoveredPoint.lon.toFixed(5)}</div>
             <hr style="margin: 5px 0; border-color: #444;">
-            <div><strong>${currentMetric}:</strong> <span style="color: #00ffff">${formattedVal}</span></div>
+            <div><strong>${currentMetric === 'difference' ? 'Difference' : currentMetric}:</strong> <span style="color: #00ffff">${formattedVal}</span></div>
             <div style="font-size: 0.75rem; color: #aaa;">
+                ${currentMetric === 'difference' ? `
+                PC: ${hoveredPoint.KR_PC_SVF?.toFixed(3) ?? '-'} <br>
+                Left: ${hoveredPoint.SVF_Left?.toFixed(3) ?? '-'} <br>
+                Right: ${hoveredPoint.SVF_Right?.toFixed(3) ?? '-'}
+                ` : `
                 LiDAR: ${hoveredPoint.lidar_svf?.toFixed(2) ?? '-'} <br>
                 GSV: ${hoveredPoint.gsv_svf?.toFixed(2) ?? '-'} <br>
                 PC: ${hoveredPoint.KR_PC_SVF?.toFixed(2) ?? '-'}
+                `}
             </div>
         `;
     } else {
