@@ -163,7 +163,6 @@ function setupControls() {
     });
 
     // File Input Listener
-    // File Input Listener
     const fileInput = document.getElementById('csv-file-input');
     if (fileInput) {
         fileInput.addEventListener('change', (e) => {
@@ -240,7 +239,7 @@ function drawLayer() {
 
     dataPoints.forEach(point => {
         const val = point[currentMetric];
-        if (val === null || val === undefined) return;
+        if (val === null || val === undefined || isNaN(val)) return;
 
         // Project lat/lon to pixel coordinates
         const pointPos = map.latLngToContainerPoint([point.lat, point.lon]);
