@@ -187,26 +187,29 @@ function setupControls() {
 
 function getPointColor(value) {
     if (currentMetric === 'difference') {
-        // Divergent color scale for difference
-        // Red (negative) <-> Grey (zero) <-> Cyan (positive)
-        // Sensitivity: fit range approx -0.3 to 0.3
-        const sensitivity = 3.0;
-        let r = 120, g = 120, b = 120; // Base grey
+        // Range [-1, 1]
+        // Positive -> Red
+        // Negative -> Blue
+        // 0 -> White (50% opacity)
 
-        if (value > 0) {
-            // Positive -> Cyan/Teal
-            const intensity = Math.min(1, value * sensitivity);
-            r = 120 - (120 * intensity);
-            g = 120 + (135 * intensity);
-            b = 120 + (135 * intensity);
+        const absVal = Math.min(1, Math.abs(value));
+        const alpha = 0.5 + (0.5 * absVal);
+
+        let r, g, b;
+
+        if (value >= 0) {
+            // White (255,255,255) -> Red (255,0,0)
+            r = 255;
+            g = Math.round(255 * (1 - absVal));
+            b = Math.round(255 * (1 - absVal));
         } else {
-            // Negative -> Red/Orange
-            const intensity = Math.min(1, Math.abs(value) * sensitivity);
-            r = 120 + (135 * intensity);
-            g = 120 - (100 * intensity);
-            b = 120 - (120 * intensity);
+            // White (255,255,255) -> Blue (0,0,255)
+            r = Math.round(255 * (1 - absVal));
+            g = Math.round(255 * (1 - absVal));
+            b = 255;
         }
-        return `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, 0.8)`;
+
+        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
     }
 
     // Map 0-1 to a color gradient
