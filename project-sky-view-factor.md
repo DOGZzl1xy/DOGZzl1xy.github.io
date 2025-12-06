@@ -9,5 +9,5 @@ I'll update all information once we finised it.
 <br>
 
 <div class="project-links">
-    <a href="portfolio/SVF/index.html" class="learn-more-btn">View Demo</a>
+    <a href="/portfolio/SVF/index.html" class="learn-more-btn">View Demo</a>
 </div>

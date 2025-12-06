@@ -163,23 +163,26 @@ function setupControls() {
     });
 
     // File Input Listener
+    // File Input Listener
     const fileInput = document.getElementById('csv-file-input');
-    fileInput.addEventListener('change', (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            Papa.parse(file, {
-                header: true,
-                dynamicTyping: true,
-                complete: function (results) {
-                    processData(results.data);
-                },
-                error: function (err) {
-                    console.error("Manual parse error:", err);
-                    alert("Failed to parse selected file.");
-                }
-            });
-        }
-    });
+    if (fileInput) {
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                Papa.parse(file, {
+                    header: true,
+                    dynamicTyping: true,
+                    complete: function (results) {
+                        processData(results.data);
+                    },
+                    error: function (err) {
+                        console.error("Manual parse error:", err);
+                        alert("Failed to parse selected file.");
+                    }
+                });
+            }
+        });
+    }
 }
 
 function getPointColor(value) {
