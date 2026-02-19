@@ -13,6 +13,7 @@ I am an undergraduate student in the **Urban and Rural Planning** at **Zhejiang 
 If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at — **xuanyu.zhou [at] zju.edu.cn** or **xuanyu.zhou [at] berkeley.edu**
 
 [**Download my CV (Update October 2025)**](https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf)
+
 [**Download my Digital Portfolio**](https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf)
 ---
 
