@@ -27,7 +27,7 @@ My research interests mainly focus on Data-driven Urban Planning, including:
 ---
 
 ## News and Updates
-- **Feb 2025**: Work accepted by EDRA 2026, see you all in MA!
+- **Feb 2025**: Work accepted by EDRA57, see you all in Amherst, MA!
 - **Oct 2025**: Finish summer intern experience at MIT-UF-NEU, you can check our work [here](https://arxiv.org/abs/2510.04186)!
 - **Sep 2025**: Work accepted by Transportation Research Board (TRB) Annual Meeting, see you in Washington, D.C.!
 - **May 2025**：Participate in MIT-UF-NEU Summer Research Camp, mentored by Xuan Jian, Ph.D.
