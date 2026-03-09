@@ -8,7 +8,7 @@ title: Publication
 
 ## Journal Paper
 
-- [Evaluating the social-economic recovery impacts of the built environment post- pandemic: A case study of COVID-19](https://doi.org/10.1177/27541231251314132)<br>Shuang Ma, **Xuanyu Zhou**, Wei Cai, Mo Chen, Shuangjin Li~<br>*Transactions in Urban Data, Science, and Technology*<br>
+- <a href="https://doi.org/10.1177/27541231251314132" target="_blank" rel="noopener">Evaluating the social-economic recovery impacts of the built environment post-pandemic: A case study of COVID-19</a><br>Shuang Ma, **Xuanyu Zhou**, Wei Cai, Mo Chen, Shuangjin Li~<br>*Transactions in Urban Data, Science, and Technology*<br>
 
 - Greening the Gap: Examining Urban Greenery Equity in Shrinking Cities<br>**Xuanyu Zhou**, Mingze Chen~<br>*Urban Forestery & Urban Greening (Under Review)*<br>
   
@@ -21,7 +21,7 @@ title: Publication
 
 ## Conference Paper
 
-- [FROM PATCHWORK TO NETWORK: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility](https://arxiv.org/abs/2510.04186v1)<br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>Transportation Research Board Annual Meeting<br>Washington, D.C January, 2026. <br>
+- <a href="https://arxiv.org/abs/2510.04186v1" target="_blank" rel="noopener">FROM PATCHWORK TO NETWORK: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility</a><br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>Transportation Research Board Annual Meeting<br>Washington, D.C January, 2026. <br>
   
 - Greening the Gap: Examining Urban Greenery Equity in Shrinking Cities<br>**Xuanyu Zhou**, Mingze Chen~<br>Association of Collegiate Schools of Planning Annual Meeting<br>Seattle, USA. November, 2024.<br>
 
@@ -30,7 +30,7 @@ title: Publication
 ## Degree Thesis
 
 **Title: A Study on the Coupling Coordination Relationship between Ecosystem Services and Ecological Resilience in the Yangtze River Delta Urban Agglomeration**
-Supervisor: [Prof. Yonghua Li](https://person.zju.edu.cn/en/yonghuali)
+Supervisor: <a href="https://person.zju.edu.cn/en/yonghuali" target="_blank" rel="noopener">Prof. Yonghua Li</a>
 
 This thesis investigates the coupling coordination degree (CCD) between ecosystem services (ES) and ecological resilience (ER) to assess regional development quality and sustainability. It first evaluates comprehensive ES and ER scores for cities in the Yangtze River Delta—measuring ES through provisioning, regulating, and supporting services, and assessing ER based on resistance, recovery, and adaptability indicators. 
 

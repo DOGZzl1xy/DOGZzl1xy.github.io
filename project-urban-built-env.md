@@ -10,7 +10,7 @@ title: Urban Built Environment
     <p>
       Evaluating the social-economic recovery impacts of the built environment post-pandemic: A case study of COVID-19 in Nagoya, Japan
     </p>
-    <a href="https://doi.org/10.1177/27541231251314132" class="learn-more-btn">Learn More</a>
+    <a href="https://doi.org/10.1177/27541231251314132" target="_blank" rel="noopener" class="learn-more-btn">Learn More</a>
   </div>
   <div class="project-image">
     <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Nagoya_recovery/Recovery_level.png" alt="Recovery Level">
