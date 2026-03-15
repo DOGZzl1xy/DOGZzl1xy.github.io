@@ -12,29 +12,27 @@ I am an undergraduate student in the **Urban and Rural Planning** at **Zhejiang 
 
 If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at — **xuanyu.zhou [at] zju.edu.cn** or **xuanyu.zhou [at] berkeley.edu**
 
-### <a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener">**Download my CV (Update October 2025)**</a>
+### <a href="https://xuanyuzhou.org/file/CV_xuanyu_20260315.pdf" target="_blank" rel="noopener">**Download my CV (Update March 2026)**</a>
 
 ### <a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener">**Download my Digital Portfolio**</a>
 
 ---
 
 ## Research Interests
-My research interests mainly focus on Data-driven Urban Planning, including: 
-- **Urban Equity:** Applying demographic and visitation data to explore the equity of urban infrastructure, particularly through spatio-temporal analysis of urban green space (UGS) access and its impact on community resilience in shrinking cities. 
-- **Urban AI:** Leveraging machine learning techniques to model complex urban phenomena—from post-pandemic resilience to the relationship between the built environment and public health outcomes.
-- **LLM for Urban Planning:** Exploring the application of Large Language Models to analyze urban policy documents, public sentiment, and qualitative data to generate insights for more responsive and inclusive planning strategies.
-- **Urban Mobility:** Developing advanced modeling frameworks for next-generation transportation systems, integrating dynamic demand patterns and heterogeneous fleets to optimize for efficiency and equity.
+My research focuses on data-driven urban analytics, with emphasis on:
+- **Built Environment and Equity:** Examining how urban green spaces and thermal exposure vary across communities, using remote sensing, LiDAR, and street view imagery to advance environmental justice in underserved regions.
+- **Urban Mobility:** Developing computational frameworks for next-generation transportation systems, including Urban Air Mobility demand modeling and shared mobility optimization.
+- **Urban Resilience and Health:** Applying geospatial machine learning to investigate relationships between built environment characteristics and public health, community vitality, and post-pandemic recovery.
   
 
 ---
-
 ## News and Updates
-- **Oct 2025**: Finish summer intern experience at MIT-UF-NEU, you can check our work <a href="https://arxiv.org/abs/2510.04186" target="_blank" rel="noopener">here</a>!
-- **Sep 2025**: Work accepted by Transportation Research Board (TRB) Annual Meeting, see you in Washington, D.C.!
-- **May 2025**: Participate in MIT-UF-NEU Summer Research Camp, mentored by Xuan Jian, Ph.D.
-- **Feb 2025**: Work accepted by EDRA57, see you all in Amherst, MA!
-- **Nov 2024**: Very excited to participate in Association of Collegiate Schools of Planning (ACSP) annual meeting in Seattle. I'll share my recent research on urban green space in shrinking cities.
-- **Aug 2024**: Work accepted by ACSP Conference, see you in Seattle!
+- **Oct 2025**: Completed the MIT-UF-NEU Summer Research Camp. Check out our work <a href="https://arxiv.org/abs/2510.04186" target="_blank" rel="noopener">here</a>!
+- **Sep 2025**: Work accepted by the Transportation Research Board (TRB) 2026 Annual Meeting — see you in Washington, D.C.!
+- **May 2025**: Joined the MIT-UF-NEU Summer Research Camp, mentored by Dr. Xuan Jiang.
+- **Feb 2025**: Work accepted by EDRA57 — see you in Amherst, MA!
+- **Nov 2024**: Presented at the Association of Collegiate Schools of Planning (ACSP) Annual Conference in Seattle on urban green space equity in shrinking cities.
+- **Aug 2024**: Work accepted by the 2024 ACSP Annual Conference!
 
 <br>
 
@@ -50,4 +48,4 @@ As an exchange student at UC Berkeley, I contributed to <a href="https://ced.ber
 
 My trajectory culminated at the **MIT-UF-NEU joint summer research camp**, where I co-developed a framework for optimizing Urban Air Mobility (UAM) systems with <a href="https://mobility.mit.edu/people/jinhua-zhao/" target="_blank" rel="noopener">Prof. Jinhua Zhao</a> and <a href="https://xuan-1998.github.io/" target="_blank" rel="noopener">Xuan Jiang</a>. This work has been accepted by the *2026 TRB Annual Meeting* (<a href="https://arxiv.org/abs/2510.04186v1" target="_blank" rel="noopener">preprint</a>) and is under review at *IEEE Transactions on Intelligent Transportation Systems*.
 
-**I am eager to join a rigorous master's program to continue tackling complex urban challenges at a deeper level.**
+**I am eager to join a rigorous Ph.D. program to continue tackling complex urban challenges at a deeper level.**
