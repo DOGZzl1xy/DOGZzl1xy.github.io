@@ -1,26 +1,52 @@
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="{{ site.url }}">{{ site.title }}</a>
-	</div>{% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
-	<div class="top-navigation">
-		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		    <ul>
-		    {% for link in site.links %}
-              	{% if link.title == "Projects" %}
-                  	<li class="dropdown">
-    				<a href="{{ site.url }}/projects/" {% if page.url contains '/projects/' %}class="top-navigation-current"{% endif %}>Projects <i class="arrow down"></i></a>
-    				<ul class="dropdown-content">
-        				<li><a href="/urban-air-mobility/">Urban Air Mobility</a></li>
-						<li><a href="/sky-view-factor/">Sky View Factor</a></li>
-        				<li><a href="/urban-green-space/">Urban Green Space</a></li>
-        				<li><a href="/urban-built-environment/">Urban Built Environment</a></li>
-						
-    				</ul>
-				</li>
-              {% else %}
-                  <li><a href="{{ site.url }}{{ link.url }}" {% if url == link.url %}class="top-navigation-current"{% endif %}>{{ link.title }}</a></li>
-              {% endif %}
-		        {% endfor %}
-		    </ul>
-		</nav>
-	</div></div>
+{% capture current_url %}{{ page.url | remove:'index.html' }}{% endcapture %}
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-brand" href="{{ site.url }}">
+      <span class="site-brand__mark">XZ</span>
+      <span class="site-brand__stack">
+        <span class="site-brand__name">{{ site.title }}</span>
+        <span class="site-brand__tag">Urban AI · Equity · Mobility</span>
+      </span>
+    </a>
+
+    <input class="site-nav-toggle" type="checkbox" id="site-nav-toggle">
+    <label class="site-nav-button" for="site-nav-toggle">
+      <span class="site-nav-button__icon"></span>
+      <strong class="visually-hidden">Toggle navigation</strong>
+    </label>
+
+    <nav class="site-nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <ul class="site-nav__list">
+        {% for link in site.links %}
+          {% assign is_active = false %}
+          {% if link.url == "/" and current_url == "/" %}
+            {% assign is_active = true %}
+          {% elsif link.title == "Projects" and page.url contains '/projects/' %}
+            {% assign is_active = true %}
+          {% elsif link.title == "Projects" and page.url contains '/urban-air-mobility/' %}
+            {% assign is_active = true %}
+          {% elsif link.title == "Projects" and page.url contains '/sky-view-factor/' %}
+            {% assign is_active = true %}
+          {% elsif link.title == "Projects" and page.url contains '/urban-green-space/' %}
+            {% assign is_active = true %}
+          {% elsif link.title == "Projects" and page.url contains '/urban-built-environment/' %}
+            {% assign is_active = true %}
+          {% elsif link.url != "/" and current_url == link.url %}
+            {% assign is_active = true %}
+          {% endif %}
+          <li>
+            <a class="site-nav__link{% if is_active %} is-active{% endif %}" href="{{ site.url }}{{ link.url }}">
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if site.owner.cv %}
+        <a class="button button--ghost site-nav__cta" href="{{ site.owner.cv }}" target="_blank" rel="noopener">
+          CV
+        </a>
+      {% endif %}
+    </nav>
+  </div>
+</header>
