@@ -9,7 +9,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <span class="eyebrow">Urban AI • Equity • Mobility</span>
     <h1>Designing data-driven tools for fairer urban futures.</h1>
     <p class="home-hero__lede">
-      I am Xuanyu Zhou, an undergraduate in Urban and Rural Planning at Zhejiang University and an exchange student at UC Berkeley CED. My work brings together urban equity, mobility, resilience, remote sensing, and machine learning, with a growing interest in how LLMs and Urban AI can support planning practice.
+      I am Xuanyu Zhou, an undergraduate in Urban and Rural Planning at Zhejiang University and a former exchange student at UC Berkeley CED. I will join the University of Pennsylvania Master of City Planning program in Fall 2026. My work brings together urban equity, mobility, resilience, remote sensing, and machine learning, with a growing interest in how LLMs and Urban AI can support planning practice.
     </p>
 
     <div class="button-row">
@@ -21,7 +21,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <ul class="hero-facts">
       <li>
         <span>Home base</span>
-        <strong>Zhejiang University, with research experience spanning Hangzhou, Berkeley, Pittsburgh, Seattle, and the Bay Area.</strong>
+        <strong>Zhejiang University now, Penn MCP from Fall 2026, with research experience spanning Hangzhou, Berkeley, Pittsburgh, Seattle, and the Bay Area.</strong>
       </li>
       <li>
         <span>Methods</span>
@@ -33,7 +33,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       </li>
       <li>
         <span>Looking ahead</span>
-        <strong>Actively preparing for a Ph.D. path centered on complex urban systems, public impact, and careful quantitative work.</strong>
+        <strong>Heading to Penn MCP in Fall 2026, open to research and practice collaborations now, and looking toward future job opportunities.</strong>
       </li>
     </ul>
   </div>
@@ -237,7 +237,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
         <span class="journey-card__label">MIT-UF-NEU</span>
         <h3>From spatial analytics to large-scale mobility systems</h3>
         <p class="journey-card__body">
-          The summer research camp sharpened my interest in computational transportation research and reinforced my goal of joining a rigorous Ph.D. program.
+          The summer research camp sharpened my interest in computational transportation research and shaped how I hope to carry large-scale mobility work into Penn MCP.
         </p>
       </article>
     </div>
@@ -248,7 +248,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       <span class="eyebrow">Open Door</span>
       <h2>Always happy to talk about cities, methods, and what comes next.</h2>
       <p class="section-heading__lede">
-        If you are building a research project, lab collaboration, or doctoral opportunity that lives somewhere between planning and computation, I would love to hear about it.
+        If you are building a research project, lab collaboration, practice initiative, or future job opportunity that lives somewhere between planning and computation, I would love to hear about it.
       </p>
     </div>
 
