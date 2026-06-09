@@ -89,7 +89,7 @@ Here is a collection of my research projects. Click on a project to learn more.
   <div class="project-card">
     <h3>Sky View Factor</h3>
     <img src="/images/fav.png" alt="Sky View Factor">
-    <p>Comparing LiDAR-based SVF with traditional imagery-based methods for microclimate analysis.</p>
+    <p>Completed SVF research comparing LiDAR-based and imagery-based methods for microclimate analysis, with an interactive demo.</p>
     <a href="/sky-view-factor/" class="project-btn">View Project</a>
   </div>
 

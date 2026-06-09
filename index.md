@@ -9,19 +9,19 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <span class="eyebrow">Urban AI • Equity • Mobility</span>
     <h1>Designing data-driven tools for fairer urban futures.</h1>
     <p class="home-hero__lede">
-      I am Xuanyu Zhou, an undergraduate in Urban and Rural Planning at Zhejiang University and a former exchange student at UC Berkeley CED. I will join the University of Pennsylvania Master of City Planning program in Fall 2026. My work brings together urban equity, mobility, resilience, remote sensing, and machine learning, with a growing interest in how LLMs and Urban AI can support planning practice.
+      I am Xuanyu Zhou, recently graduated from Zhejiang University with a degree in Urban and Rural Planning, and a former exchange student at UC Berkeley CED. I will join the University of Pennsylvania Master of City Planning program in Fall 2026. My work brings together urban equity, mobility, resilience, remote sensing, and machine learning, with a growing interest in how LLMs and Urban AI can support planning practice.
     </p>
 
     <div class="button-row">
       <a class="button button--swatch" href="https://xuanyuzhou.org/file/CV_xuanyu_20260315.pdf" target="_blank" rel="noopener">Download CV</a>
       <a class="button button--ghost" href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener">Digital Portfolio</a>
-      <a class="button button--ink" href="mailto:xuanyu.zhou@zju.edu.cn">Start A Conversation</a>
+      <a class="button button--ink" href="mailto:xuanyuz@design.upenn.edu">Start A Conversation</a>
     </div>
 
     <ul class="hero-facts">
       <li>
         <span>Home base</span>
-        <strong>Zhejiang University now, Penn MCP from Fall 2026, with research experience spanning Hangzhou, Berkeley, Pittsburgh, Seattle, and the Bay Area.</strong>
+        <strong>Recent graduate from Zhejiang University, Penn MCP from Fall 2026, with research experience spanning Hangzhou, Berkeley, Pittsburgh, Seattle, and the Bay Area.</strong>
       </li>
       <li>
         <span>Methods</span>
@@ -160,40 +160,48 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       <span class="eyebrow">News & Updates</span>
       <h2>Recent steps that moved the work forward.</h2>
       <p class="section-heading__lede">
-        A few milestones from the last two years, from accepted work to field-building collaborations.
+        A few milestones from the last two years, from preprints and presentations to collaborative research.
       </p>
     </div>
 
     <div class="timeline-list">
       <article class="timeline-card">
-        <span class="timeline-card__date">Oct 2025</span>
-        <h3>Completed the MIT-UF-NEU Summer Research Camp.</h3>
+        <span class="timeline-card__date">June 28, 2026</span>
+        <h3>Graduated from Zhejiang University.</h3>
         <p class="timeline-card__body">
-          Wrapped an intensive research collaboration and shared our UAM work as a public preprint.
+          Completed the Urban and Rural Planning degree and received university-level Outstanding Graduate and college Outstanding Undergraduate Thesis honors.
+        </p>
+      </article>
+
+      <article class="timeline-card">
+        <span class="timeline-card__date">2026</span>
+        <h3>Submitted PedSVF to ACM SIGSPATIAL 2026.</h3>
+        <p class="timeline-card__body">
+          The pedestrian-scale sky view factor study is under review at the 34th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems.
+        </p>
+      </article>
+
+      <article class="timeline-card">
+        <span class="timeline-card__date">2026</span>
+        <h3>Accepted by Geoinformatics 2026.</h3>
+        <p class="timeline-card__body">
+          The pedestrian-centered multi-view-factor mapping work will be presented at the National University of Singapore in July 2026.
+        </p>
+      </article>
+
+      <article class="timeline-card">
+        <span class="timeline-card__date">Oct 2025</span>
+        <h3>Released the UAM study as an arXiv preprint.</h3>
+        <p class="timeline-card__body">
+          Shared the demand analysis and fleet optimization framework publicly, extending the MIT-UF-NEU summer research collaboration.
         </p>
       </article>
 
       <article class="timeline-card">
         <span class="timeline-card__date">Sep 2025</span>
-        <h3>Accepted by the Transportation Research Board 2026 Annual Meeting.</h3>
+        <h3>Presented at the Transportation Research Board 2026 Annual Meeting.</h3>
         <p class="timeline-card__body">
-          The UAM study will be presented in Washington, D.C., extending the summer camp work into a broader transportation audience.
-        </p>
-      </article>
-
-      <article class="timeline-card">
-        <span class="timeline-card__date">May 2025</span>
-        <h3>Joined the MIT-UF-NEU research camp.</h3>
-        <p class="timeline-card__body">
-          Began working with Dr. Xuan Jiang on simulation-heavy mobility research and large-scale systems thinking.
-        </p>
-      </article>
-
-      <article class="timeline-card">
-        <span class="timeline-card__date">2024</span>
-        <h3>Presented and published early work on urban green space equity.</h3>
-        <p class="timeline-card__body">
-          Shared research at the ACSP Annual Conference in Seattle and kept building the paper toward journal review.
+          Presented the UAM study in Washington, D.C., extending the summer camp work into a broader transportation audience.
         </p>
       </article>
     </div>
@@ -227,9 +235,9 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
       <article class="journey-card">
         <span class="journey-card__label">UC Berkeley CED</span>
-        <h3>Microclimate and Sky View Factor</h3>
+        <h3>Pedestrian-scale Sky View Factor mapping</h3>
         <p class="journey-card__body">
-          At the 3M Lab, I contributed to work comparing LiDAR-based SVF with imagery-based approaches for fine-grained microclimate analysis.
+          At the 3M Lab, I contributed to PedSVF, a multimodal aerial-street grounding study for pedestrian-scale SVF estimation, now under review at ACM SIGSPATIAL 2026 and accepted by Geoinformatics 2026.
         </p>
       </article>
 
@@ -263,8 +271,8 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       <article class="contact-card">
         <h3>Reach out</h3>
         <ul class="contact-card__list">
-          <li><a href="mailto:xuanyu.zhou@zju.edu.cn">xuanyu.zhou@zju.edu.cn</a></li>
           <li><a href="mailto:xuanyu.zhou@berkeley.edu">xuanyu.zhou@berkeley.edu</a></li>
+          <li><a href="mailto:xuanyuz@design.upenn.edu">xuanyuz@design.upenn.edu</a></li>
           <li><a href="https://scholar.google.com/citations?user=nK7_DHMAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
           <li><a href="https://github.com/DOGZzl1xy" target="_blank" rel="noopener">GitHub</a></li>
         </ul>

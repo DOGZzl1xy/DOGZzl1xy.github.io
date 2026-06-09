@@ -10,7 +10,7 @@ Urban Air Mobility (UAM) presents a transformative vision for metropolitan trans
 
 Our equilibrium search algorithm is extended to accurately forecast demand and determine the most efficient fleet composition. Applied to a case study of the San Francisco Bay Area, our results demonstrate that this UAM model can yield over 20 minutes' travel time savings for 230,000 selected trips. However, the analysis also reveals that system-wide success is critically dependent on seamless integration with ground access and dynamic scheduling.
 
-This work is part of 2025 MIT-UF-NEU joint summer research camp, and has been accepted by the 2026 Transportation Research Board Annual Meeting, and is under review at IEEE Transactions on Intelligent Transportation Systems. 
+This work is part of the 2025 MIT-UF-NEU joint summer research camp, was presented at the 2026 Transportation Research Board Annual Meeting, and is under review at IEEE Transactions on Intelligent Transportation Systems.
 
 **Preprint paper can be found <a href="https://arxiv.org/abs/2510.04186" target="_blank" rel="noopener" style="color: red;">here</a>.**
 

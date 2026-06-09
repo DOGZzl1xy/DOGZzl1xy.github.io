@@ -16,6 +16,8 @@ title: Awards
 ## Honor
 
 - **Academic Excellence Award**, Zhejiang University (2022, 2023, 2024, 2025)
+- **Outstanding Graduate**, Zhejiang University (2026)
+- **Outstanding Undergraduate Thesis**, College of Civil Engineering and Architecture, Zhejiang University (2026)
 - **Student Leadership Award**, Zhejiang University (2023, 2024)
 - **Outstanding Community Service Volunteer**, Zhejiang University (2025)
 - **Outstanding Member of the Chinese Communist Youth League**, The Communist Youth League Committee of Zhejiang University (2024)
