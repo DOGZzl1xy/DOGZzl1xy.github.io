@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive pedestrian-scale Sky View Factor comparison for San Francisco using LiDAR, street-view imagery, and generated point clouds.">
     <title>Sidewalk Sky View Factor</title>
 
     <!-- Leaflet CSS -->
@@ -16,7 +17,7 @@
 
 <body>
 
-    <div id="layout-container">
+    <main id="layout-container">
         <div id="ui-container">
             <header>
                 <h1>Sidewalk Sky View Factor</h1>
@@ -31,15 +32,14 @@
                     <option value="gsv_svf">Google Street View SVF</option>
                     <option value="KR_PC_SVF">Generated Point Cloud SVF</option>
                 </select>
-
+                <p id="data-status" role="status" aria-live="polite">Loading map data…</p>
             </div>
 
             <div id="info-panel">
                 <h3>Project Info</h3>
                 <p>
-                    Traditional SVF calculation uses Google Street View as a measurement tool. However, the spot is
-                    located at the driverway instead of the sidewalk. We introduce a human-centric method to move the
-                    measurement spot to the sidewalk.
+                    Traditional SVF calculation often uses Google Street View imagery captured from the roadway.
+                    We introduce a human-centric method that moves the measurement location to the sidewalk.
                 </p>
                 <div id="project-description">
                     <!-- Project description will go here -->
@@ -59,7 +59,7 @@
         </div>
 
         <div id="map"></div>
-    </div>
+    </main>
 
     <div id="tooltip" class="hidden">
         <div id="tooltip-content"></div>
@@ -69,11 +69,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <!-- PapaParse for CSV -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-
     <!-- Main Application -->
-    <script src="main.js?v=2"></script>
+    <script src="main.js?v=3"></script>
 </body>
 
 </html>

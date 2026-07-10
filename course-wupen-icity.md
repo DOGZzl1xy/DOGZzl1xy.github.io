@@ -3,7 +3,7 @@ layout: page
 title: "[WUPENiCity] Field Research on Optimization of Park-and-Ride (P+R) Systems in Hangzhou"
 ---
 
-## [WUPENiCity] Field Research on Optimization of Park-and-Ride (P+R) Systems in Hangzhou
+# [WUPENiCity] Field Research on Optimization of Park-and-Ride (P+R) Systems in Hangzhou
 
 #### **Xuanyu Zhou**, Qianyi Yu<br> Instructor: Prof. Chuankun Rao
 
@@ -12,7 +12,7 @@ Investigated the efficacy of Hangzhou’s Park-and-Ride system in reducing carbo
 **Tech Stack:** Random Forest, SHAP Analysis, GIS, Statistical Analysis, Field Survey
 
 <div class="project-image">
-  <img src="/courseworks_file/course-wupen/06.png" alt="Hangzhou P+R System Analysis">
+  <img src="/courseworks_file/course-wupen/06_web.jpg" alt="Hangzhou P+R System Analysis" loading="lazy" decoding="async">
 </div>
 
 <div class="project-links">

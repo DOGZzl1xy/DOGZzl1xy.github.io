@@ -96,6 +96,16 @@ select:focus {
     border-color: var(--accent-color);
 }
 
+#data-status {
+    margin: 8px 0 0;
+    color: #aaa;
+    font-size: 0.78rem;
+}
+
+#data-status.is-error {
+    color: #ff8a80;
+}
+
 #info-panel {
     font-size: 0.85rem;
     line-height: 1.5;
@@ -159,4 +169,30 @@ select:focus {
 
 #tooltip-content strong {
     color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    #layout-container {
+        flex-direction: column;
+    }
+
+    #ui-container {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        max-height: 44vh;
+        padding: 14px;
+        border-right: 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    #map {
+        width: 100%;
+        min-height: 56vh;
+    }
+
+    #tooltip {
+        position: fixed;
+    }
 }

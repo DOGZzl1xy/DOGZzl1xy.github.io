@@ -2,8 +2,8 @@
 #  BASIC SITE INFO
 # --------------------------------------------------
 title: Xuanyu Zhou  # Main site title (appears in browser tab & RSS)
-tagline: Here is personal website of Xuanyu Zhou. Powered by Jekyll, based on the Minimal Mistakes theme.  # Optional short tagline, used by some layouts
-description: Two roads diverged in woods, I took the one less traveled by.  # Strongly recommended for SEO & social cards
+tagline: Urban analytics, equity, mobility, and AI for planning.
+description: Xuanyu Zhou is an urban analytics researcher working across equity, mobility, resilience, remote sensing, and machine learning.
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
@@ -15,33 +15,10 @@ url: https://xuanyuzhou.org
 owner:
   name: Xuanyu Zhou
   avatar: My_logo.JPG
-  # bio: Dream big, stay positive, work hard, and enjoy the journey.
-  # email: xuanyuz@design.upenn.edu
-  cv: https://xuanyuzhou.org/file/CV_xuanyu_20260315.pdf
-
-
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  # twitter: lancecai2002
+  cv: https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf
   github: DOGZzl1xy
-  # linkedin: hanlincai
   scholar: https://scholar.google.com/citations?user=nK7_DHMAAAAJ
   ORCID: https://orcid.org/0009-0004-8534-0211
-  # researchgate: https://www.researchgate.net/profile/Hanlin-Cai
-  # zhihu: https://www.zhihu.com/people/chlire
-  # xiaohongshu: 5c27848f0000000005030c6f
-  # bilibili: 594030035
-  # facebook: caihanlin2002
-  # instagram: lancecai2002
-  # lastfm:
-  # tumblr:
-
-
-# --------------------------------------------------
-#  SEARCH-ENGINE VERIFICATION & ANALYTICS
-# --------------------------------------------------
-google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
-# bing_verify: ""    # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-# google_analytics: "G-XXXXXXX"                                 # GA-4 property ID
 
 
 # --------------------------------------------------
@@ -65,10 +42,7 @@ links:
 #  BUILD & RENDERING OPTIONS
 # --------------------------------------------------
 timezone: Asia/Shanghai          # IANA time-zone ID (China/Beijing is invalid)
-future: true                     # Render posts dated in the future
-highlighter: rouge               # Code highlighter; Rouge is default in MM
-# markdown: kramdown             # Jekyll default; uncomment to force
-# pygments: true                 # Legacy option (Rouge supersedes this)
+future: false
 
 
 # --------------------------------------------------
@@ -87,48 +61,17 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-  # coderay:
-  #   coderay_line_numbers:
-  #   coderay_line_numbers_start: 1
-  #   coderay_tab_width: 4
-  #   coderay_bold_every: 10
-  #   coderay_css: class
-
-
-# --------------------------------------------------
-#  DISQUS COMMENT SYSTEM
-# --------------------------------------------------
-disqus:
-  shortname: lancecai
-
-
-# include: [".htaccess"]
-# exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
-
 # --------------------------------------------------
 #  INCLUDE / EXCLUDE Lists
 # --------------------------------------------------
-include: [".htaccess"]           # Files to force-include in the build
 exclude:                         # Folders/files ignored during build
-  - "lib"
-  - "config.rb"
-  - "Capfile"
-  - "config"
-  - "log"
-  - "Rakefile"
-  - "Rakefile.rb"
   - "tmp"
-  - "less"
-  - "minimal-mistakes.sublime-project"
-  - "minimal-mistakes.sublime-workspace"
+  - "vendor"
+  - "portfolio/SVF/DATA_2022_2024_final.csv"
 
 
 # --------------------------------------------------
 #  OPTIONAL PLUG-INS (uncomment once gems are added)
 # --------------------------------------------------
 plugins:
-  - jekyll-feed          # Auto-generate RSS feed
   - jekyll-sitemap       # Auto-generate sitemap.xml
-  - jekyll-seo-tag       # Adds SEO meta tags & JSON-LD
-#   - jekyll-picture-tag   # Responsive images & WebP/AVIF
-  # - jekyll-archives      # Year/month archive pages

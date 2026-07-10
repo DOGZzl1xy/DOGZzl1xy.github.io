@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/space-mono-400-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/space-mono-700-latin.woff2") format("woff2");
+}
+
 :root {
   --color-bg: #faf9f7;
   --color-bg-soft: #f4efe6;
@@ -31,7 +55,7 @@
   --radius-pill: 999px;
   --container-width: 1180px;
   --gutter: clamp(1.25rem, 3vw, 2rem);
-  --font-sans: "Roobert", "Space Grotesk", "Avenir Next", "Helvetica Neue",
+  --font-sans: "Space Grotesk", "Avenir Next", "Helvetica Neue",
     Arial, sans-serif;
   --font-mono: "Space Mono", monospace;
 }
@@ -174,7 +198,15 @@ select {
 }
 
 .site-nav-toggle {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .site-nav-button {
@@ -188,6 +220,11 @@ select {
   background: var(--color-surface);
   box-shadow: var(--shadow-clay);
   cursor: pointer;
+}
+
+.site-nav-toggle:focus-visible + .site-nav-button {
+  outline: 2px solid rgb(20, 110, 245);
+  outline-offset: 3px;
 }
 
 .site-nav-button__icon,
@@ -354,6 +391,17 @@ select {
 .article-wrap .learn-more-btn:hover {
   background: var(--color-matcha-dark);
   border-color: var(--color-matcha-dark);
+}
+
+.status-label,
+.status-label:hover,
+.article-wrap .status-label:hover {
+  transform: none;
+  border-color: var(--color-border-dark);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-clay);
+  color: var(--color-text);
+  cursor: default;
 }
 
 .button--light {

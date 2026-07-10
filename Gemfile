@@ -9,7 +9,5 @@ gem "base64", "~> 0.2"
 gem "bigdecimal", "~> 3.1"
 
 
-gem "jekyll-feed", "~> 0.17"
 gem "jekyll-sitemap", "~> 1.4"
-gem "jekyll-seo-tag", "~> 2.8"       # Adds SEO meta tags & JSON-LD
 gem "ffi", "< 1.17"

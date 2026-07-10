@@ -81,28 +81,28 @@ Here is a collection of my research projects. Click on a project to learn more.
 
   <div class="project-card">
     <h3>Urban Air Mobility</h3>
-    <img src="/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1.png" alt="Urban Air Mobility">
+    <img src="/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1_web.jpg" alt="Urban Air Mobility" loading="lazy" decoding="async">
     <p>Optimizing UAM systems with dynamic demand and heterogeneous fleets in the SF Bay Area.</p>
     <a href="/urban-air-mobility/" class="project-btn">View Project</a>
   </div>
 
   <div class="project-card">
     <h3>Sky View Factor</h3>
-    <img src="/images/fav.png" alt="Sky View Factor">
+    <img src="/images/fav.png" alt="Sky View Factor" loading="lazy" decoding="async">
     <p>Completed SVF research comparing LiDAR-based and imagery-based methods for microclimate analysis, with an interactive demo.</p>
     <a href="/sky-view-factor/" class="project-btn">View Project</a>
   </div>
 
   <div class="project-card">
     <h3>Urban Green Space</h3>
-    <img src="/mypaper/urban-green-space/framework.png" alt="Urban Green Space">
+    <img src="/mypaper/urban-green-space/framework.png" alt="Urban Green Space" loading="lazy" decoding="async">
     <p>Examining urban greenery equity and community vitality in shrinking cities.</p>
     <a href="/urban-green-space/" class="project-btn">View Project</a>
   </div>
 
   <div class="project-card">
     <h3>Urban Built Environment</h3>
-    <img src="/mypaper/urban-built-env/Nagoya_recovery/Recovery_level.png" alt="Urban Built Environment">
+    <img src="/mypaper/urban-built-env/Nagoya_recovery/Recovery_level_web.jpg" alt="Urban Built Environment" loading="lazy" decoding="async">
     <p>Analyzing the built environment's impact on post-pandemic recovery and public health.</p>
     <a href="/urban-built-environment/" class="project-btn">View Project</a>
   </div>

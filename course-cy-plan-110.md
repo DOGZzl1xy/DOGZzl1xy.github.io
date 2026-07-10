@@ -3,7 +3,7 @@ layout: page
 title: "[CY PLAN 110] Introduction to City Planning"
 ---
 
-## [CY PLAN 110] Introduction to City Planning
+# [CY PLAN 110] Introduction to City Planning
 
 #### Instructor: Yanin Alexa Kramsky <br>TA: Xixi Jiang
 
@@ -12,10 +12,10 @@ Investigated the spatial inequality of the Bay Wheels bike-share system in Berke
 **Tech Stack:** GIS, US Census Data, Field Observation, Policy Analysis
 
 <div class="project-image">
-  <img src="/courseworks_file/course-BayWheel/BayWheel_Map.png" alt="Bay Wheels GIS Analysis">
+  <img src="/courseworks_file/course-BayWheel/BayWheel_Map_web.jpg" alt="Bay Wheels GIS Analysis" loading="lazy" decoding="async">
 </div>
 <div class="project-image">
-  <img src="/courseworks_file/course-BayWheel/BayWheel_income.png" alt="Bay Wheels Income Analysis">
+  <img src="/courseworks_file/course-BayWheel/BayWheel_income_web.jpg" alt="Bay Wheels Income Analysis" loading="lazy" decoding="async">
 </div>
 
 <div class="project-links">

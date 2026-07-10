@@ -13,7 +13,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     </p>
 
     <div class="button-row">
-      <a class="button button--swatch" href="https://xuanyuzhou.org/file/CV_xuanyu_20260315.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="button button--swatch" href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       <a class="button button--ghost" href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener">Digital Portfolio</a>
       <a class="button button--ink" href="mailto:xuanyuz@design.upenn.edu">Start A Conversation</a>
     </div>
@@ -40,7 +40,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
   <div class="home-hero__visual">
     <div class="portrait-panel">
-      <img src="/images/xuanyu.png" alt="Portrait of Xuanyu Zhou">
+      <img src="/images/xuanyu_web.jpg" alt="Portrait of Xuanyu Zhou" decoding="async" fetchpriority="high">
       <p class="portrait-panel__caption">
         Planning researcher with one foot in spatial data and the other in design, always looking for clearer ways to ask urban questions.
       </p>
@@ -118,7 +118,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
     <div class="selected-grid">
       <article class="selected-card">
-        <img src="/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1.png" alt="Urban Air Mobility poster">
+        <img src="/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1_web.jpg" alt="Urban Air Mobility poster" loading="lazy" decoding="async">
         <div class="selected-card__content">
           <span class="selected-card__label">Urban Mobility</span>
           <h3>Urban Air Mobility</h3>
@@ -130,7 +130,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       </article>
 
       <article class="selected-card">
-        <img src="/mypaper/urban-green-space/framework.png" alt="Urban Green Space framework">
+        <img src="/mypaper/urban-green-space/framework.png" alt="Urban Green Space framework" loading="lazy" decoding="async">
         <div class="selected-card__content">
           <span class="selected-card__label">Equity & Green Space</span>
           <h3>Urban Green Space</h3>
@@ -142,7 +142,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       </article>
 
       <article class="selected-card">
-        <img src="/mypaper/urban-built-env/Nagoya_recovery/Recovery_level.png" alt="Urban Built Environment recovery map">
+        <img src="/mypaper/urban-built-env/Nagoya_recovery/Recovery_level_web.jpg" alt="Urban Built Environment recovery map" loading="lazy" decoding="async">
         <div class="selected-card__content">
           <span class="selected-card__label">Resilience & Health</span>
           <h3>Urban Built Environment</h3>
@@ -165,6 +165,14 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     </div>
 
     <div class="timeline-list">
+      <article class="timeline-card">
+        <span class="timeline-card__date">July 2026</span>
+        <h3>Submitted a systematic review to <em>Landscape and Urban Planning</em>.</h3>
+        <p class="timeline-card__body">
+          Serving as corresponding author, I contributed to a review of 1,446 studies examining how spatial and nonlinear analytical paradigms shape evidence in planning research.
+        </p>
+      </article>
+
       <article class="timeline-card">
         <span class="timeline-card__date">June 28, 2026</span>
         <h3>Graduated from Zhejiang University.</h3>
@@ -199,9 +207,9 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
       <article class="timeline-card">
         <span class="timeline-card__date">Sep 2025</span>
-        <h3>Presented at the Transportation Research Board 2026 Annual Meeting.</h3>
+        <h3>Accepted by the Transportation Research Board 2026 Annual Meeting.</h3>
         <p class="timeline-card__body">
-          Presented the UAM study in Washington, D.C., extending the summer camp work into a broader transportation audience.
+          The UAM study was accepted in September 2025 and presented in Washington, D.C., in January 2026, extending the summer research collaboration to a broader transportation audience.
         </p>
       </article>
     </div>
@@ -271,6 +279,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       <article class="contact-card">
         <h3>Reach out</h3>
         <ul class="contact-card__list">
+          <li><a href="mailto:xuanyu.zhou@zju.edu.cn">xuanyu.zhou@zju.edu.cn</a></li>
           <li><a href="mailto:xuanyu.zhou@berkeley.edu">xuanyu.zhou@berkeley.edu</a></li>
           <li><a href="mailto:xuanyuz@design.upenn.edu">xuanyuz@design.upenn.edu</a></li>
           <li><a href="https://scholar.google.com/citations?user=nK7_DHMAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>

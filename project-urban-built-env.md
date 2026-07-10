@@ -4,6 +4,8 @@ permalink: /urban-built-environment/index.html
 title: Urban Built Environment
 ---
 
+# Urban Built Environment
+
 <div class="project-feature">
   <div class="project-text">
     <h3>COVID-19 Recovery</h3>
@@ -13,7 +15,7 @@ title: Urban Built Environment
     <a href="https://doi.org/10.1177/27541231251314132" target="_blank" rel="noopener" class="learn-more-btn">Learn More</a>
   </div>
   <div class="project-image">
-    <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Nagoya_recovery/Recovery_level.png" alt="Recovery Level">
+    <img src="/mypaper/urban-built-env/Nagoya_recovery/Recovery_level_web.jpg" alt="Recovery Level" loading="lazy" decoding="async">
   </div>
 </div>
 
@@ -23,10 +25,10 @@ title: Urban Built Environment
     <p>
       Synergistic health effects of bike ride in built environment and climate transformation, with a specific focus on the case study of Shenzhen, China.
     </p>
-    <a href="https://xuanyuzhou.org//urban-built-environment/" class="learn-more-btn">Under Review</a>
+    <span class="learn-more-btn status-label">Under Review · npj Urban Sustainability</span>
   </div>
   <div class="project-image">
-    <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Shenzhen_bikesharing/Cohealth_spatial distribution.png" alt="Spatial Distribution">
+    <img src="/mypaper/urban-built-env/Shenzhen_bikesharing/Cohealth_spatial_distribution_web.jpg" alt="Spatial Distribution" loading="lazy" decoding="async">
   </div>
 </div>
 
@@ -36,9 +38,9 @@ title: Urban Built Environment
     <p>
       Using Weibo data to study the relationship between built environment and user's emotion, with a specific focus on the case study of Beijing, China.
     </p>
-    <a href="https://xuanyuzhou.org//urban-built-environment/" class="learn-more-btn">Under Review</a>
+    <span class="learn-more-btn status-label">Under Review · Urban Studies</span>
   </div>
   <div class="project-image">
-    <img src="https://xuanyuzhou.org/mypaper/urban-built-env/Beijing_emotion/Beijing_BE_emotion.png" alt="project framework">
+    <img src="/mypaper/urban-built-env/Beijing_emotion/Beijing_BE_emotion_web.jpg" alt="Project framework" loading="lazy" decoding="async">
   </div>
 </div>

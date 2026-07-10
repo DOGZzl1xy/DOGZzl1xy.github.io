@@ -14,11 +14,11 @@ This work is part of the 2025 MIT-UF-NEU joint summer research camp, was present
 
 **Preprint paper can be found <a href="https://arxiv.org/abs/2510.04186" target="_blank" rel="noopener" style="color: red;">here</a>.**
 
-<img src="https://xuanyuzhou.org/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1.png" alt="Elevator Pitch" class="img-full-width"> 
+<img src="/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1_web.jpg" alt="Elevator Pitch" class="img-full-width" loading="lazy" decoding="async">
 
 <br>
 
-<img src="https://xuanyuzhou.org/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_2.png" alt="Poster" class="img-full-width"> 
+<img src="/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_2_web.jpg" alt="Poster" class="img-full-width" loading="lazy" decoding="async">
 
 
 <br>
