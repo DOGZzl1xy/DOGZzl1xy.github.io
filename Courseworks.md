@@ -16,30 +16,21 @@ Here is a collection of my major course works. Click on a project to learn more.
   margin-top: 30px;
 }
 
+/* layout only — colors, borders, and fonts come from the site theme */
 .coursework-item {
-  border: 1px solid #eee;
-  border-radius: 8px;
   padding: 20px;
   text-align: center;
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff; /* Ensure background is white */
-}
-
-.coursework-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .coursework-item img {
   width: 100%;
   height: 200px;
   object-fit: contain; /* Ensure image fits without cropping */
-  border-radius: 4px;
   margin-bottom: 15px;
-  background-color: #fff; /* Optional: background for empty space */
 }
 
 .coursework-item h3 {
@@ -49,22 +40,7 @@ Here is a collection of my major course works. Click on a project to learn more.
 }
 
 .learn-more-btn {
-  display: inline-block;
-  padding: 8px 20px;
-  background-color: #333 !important; /* Force black background */
-  color: white !important; /* Force white text */
-  text-decoration: none;
-  border-radius: 4px;
   margin-top: auto;
-  opacity: 1 !important; /* Ensure visible */
-  transform: none !important;
-  border: none !important; /* Override main.css border */
-}
-
-.learn-more-btn:hover {
-  background-color: #555 !important;
-  color: white !important;
-  text-decoration: none;
 }
 
 @media (max-width: 768px) {

@@ -16,30 +16,21 @@ Here is a collection of my research projects. Click on a project to learn more.
   margin-top: 30px;
 }
 
+/* layout only — colors, borders, and fonts come from the site theme */
 .project-card {
-  border: 1px solid #eee;
-  border-radius: 8px;
   padding: 20px;
   text-align: center;
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .project-card img {
   width: 100%;
   height: 200px;
   object-fit: contain;
-  border-radius: 4px;
   margin-bottom: 15px;
-  background-color: #fff;
 }
 
 .project-card h3 {
@@ -50,24 +41,14 @@ Here is a collection of my research projects. Click on a project to learn more.
 
 .project-card p {
   font-size: 0.9em;
-  color: #555;
   margin-bottom: 15px;
 }
 
 .project-btn {
   display: inline-block;
   padding: 8px 20px;
-  background-color: #333;
-  color: white;
   text-decoration: none;
-  border-radius: 4px;
   margin-top: auto;
-}
-
-.project-btn:hover {
-  background-color: #555;
-  color: white;
-  text-decoration: none;
 }
 
 @media (max-width: 768px) {
