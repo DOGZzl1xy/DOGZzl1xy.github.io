@@ -799,20 +799,21 @@ select {
   border-bottom: 1.5px dashed var(--color-line);
 }
 
-.desk-index .anno-cn {
-  font-family: var(--font-sans);
-  font-size: 0.92rem;
-  font-weight: 600;
-}
-
 .desk-index .anno-en {
   font-family: var(--font-hand);
   font-size: 0.98rem;
 }
 
+.desk-index .index-fig {
+  color: var(--color-text-soft);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+
 .desk-index a:active .anno-en,
 .desk-index a:hover .anno-en,
-.desk-index a:hover .anno-cn {
+.desk-index a:hover .index-fig {
   color: var(--color-accent);
 }
 

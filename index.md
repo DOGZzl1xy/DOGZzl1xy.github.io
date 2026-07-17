@@ -131,7 +131,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
       <!-- ==== fig.02 · paper stack → publication ==== -->
       <a href="/publication/" class="scene-link" aria-label="Publications">
-        <rect class="hit" x="612" y="182" width="135" height="132" />
+        <rect class="hit" x="612" y="182" width="155" height="132" />
         <g class="scene-obj" transform="translate(630,195)">
           <path pathLength="1" d="M8 14 L92 8 L100 78 L16 84 Z" />
           <path pathLength="1" d="M14 9 L96 3.5 L97 11" />
@@ -141,12 +141,12 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <path pathLength="1" class="ink-stroke" d="M30 74 Q42 62 52 66 Q62 70 70 60" />
           <text class="svg-hand" x="76" y="26" font-size="17">&dagger;</text>
         </g>
-        <text class="obj-label" x="668" y="306"><tspan>publication</tspan><tspan class="obj-fig" dx="7">fig.02</tspan></text>
+        <text class="obj-label" x="688" y="306"><tspan>publication</tspan><tspan class="obj-fig" dx="7">fig.02</tspan></text>
       </a>
 
       <!-- ==== fig.03 · medal & certificate → awards ==== -->
       <a href="/awards/" class="scene-link" aria-label="Awards">
-        <rect class="hit" x="758" y="178" width="140" height="140" />
+        <rect class="hit" x="758" y="178" width="158" height="140" />
         <g class="scene-obj" transform="translate(775,190)">
           <path pathLength="1" d="M0 8 L96 3 L101 62 L6 68 Z" />
           <path pathLength="1" d="M8 15 L89 10.5 L93 55 L13 60 Z" />
@@ -156,11 +156,11 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <circle pathLength="1" cx="88" cy="62" r="15" />
           <path pathLength="1" class="ink" d="M88 53 L90.7 58.4 L96.5 59.2 L92.3 63.3 L93.4 69 L88 66.3 L82.6 69 L83.7 63.3 L79.5 59.2 L85.3 58.4 Z" />
         </g>
-        <text class="obj-label" x="840" y="306"><tspan>awards</tspan><tspan class="obj-fig" dx="7">fig.03</tspan></text>
+        <text class="obj-label" x="858" y="306"><tspan>awards</tspan><tspan class="obj-fig" dx="7">fig.03</tspan></text>
       </a>
 
       <!-- ==== fig.08 · teacup → chinese version ==== -->
-      <a href="/cn/" class="scene-link" aria-label="中文版主页 Chinese version">
+      <a href="/cn/" class="scene-link" aria-label="Chinese version homepage">
         <rect class="hit" x="182" y="272" width="125" height="162" />
         <g class="scene-obj" transform="translate(200,285)">
           <path pathLength="1" d="M8 92 Q46 102 84 90" />
@@ -252,17 +252,17 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
   <!-- compact index shown on small screens instead of the scene -->
   <div class="desk-index">
-    <p class="desk-index__title">the desk &middot; 桌面</p>
+    <p class="desk-index__title">the desk</p>
     <ul>
-      <li><a href="/projects/"><span class="anno-cn">项目</span> <span class="anno-en">projects</span></a></li>
-      <li><a href="/publication/"><span class="anno-cn">论文</span> <span class="anno-en">publication</span></a></li>
-      <li><a href="/awards/"><span class="anno-cn">奖项</span> <span class="anno-en">awards</span></a></li>
-      <li><a href="/courseworks/"><span class="anno-cn">图纸</span> <span class="anno-en">courseworks</span></a></li>
-      <li><a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener"><span class="anno-cn">简历</span> <span class="anno-en">cv</span></a></li>
-      <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener"><span class="anno-cn">作品集</span> <span class="anno-en">portfolio</span></a></li>
-      <li><a href="mailto:xuanyuz@design.upenn.edu"><span class="anno-cn">来信</span> <span class="anno-en">write to me</span></a></li>
-      <li><a href="/hobbies/"><span class="anno-cn">爱好</span> <span class="anno-en">hobbies</span></a></li>
-      <li><a href="/cn/"><span class="anno-cn">中文</span> <span class="anno-en">ver.</span></a></li>
+      <li><a href="/projects/"><span class="anno-en">projects</span> <span class="index-fig">fig.01</span></a></li>
+      <li><a href="/publication/"><span class="anno-en">publication</span> <span class="index-fig">fig.02</span></a></li>
+      <li><a href="/awards/"><span class="anno-en">awards</span> <span class="index-fig">fig.03</span></a></li>
+      <li><a href="/courseworks/"><span class="anno-en">courseworks</span> <span class="index-fig">fig.04</span></a></li>
+      <li><a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener"><span class="anno-en">cv</span> <span class="index-fig">fig.05</span></a></li>
+      <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener"><span class="anno-en">portfolio</span> <span class="index-fig">fig.06</span></a></li>
+      <li><a href="mailto:xuanyuz@design.upenn.edu"><span class="anno-en">write to me</span> <span class="index-fig">fig.07</span></a></li>
+      <li><a href="/cn/"><span class="anno-en">chinese ver.</span> <span class="index-fig">fig.08</span></a></li>
+      <li><a href="/hobbies/"><span class="anno-en">hobbies</span> <span class="index-fig">fig.09</span></a></li>
     </ul>
   </div>
 </section>
