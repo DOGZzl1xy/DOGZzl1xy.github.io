@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Interactive pedestrian-scale Sky View Factor comparison for San Francisco using LiDAR, street-view imagery, and generated point clouds.">
-    <title>Sidewalk Sky View Factor</title>
+    <title>Sky View Factor</title>
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 
 <body>
@@ -20,8 +20,9 @@
     <main id="layout-container">
         <div id="ui-container">
             <header>
-                <h1>Sidewalk Sky View Factor</h1>
-                <p class="subtitle">Spatial Distribution of Urban Sky Visibility in San Francisco</p>
+                <a class="back-link" href="/sky-view-factor/">&larr; back to the project</a>
+                <h1>Sky View Factor</h1>
+                <p class="subtitle">Spatial distribution of urban sky visibility in San Francisco</p>
             </header>
 
             <div class="controls">
@@ -46,13 +47,13 @@
                 </div>
                 <hr>
                 <div class="legend-item">
-                    <span class="color-box" style="background: red;"></span> Positive Difference (Red)
+                    <span class="color-box" style="background: #c0392b;"></span> Positive difference (red)
                 </div>
                 <div class="legend-item">
-                    <span class="color-box" style="background: blue;"></span> Negative Difference (Blue)
+                    <span class="color-box" style="background: #2e6da4;"></span> Negative difference (blue)
                 </div>
                 <div class="legend-item">
-                    <span class="color-box high"></span> High SVF (Cyan)
+                    <span class="color-box" style="background: #bdd0e4;"></span>&rarr;<span class="color-box" style="background: #21496f; margin-left: 10px;"></span> Single sources: low &rarr; high SVF
                 </div>
                 <p class="instruction">Hover over points to see details.</p>
             </div>
@@ -70,7 +71,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <!-- Main Application -->
-    <script src="main.js?v=3"></script>
+    <script src="main.js?v=8"></script>
 </body>
 
 </html>

@@ -35,10 +35,9 @@ function initMap() {
 
     L.control.zoom({ position: 'topright' }).addTo(map);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
     }).addTo(map);
 
     L.CanvasLayer = L.Layer.extend({
@@ -220,7 +219,7 @@ function drawLayer() {
     if (hoveredScreenPoint) {
         ctx.beginPath();
         ctx.arc(hoveredScreenPoint.x, hoveredScreenPoint.y, 6, 0, Math.PI * 2);
-        ctx.strokeStyle = '#fff';
+        ctx.strokeStyle = '#2c2c2c';
         ctx.lineWidth = 2;
         ctx.stroke();
     } else if (hoveredPoint) {
@@ -245,23 +244,22 @@ function addToHoverGrid(indexedPoint) {
 
 function getPointColor(value) {
     if (currentMetric === 'difference') {
-        const absoluteValue = Math.min(1, Math.abs(value));
-        const alpha = 0.5 + (0.5 * absoluteValue);
-
-        if (value >= 0) {
-            const channel = Math.round(255 * (1 - absoluteValue));
-            return `rgba(255, ${channel}, ${channel}, ${alpha})`;
-        }
-
-        const channel = Math.round(255 * (1 - absoluteValue));
-        return `rgba(${channel}, ${channel}, 255, ${alpha})`;
+        // emphasis curve keeps small differences visible on the light basemap
+        const magnitude = Math.pow(Math.min(1, Math.abs(value)), 0.55);
+        const alpha = 0.65 + (0.3 * magnitude);
+        // fade between the paper tone (249,247,241) and full red/blue
+        const target = value >= 0 ? [192, 57, 43] : [46, 109, 164];
+        const r = Math.round(249 + (target[0] - 249) * magnitude);
+        const g = Math.round(247 + (target[1] - 247) * magnitude);
+        const b = Math.round(241 + (target[2] - 241) * magnitude);
+        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
     }
 
+    // single sources: one ink-blue hue, light (low SVF) to dark (high SVF)
     const normalizedValue = Math.max(0, Math.min(1, value));
-    const hue = 240 - (normalizedValue * 60);
-    const lightness = 20 + (normalizedValue * 70);
-    const alpha = 0.6 + (normalizedValue * 0.4);
-    return `hsla(${hue}, 100%, ${lightness}%, ${alpha})`;
+    const lightness = 78 - (normalizedValue * 50);
+    const alpha = 0.4 + (normalizedValue * 0.35);
+    return `hsla(211, 55%, ${lightness}%, ${alpha})`;
 }
 
 function handleMouseMove(event) {
@@ -333,9 +331,9 @@ function updateTooltip(x, y) {
     content.innerHTML = `
         <div><strong>Lat:</strong> ${hoveredPoint.lat.toFixed(5)}</div>
         <div><strong>Lon:</strong> ${hoveredPoint.lon.toFixed(5)}</div>
-        <hr style="margin: 5px 0; border-color: #444;">
-        <div><strong>${currentMetric === 'difference' ? 'Difference' : currentMetric}:</strong> <span style="color: #00ffff">${formattedValue}</span></div>
-        <div style="font-size: 0.75rem; color: #aaa;">
+        <hr style="margin: 5px 0; border: 0; border-top: 1px dashed #d9d3c3;">
+        <div><strong>${currentMetric === 'difference' ? 'Difference' : currentMetric}:</strong> <span style="color: #e74c3c">${formattedValue}</span></div>
+        <div style="font-size: 0.75rem; color: #5d584e;">
             ${currentMetric === 'difference' ? `
             PC: ${formatMetric(hoveredPoint.KR_PC_SVF, 3)} <br>
             Left: ${formatMetric(hoveredPoint.SVF_Left, 3)} <br>

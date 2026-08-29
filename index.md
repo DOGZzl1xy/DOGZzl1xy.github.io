@@ -26,7 +26,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <span class="eyebrow">Urban AI &bull; Equity &bull; Mobility</span>
     <h1>Designing data-driven tools for fairer urban futures.</h1>
     <p class="home-intro__lede">
-      I am Xuanyu Zhou, recently graduated from Zhejiang University with a degree in Urban and Rural Planning, and a former exchange student at UC Berkeley CED. I will join the University of Pennsylvania Master of City Planning program in Fall 2026. My work brings together urban equity, mobility, resilience, remote sensing, and machine learning, with a growing interest in how LLMs and Urban AI can support planning practice.
+      I am Xuanyu Zhou, a Master of City Planning student at the University of Pennsylvania. Before Penn, I studied Urban and Rural Planning at Zhejiang University and spent an exchange semester at UC Berkeley CED. My work brings together urban equity, mobility, resilience, remote sensing, and machine learning, with a growing interest in how LLMs and Urban AI can support planning practice.
     </p>
 
     <ul class="interest-notes">
@@ -159,20 +159,16 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
         <text class="obj-label" x="858" y="306"><tspan>awards</tspan><tspan class="obj-fig" dx="7">fig.03</tspan></text>
       </a>
 
-      <!-- ==== fig.08 · teacup → chinese version ==== -->
-      <a href="/cn/" class="scene-link" aria-label="Chinese version homepage">
-        <rect class="hit" x="182" y="272" width="125" height="162" />
-        <g class="scene-obj" transform="translate(200,285)">
-          <path pathLength="1" d="M8 92 Q46 102 84 90" />
-          <path pathLength="1" d="M18 48 Q17 76 29 83 Q46 90 62 82 Q72 75 72.5 48" />
-          <path pathLength="1" d="M18 48 Q45 57 72.5 48 Q45 40 18 48 Z" />
-          <ellipse pathLength="1" class="ink" cx="45" cy="50" rx="20" ry="5" />
-          <path pathLength="1" d="M72 54 Q86 56 83 68 Q81 76 68 75" />
-          <path pathLength="1" d="M36 34 Q31 26 37 18 Q43 10 38 2" />
-          <path pathLength="1" d="M56 33 Q61 24 55 16" />
-        </g>
-        <text class="obj-label" x="232" y="424"><tspan>chinese ver.</tspan><tspan class="obj-fig" dx="7">fig.08</tspan></text>
-      </a>
+      <!-- ==== deco: teacup (was the chinese-version link; now just set dressing) ==== -->
+      <g class="scene-deco" transform="translate(200,285)" aria-hidden="true">
+        <path pathLength="1" d="M8 92 Q46 102 84 90" />
+        <path pathLength="1" d="M18 48 Q17 76 29 83 Q46 90 62 82 Q72 75 72.5 48" />
+        <path pathLength="1" d="M18 48 Q45 57 72.5 48 Q45 40 18 48 Z" />
+        <ellipse pathLength="1" class="ink" cx="45" cy="50" rx="20" ry="5" />
+        <path pathLength="1" d="M72 54 Q86 56 83 68 Q81 76 68 75" />
+        <path pathLength="1" d="M36 34 Q31 26 37 18 Q43 10 38 2" />
+        <path pathLength="1" d="M56 33 Q61 24 55 16" />
+      </g>
 
       <!-- ==== fig.04 · blueprint roll → courseworks ==== -->
       <a href="/courseworks/" class="scene-link" aria-label="Course works">
@@ -231,7 +227,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <circle pathLength="1" cx="112" cy="42" r="4.5" />
           <path pathLength="1" d="M109 39 L101 26 M112 38 L109 24 M115 39 L117 25" />
         </g>
-        <text class="obj-label" x="998" y="424"><tspan>hobbies</tspan><tspan class="obj-fig" dx="7">fig.09</tspan></text>
+        <text class="obj-label" x="998" y="424"><tspan>hobbies</tspan><tspan class="obj-fig" dx="7">fig.08</tspan></text>
       </a>
 
       <!-- ==== caption ==== -->
@@ -261,8 +257,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       <li><a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener"><span class="anno-en">cv</span> <span class="index-fig">fig.05</span></a></li>
       <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener"><span class="anno-en">portfolio</span> <span class="index-fig">fig.06</span></a></li>
       <li><a href="mailto:xuanyuz@design.upenn.edu"><span class="anno-en">write to me</span> <span class="index-fig">fig.07</span></a></li>
-      <li><a href="/cn/"><span class="anno-en">chinese ver.</span> <span class="index-fig">fig.08</span></a></li>
-      <li><a href="/hobbies/"><span class="anno-en">hobbies</span> <span class="index-fig">fig.09</span></a></li>
+      <li><a href="/hobbies/"><span class="anno-en">hobbies</span> <span class="index-fig">fig.08</span></a></li>
     </ul>
   </div>
 </section>
@@ -274,7 +269,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <article class="sticky-note" style="--r:-2.5deg;">
       <span class="sticky-note__pin" aria-hidden="true"></span>
       <span class="sticky-note__date">Jul 2026</span>
-      <p>Submitted a systematic review of 1,446 studies to <em>Landscape and Urban Planning</em>, serving as corresponding author.</p>
+      <p>Submitted a systematic review of 1,446 studies to <em>Landscape and Urban Planning</em> as corresponding author.</p>
     </article>
 
     <article class="sticky-note" style="--r:1.8deg;">
@@ -286,7 +281,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <article class="sticky-note" style="--r:-1.2deg;">
       <span class="sticky-note__pin" aria-hidden="true"></span>
       <span class="sticky-note__date">2026</span>
-      <p>PedSVF is under review at ACM SIGSPATIAL 2026 and will be presented at Geoinformatics 2026, NUS Singapore.</p>
+      <p>PedSVF is under review at ACM SIGSPATIAL 2026 and was presented at Geoinformatics 2026, NUS Singapore.</p>
     </article>
   </div>
 

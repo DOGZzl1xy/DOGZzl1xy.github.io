@@ -6,11 +6,11 @@ title: Urban Air Mobility
 
 # Urban Air Mobility
 
-Urban Air Mobility (UAM) presents a transformative vision for metropolitan transportation, but its practical implementation is hindered by substantial infrastructure costs and operational complexities. We address these challenges by modeling a UAM network that leverages existing regional airports and operates with an optimized, heterogeneous fleet of aircraft. We introduce LPSim, a Large-Scale Parallel Simulation framework that utilizes multi-GPU computing to co-optimize UAM demand, fleet operations, and ground transportation interactions simultaneously. 
+Could commuter flights from the Bay Area's existing regional airports take real pressure off its congested roads? Urban Air Mobility (UAM) is usually discussed as a distant vision because new infrastructure is expensive and operations are complex. We sidestep part of that problem by modeling a UAM network that reuses regional airports already in place, served by a mixed fleet of aircraft.
 
-Our equilibrium search algorithm is extended to accurately forecast demand and determine the most efficient fleet composition. Applied to a case study of the San Francisco Bay Area, our results demonstrate that this UAM model can yield over 20 minutes' travel time savings for 230,000 selected trips. However, the analysis also reveals that system-wide success is critically dependent on seamless integration with ground access and dynamic scheduling.
+The study builds on LPSim, a large-scale parallel simulation framework that uses multi-GPU computing to co-optimize UAM demand, fleet operations, and interactions with ground transportation. We extended its equilibrium search algorithm to forecast demand and find the most efficient fleet composition. In the San Francisco Bay Area case study, the network saves over 20 minutes of travel time for 230,000 selected trips. The same analysis shows the catch: those savings depend on smooth ground access and dynamic scheduling, not on the aircraft alone.
 
-This work is part of the 2025 MIT-UF-NEU joint summer research camp, was presented at the 2026 Transportation Research Board Annual Meeting, and is under review at IEEE Transactions on Intelligent Transportation Systems.
+This work started at the 2025 MIT-UF-NEU joint summer research program, was presented at the 2026 Transportation Research Board Annual Meeting, and is under review at IEEE Transactions on Intelligent Transportation Systems.
 
 **Preprint paper can be found <a href="https://arxiv.org/abs/2510.04186" target="_blank" rel="noopener" style="color: #e74c3c;">here</a>.**
 

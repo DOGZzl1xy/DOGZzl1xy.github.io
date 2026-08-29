@@ -2,6 +2,8 @@
 layout: page
 permalink: /cn/index.html
 title: 主页中文版
+sitemap: false
+noindex: true
 ---
 
 # 关于我

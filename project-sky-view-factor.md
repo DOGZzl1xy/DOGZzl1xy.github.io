@@ -6,11 +6,11 @@ title: Sky View Factor
 
 # Sky View Factor
 
-This project compares LiDAR-based Sky View Factor (SVF) estimation with imagery-based approaches for fine-grained urban microclimate analysis. The work has been completed, and the manuscript "PedSVF: Multimodal Aerial-Street Grounding for Pedestrian-Scale Sky View Factor Estimation" is currently under review at ACM SIGSPATIAL 2026.
+How much sky can a pedestrian actually see? Sky View Factor (SVF) drives street-level heat and comfort, but it is usually measured from the roadway, where street view cars drive, rather than from the sidewalk, where people walk. This project compares LiDAR-based SVF estimation with imagery-based approaches for fine-grained urban microclimate analysis, moving the measurement to pedestrian scale.
 
-The project has also been accepted by the 33rd International Conference on Geoinformatics (Geoinformatics 2026), held at the National University of Singapore from July 19-22, 2026, where it will be presented as part of broader work on urban sensing, street-level morphology, and climate-sensitive planning analytics.
+The manuscript, "PedSVF: Multimodal Aerial-Street Grounding for Pedestrian-Scale Sky View Factor Estimation," is under review at ACM SIGSPATIAL 2026. Part of this work was presented at the 33rd International Conference on Geoinformatics (Geoinformatics 2026) at the National University of Singapore in July 2026, alongside broader work on urban sensing, street-level morphology, and climate-sensitive planning analytics.
 
-An interactive demo is available below.
+The interactive demo below maps sidewalk-scale SVF across San Francisco.
 
 <div class="project-links">
     <a href="/portfolio/SVF/index.html" class="learn-more-btn">View Demo</a>

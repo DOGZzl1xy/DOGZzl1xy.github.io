@@ -5,9 +5,9 @@ title: "[Landscape Design] Island of Lake of Zijingang Campus"
 
 # [Landscape Design] Island of Lake of Zijingang Campus
 
-**Project Description:**
+This studio project turns the small island in the lake of Zhejiang University's Zijingang campus into a healing garden. The design started from sight-line and circulation analysis, since the island is watched from two busy shore paths, and from the needs of therapeutic use: a sense of safety, low physical effort, small enclosed areas, and calm transitions between them.
 
-This project focuses on the landscape design of the Island of Lake on the Zijingang Campus. It involves comprehensive site analysis, conceptual planning, and detailed design to enhance the ecological and aesthetic value of the waterfront area. Please refer to the attached report for the full design proposal and visualizations.
+The plan divides the island into a waterside viewing edge, a central activity-and-therapy zone with lawns you can lie down on, and a dense planted buffer that screens the internal road. Woven pod-like shelters offer one-person and small-group retreat spaces, all main paths are barrier-free, and the planting palette (willow, osmanthus, Japanese maple, ginkgo, and magnolia) is chosen to shift with the seasons.
 
 <div class="project-image">
   <img src="/courseworks_file/landscape-design/landscape_cover_1_web.jpg" alt="Landscape Design of Island of Lake of Zijingang Campus" loading="lazy" decoding="async">

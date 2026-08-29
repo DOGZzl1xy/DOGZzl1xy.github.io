@@ -6,7 +6,7 @@ title: Course Works
 
 # Course works
 
-Here is a collection of my major course works. Click on a project to learn more.
+Studio and course projects from Zhejiang University and UC Berkeley, from GIS analysis to landscape and regulatory planning.
 
 <style>
 .coursework-grid {
@@ -81,8 +81,8 @@ Here is a collection of my major course works. Click on a project to learn more.
   
 
   <div class="coursework-item">
-    <h3>[Regulatory Detailed Planning] Tangbei Block, Hangzhou</h3>
-    <img src="/courseworks_file/regulatory-planning/regulatory_planning_cover_web.jpg" alt="Regulatory Detailed Planning of Tangbei Block" loading="lazy" decoding="async">
+    <h3>[Regulatory Detailed Planning] Tangbei Unit, Hangzhou</h3>
+    <img src="/courseworks_file/regulatory-planning/regulatory_planning_cover_web.jpg" alt="Regulatory Detailed Planning of Tangbei Unit" loading="lazy" decoding="async">
     <a href="/course-regulatory-planning.html" class="learn-more-btn">View Project</a>
   </div>
 

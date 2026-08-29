@@ -75,3 +75,14 @@ exclude:                         # Folders/files ignored during build
 # --------------------------------------------------
 plugins:
   - jekyll-sitemap       # Auto-generate sitemap.xml
+
+
+# --------------------------------------------------
+#  FRONT MATTER DEFAULTS
+#  (keeps the unlinked archive page out of sitemap.xml)
+# --------------------------------------------------
+defaults:
+  - scope:
+      path: "along-the-way.html"
+    values:
+      sitemap: false

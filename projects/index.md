@@ -6,7 +6,7 @@ title: Projects
 
 # Research Projects
 
-Here is a collection of my research projects. Click on a project to learn more.
+Four directions I keep coming back to: mobility simulation, street-level microclimate, green space equity, and how the built environment shapes health and recovery.
 
 <style>
 .project-grid {
@@ -70,7 +70,7 @@ Here is a collection of my research projects. Click on a project to learn more.
   <div class="project-card">
     <h3>Sky View Factor</h3>
     <img src="/images/svf-street-view.jpg" alt="Panoramic street view used in the Sky View Factor project" loading="lazy" decoding="async">
-    <p>Completed SVF research comparing LiDAR-based and imagery-based methods for microclimate analysis, with an interactive demo.</p>
+    <p>Comparing LiDAR-based and imagery-based SVF at pedestrian scale, with an interactive San Francisco demo.</p>
     <a href="/sky-view-factor/" class="project-btn">View Project</a>
   </div>
 

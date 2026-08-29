@@ -2,21 +2,15 @@
 layout: page
 permalink: /hobbies/index.html
 title: Hobbies
-description: Xuanyu Zhou's interests outside research, including swimming, badminton, and video games.
+description: What Xuanyu Zhou does outside research, including League of Legends, the Civilization series, indie games, badminton, and swimming.
 ---
 
 # Hobbies
 
-Outside research and planning, I enjoy activities that help me recharge, stay active, and explore different kinds of challenges.
+## Games
 
-## Swimming
+My main game is League of Legends, with some Apex Legends on the side, and I have sunk an honestly unreasonable number of hours into the Civilization series. I also have a soft spot for small, carefully made indie games: Balatro, Inscryption, and Hades are the ones I recommend to everyone, and Ori is my favorite game of all.
 
-Swimming is one of my favorite ways to exercise and clear my mind. I enjoy the calm rhythm of being in the water and the sense of focus it brings.
+## Sports
 
-## Badminton
-
-I also enjoy playing badminton. It is a fun way to stay active, spend time with friends, and take a break from work.
-
-## Video Games
-
-I mainly play MOBA games and small, carefully crafted indie games. I enjoy both the strategy and teamwork of competitive games and the distinctive ideas, stories, and design found in focused indie titles.
+I played badminton for two years in high school and still pick it up on and off with friends. I swim now and then too. Neither is anywhere near competitive; they are just how I unwind.

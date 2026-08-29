@@ -1,9 +1,32 @@
+/* Matches the main site's paper palette (see /assets/css/main.css) */
+
+@font-face {
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/assets/fonts/architects-daughter-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('/assets/fonts/space-grotesk-latin.woff2') format('woff2');
+}
+
 :root {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --accent-color: #00bcd4;
-    --panel-bg: rgba(20, 20, 20, 0.85);
-    --border-color: #333;
+    --bg-color: #f9f7f1;
+    --surface: #fdfcf7;
+    --text-color: #2c2c2c;
+    --text-muted: #5d584e;
+    --text-soft: #97907e;
+    --line: #d9d3c3;
+    --stroke: #756e5f;
+    --accent-color: #e74c3c;
+    --font-sans: 'Space Grotesk', 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
+    --font-hand: 'Architects Daughter', 'Segoe Print', 'Bradley Hand', cursive;
 }
 
 body,
@@ -12,7 +35,7 @@ html {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-sans);
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow: hidden;
@@ -31,6 +54,12 @@ html {
     height: 100%;
     z-index: 1;
     position: relative;
+    background: var(--bg-color);
+}
+
+/* soften the basemap toward the site's paper palette */
+#map .leaflet-tile-pane {
+    filter: saturate(0.3) contrast(0.92) brightness(1.04);
 }
 
 #ui-container {
@@ -38,34 +67,48 @@ html {
     /* 1/3 width */
     min-width: 300px;
     height: 100%;
-    background-color: var(--panel-bg);
-    padding: 20px;
-    border-right: 1px solid var(--border-color);
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--surface);
+    padding: 22px;
+    border-right: 1.5px solid var(--line);
     overflow-y: auto;
     z-index: 2;
     box-sizing: border-box;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    color: var(--text-soft);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--line);
+}
+
+.back-link:hover {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
 }
 
 #project-description {
     margin: 20px 0;
     line-height: 1.6;
     font-size: 0.9rem;
-    color: #ccc;
+    color: var(--text-muted);
 }
 
 header h1 {
     margin: 0 0 5px 0;
-    font-size: 1.5rem;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-family: var(--font-hand);
+    font-weight: 400;
+    color: var(--text-color);
 }
 
 .subtitle {
     margin: 0 0 20px 0;
     font-size: 0.85rem;
-    color: #aaa;
+    color: var(--text-soft);
 }
 
 .controls {
@@ -82,10 +125,11 @@ label {
 select {
     width: 100%;
     padding: 10px;
-    background-color: #222;
-    color: #fff;
-    border: 1px solid #444;
-    border-radius: 4px;
+    background-color: var(--surface);
+    color: var(--text-color);
+    border: 1.5px solid var(--stroke);
+    border-radius: 8px 6px 9px 6px;
+    font-family: var(--font-sans);
     font-size: 0.9rem;
     cursor: pointer;
     transition: border-color 0.3s;
@@ -98,22 +142,29 @@ select:focus {
 
 #data-status {
     margin: 8px 0 0;
-    color: #aaa;
+    color: var(--text-soft);
     font-size: 0.78rem;
 }
 
 #data-status.is-error {
-    color: #ff8a80;
+    color: var(--accent-color);
 }
 
 #info-panel {
     font-size: 0.85rem;
     line-height: 1.5;
+    color: var(--text-muted);
+}
+
+#info-panel h3 {
+    font-family: var(--font-hand);
+    font-weight: 400;
+    color: var(--text-color);
 }
 
 #info-panel hr {
     border: 0;
-    border-top: 1px solid var(--border-color);
+    border-top: 1.5px dashed var(--line);
     margin: 15px 0;
 }
 
@@ -132,18 +183,17 @@ select:focus {
 }
 
 .color-box.high {
-    background-color: #00ffff;
-    box-shadow: 0 0 5px #00ffff;
+    background-color: #c0392b;
 }
 
 .color-box.low {
-    background-color: #003366;
+    background-color: #2e6da4;
 }
 
 .instruction {
     margin-top: 15px;
-    font-style: italic;
-    color: #888;
+    font-family: var(--font-hand);
+    color: var(--text-soft);
     text-align: center;
 }
 
@@ -151,13 +201,14 @@ select:focus {
 #tooltip {
     position: absolute;
     z-index: 2000;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 1px solid var(--accent-color);
+    background-color: var(--surface);
+    color: var(--text-color);
+    border: 1.5px solid var(--stroke);
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 10px 6px 11px 6px;
     pointer-events: none;
     font-size: 0.8rem;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    box-shadow: 2px 3px 0 rgba(44, 44, 44, 0.08);
     transform: translate(15px, 15px);
     transition: opacity 0.2s;
 }
@@ -168,7 +219,7 @@ select:focus {
 }
 
 #tooltip-content strong {
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -184,7 +235,7 @@ select:focus {
         max-height: 44vh;
         padding: 14px;
         border-right: 0;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1.5px solid var(--line);
     }
 
     #map {
