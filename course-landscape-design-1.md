@@ -1,5 +1,6 @@
 ---
 layout: page
+section: courseworks
 title: "[Landscape Design] Island of Lake of Zijingang Campus"
 ---
 

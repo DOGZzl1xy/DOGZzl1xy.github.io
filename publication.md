@@ -2,36 +2,35 @@
 layout: page
 permalink: /publication/index.html
 title: Publication
+body_class: page-publication
 ---
-
-> (†: equal contribution, ~: corresponding author)
 
 # Publications
 
+> (†: equal contribution, ~: corresponding author)
+
 ## Journal Papers
 
-- <a href="https://doi.org/10.1177/27541231251314132" target="_blank" rel="noopener">Evaluating the social-economic recovery impacts of the built environment post-pandemic: A case study of COVID-19</a><br>Shuang Ma, **Xuanyu Zhou**, Wei Cai, Mo Chen, Shuangjin Li~<br>*Transactions in Urban Data, Science, and Technology*<br>
+- <span class="pub-title"><a href="https://doi.org/10.1177/27541231251314132" target="_blank" rel="noopener">Evaluating the social-economic recovery impacts of the built environment post-pandemic: A case study of COVID-19</a></span><br>Shuang Ma, **Xuanyu Zhou**, Wei Cai, Mo Chen, Shuangjin Li~<br>*Transactions in Urban Data, Science, and Technology*<br>
 
-- How do we model cities? A systematic review of spatial and nonlinear analytical paradigms in planning research<br>Mingze Chen, **Xuanyu Zhou~**, Yuxuan Liu<br>*Landscape and Urban Planning (Under Review)*<br>
+- <span class="pub-title">How do we model cities? A systematic review of spatial and nonlinear analytical paradigms in planning research</span><br>Mingze Chen, **Xuanyu Zhou~**, Yuxuan Liu<br>*Landscape and Urban Planning (Under Review)*<br>
   
-- Future life expectancy extension under bike ride, air pollution exposure, and traffic accidents through modifying the built environment and climate: An integrated modelling study<br>Shuang Ma, Wanshi Li, **Xuanyu Zhou**, Tao Ma, Yinbin He, Shuangjin Li~<br>*npj Urban Sustainability (Under Review)*<br>
+- <span class="pub-title">Future life expectancy extension under bike ride, air pollution exposure, and traffic accidents through modifying the built environment and climate: An integrated modelling study</span><br>Shuang Ma, Wanshi Li, **Xuanyu Zhou**, Tao Ma, Yinbin He, Shuangjin Li~<br>*npj Urban Sustainability (Under Review)*<br>
 
-- Exploring the relationship between resident emotions and built environment in Beijing based on a geographical weighted random forest approach<br>Shuangjin Li, Wei Cai, Changlong Wu, Xin Zhang, **Xuanyu Zhou**, Yinbin He, Shuang Ma~<br>*Urban Studies (Under Review)*<br>
+- <span class="pub-title">Exploring the relationship between resident emotions and built environment in Beijing based on a geographical weighted random forest approach</span><br>Shuangjin Li, Wei Cai, Changlong Wu, Xin Zhang, **Xuanyu Zhou**, Yinbin He, Shuang Ma~<br>*Urban Studies (Under Review)*<br>
 
-- From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Advanced Air Mobility<br>Xuan Jiang, **Xuanyu Zhou~**, Yibo Zhao, Shangqing Cao, Haoze He, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>*IEEE Transactions on Intelligent Transportation Systems (Under Review)*
+- <span class="pub-title">From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Advanced Air Mobility</span><br>Xuan Jiang, **Xuanyu Zhou~**, Yibo Zhao, Shangqing Cao, Haoze He, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>*IEEE Transactions on Intelligent Transportation Systems (Under Review)*
   
 
 ## Conference Papers
 
-- <a href="https://arxiv.org/abs/2510.04186v1" target="_blank" rel="noopener">From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility</a><br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Haoze He, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>Transportation Research Board Annual Meeting<br>Washington, D.C., January 2026<br>
+- <span class="pub-title"><a href="https://arxiv.org/abs/2510.04186v1" target="_blank" rel="noopener">From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility</a></span><br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Haoze He, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>Transportation Research Board Annual Meeting<br>Washington, D.C., January 2026<br>
 
-- PedSVF: Multimodal Aerial-Street Grounding for Pedestrian-Scale Sky View Factor Estimation<br>Yuye Zhou, **Xuanyu Zhou**, Julian Stangl, Peimin Chen, Maryam Hosseini, Lu Liang~<br>34th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL 2026, Under Review)<br>
+- <span class="pub-title">PedSVF: Multimodal Aerial-Street Grounding for Pedestrian-Scale Sky View Factor Estimation</span><br>Yuye Zhou, **Xuanyu Zhou**, Julian Stangl, Peimin Chen, Maryam Hosseini, Lu Liang~<br>34th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL 2026, Under Review)<br>
 
-- Perceiving the Street from Where People Stand: Pedestrian-Centered Multi-View-Factor Mapping via Street View Imagery and Monocular 3D Reconstruction<br>Yuye Zhou, **Xuanyu Zhou**, Lu Liang~<br>33rd International Conference on Geoinformatics (Geoinformatics 2026)<br>National University of Singapore, Singapore, July 2026<br>
+- <span class="pub-title">Perceiving the Street from Where People Stand: Pedestrian-Centered Multi-View-Factor Mapping via Street View Imagery and Monocular 3D Reconstruction</span><br>Yuye Zhou, **Xuanyu Zhou**, Lu Liang~<br>33rd International Conference on Geoinformatics (Geoinformatics 2026)<br>National University of Singapore, Singapore, July 2026<br>
   
-- Greening the Gap: Examining Urban Greenery Equity in Shrinking Cities<br>**Xuanyu Zhou**, Mingze Chen~<br>Association of Collegiate Schools of Planning Annual Meeting<br>Seattle, USA, November 2024<br>
-
----
+- <span class="pub-title">Greening the Gap: Examining Urban Greenery Equity in Shrinking Cities</span><br>**Xuanyu Zhou**, Mingze Chen~<br>Association of Collegiate Schools of Planning Annual Meeting<br>Seattle, USA, November 2024<br>
 
 ## Degree Thesis
 
@@ -42,5 +41,3 @@ Using Hangzhou as a case study, this thesis asks how urban pluvial flood risk ev
 
 **Key Words:** Urban pluvial flooding; Shared Socioeconomic Pathways (SSPs); HEC-RAS two-dimensional simulation; evaluation of planning interventions.
 
-
-<br>

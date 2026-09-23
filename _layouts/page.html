@@ -4,16 +4,12 @@
 {% include head.html %}
 </head>
 
-<body class="site-body page-content" itemscope itemtype="http://schema.org/WebPage">
+<body class="site-body page-content{% if page.body_class %} {{ page.body_class }}{% endif %}" itemscope itemtype="http://schema.org/WebPage">
 {% include navigation.html %}
 
 <main class="site-main" role="main" itemprop="mainContentOfPage">
   <div class="site-main__inner">
     <div class="content-layout">
-      <aside class="content-sidebar">
-        {% include author-bio.html %}
-      </aside>
-
       <article class="content-card" itemscope itemtype="http://schema.org/CreativeWork">
         <div class="article-wrap" itemprop="text">
           {{ content }}

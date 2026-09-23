@@ -21,48 +21,58 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
   </div>
 </div>
 
-<section class="home-intro">
-  <div class="home-intro__copy">
-    <span class="eyebrow">Urban AI &bull; Equity &bull; Mobility</span>
-    <h1>Designing data-driven tools for fairer urban futures.</h1>
-    <p class="home-intro__lede">
-      I am Xuanyu Zhou, a Master of City Planning student at the University of Pennsylvania. Before Penn, I studied Urban and Rural Planning at Zhejiang University and spent an exchange semester at UC Berkeley CED. My work brings together urban equity, mobility, resilience, remote sensing, and machine learning, with a growing interest in how LLMs and Urban AI can support planning practice.
+<section class="hero">
+  <div class="hero__copy">
+    <span class="eyebrow">Master of City Planning &middot; University of Pennsylvania</span>
+    <h1>Designing data&#8209;driven tools for <em class="scribble">fairer</em> urban futures.</h1>
+    <p class="hero__lede">
+      I&rsquo;m <strong>Xuanyu Zhou</strong>. I trained as a planner at Zhejiang University, spent a semester at UC Berkeley&rsquo;s College of Environmental Design, and now study at Penn. My research asks who gets the good parts of a city &mdash; shade, green space, quick trips, a fast recovery after a crisis &mdash; and measures it with remote sensing, simulation, and machine learning. Lately I&rsquo;m also testing where LLMs are genuinely useful in planning work.
     </p>
-
-    <ul class="interest-notes">
-      <li>
-        <span class="interest-notes__fig">fig.a</span>
-        <span class="interest-notes__title">built environment &amp; equity</span>
-        <span class="interest-notes__body">— green space, thermal exposure &amp; street-level conditions across communities, via remote sensing, LiDAR &amp; imagery</span>
-      </li>
-      <li>
-        <span class="interest-notes__fig">fig.b</span>
-        <span class="interest-notes__title">mobility systems</span>
-        <span class="interest-notes__body">— simulation-first frameworks for Urban Air Mobility &amp; shared mobility in real metropolitan conditions</span>
-      </li>
-      <li>
-        <span class="interest-notes__fig">fig.c</span>
-        <span class="interest-notes__title">resilience &amp; health</span>
-        <span class="interest-notes__body">— geospatial ML connecting urban form with post-pandemic recovery, vitality &amp; public health</span>
-      </li>
-    </ul>
   </div>
 
-  <figure class="polaroid">
-    <span class="polaroid__tape polaroid__tape--left"></span>
-    <span class="polaroid__tape polaroid__tape--right"></span>
-    <img src="/images/xuanyu_web.jpg" alt="Portrait of Xuanyu Zhou" decoding="async" fetchpriority="high">
-    <figcaption>
-      <strong>Xuanyu Zhou</strong>
-      <span>planning &times; spatial data, ZJU &rarr; Berkeley &rarr; Penn</span>
-    </figcaption>
+  <figure class="portrait">
+    <svg class="portrait__frame" viewBox="0 0 100 125" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M4 1.5 Q50 0.4 96.5 1.8 Q99 2 98.8 5 Q99.6 62 98.6 120 Q98.4 123.4 95 123.3 Q50 124.6 4.6 123.2 Q1.2 123 1.3 119.5 Q0.5 62 1.2 4.8 Q1.3 1.6 4 1.5" />
+    </svg>
+    <img src="/images/xuanyu_web.jpg" alt="Portrait of Xuanyu Zhou" width="494" height="791" decoding="async" fetchpriority="high">
   </figure>
 </section>
 
-<section class="desk" aria-label="Site navigation drawn as objects on a desk">
+<section class="home-section" aria-labelledby="focus-title">
+  <div class="home-section__head">
+    <h2 class="home-section__title" id="focus-title">Research</h2>
+    <a class="arrow-link" href="/publication/">All publications &rarr;</a>
+  </div>
 
+  <ul class="focus-list">
+    <li>
+      <span class="focus-list__num">01</span>
+      <h3>Built environment &amp; equity</h3>
+      <p>Green space, heat exposure, and street-level conditions across communities, read from satellite imagery, LiDAR, and street view.</p>
+    </li>
+    <li>
+      <span class="focus-list__num">02</span>
+      <h3>Mobility systems</h3>
+      <p>Simulation-first frameworks for urban air mobility and shared mobility, tested against real metropolitan demand.</p>
+    </li>
+    <li>
+      <span class="focus-list__num">03</span>
+      <h3>Resilience &amp; health</h3>
+      <p>Geospatial machine learning that links urban form to post-pandemic recovery, everyday vitality, and public health.</p>
+    </li>
+  </ul>
+</section>
+
+<section class="home-section" aria-labelledby="desk-title">
+  <div class="home-section__head">
+    <h2 class="home-section__title" id="desk-title">On my desk</h2>
+    <p class="home-section__hint home-section__hint--desk">Everything here is a link &mdash; hover the laptop for selected projects.</p>
+  </div>
+
+<div class="desk" role="navigation" aria-label="Site sections drawn as objects on a desk">
+  <div class="desk-board">
   <div class="desk-scene-wrap">
-    <svg class="desk-scene" viewBox="0 0 1200 690" role="presentation">
+    <svg class="desk-scene" viewBox="60 60 1080 540" role="presentation">
 
       <!-- ==== the desk itself (back edge gaps where laptop & plant sit) ==== -->
       <g class="scene-desk">
@@ -73,9 +83,9 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
         <path pathLength="1" d="M1105 394 Q600 401 95 400" />
         <path pathLength="1" d="M95 400 L210 168" />
         <path pathLength="1" d="M95 400 L95 436 Q600 442 1105 436 L1105 394" />
-        <path pathLength="1" d="M115 438 L118 640 M138 438 L140 640" />
-        <path pathLength="1" d="M1062 437 L1064 640 M1085 437 L1086 640" />
-        <path pathLength="1" d="M140 562 L1062 557 M140 574 L1062 569" />
+        <path pathLength="1" d="M115 438 L117 588 M138 438 L139 588" />
+        <path pathLength="1" d="M1062 437 L1063 588 M1085 437 L1086 588" />
+        <path pathLength="1" d="M139 536 L1062 532 M139 547 L1062 543" />
       </g>
 
       <!-- ==== deco: plant (back-right, clear of the corner), bird, ring, sparkle ==== -->
@@ -109,7 +119,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <path pathLength="1" d="M4 26 Q4 20 10 20 L38 18 Q42 18 44 22 L47 26 L104 23 Q109 23 109.5 28 L112 74 Q112 79 107 79.3 L10 83 Q5 83.2 4.8 78 Z" />
           <path pathLength="1" d="M12 19 L84 16" />
           <circle pathLength="1" class="ink" cx="94" cy="66" r="5.5" />
-          <text class="svg-hand" x="42" y="62" font-size="26">CV</text>
+          <text class="svg-hand" x="40" y="60" font-size="22">CV</text>
         </g>
         <text class="obj-label" x="246" y="192"><tspan>cv</tspan><tspan class="obj-fig" dx="7">fig.05</tspan></text>
       </a>
@@ -230,8 +240,6 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
         <text class="obj-label" x="998" y="424"><tspan>hobbies</tspan><tspan class="obj-fig" dx="7">fig.08</tspan></text>
       </a>
 
-      <!-- ==== caption ==== -->
-      <text class="scene-caption" x="40" y="666">&mdash; the annotated desk &middot; click anything</text>
     </svg>
 
     <!-- typewriter terminal over the laptop screen -->
@@ -245,50 +253,45 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
       <a href="/urban-built-environment/">urban built environment</a>
     </div>
   </div>
+  </div>
 
   <!-- compact index shown on small screens instead of the scene -->
   <div class="desk-index">
-    <p class="desk-index__title">the desk</p>
     <ul>
-      <li><a href="/projects/"><span class="anno-en">projects</span> <span class="index-fig">fig.01</span></a></li>
-      <li><a href="/publication/"><span class="anno-en">publication</span> <span class="index-fig">fig.02</span></a></li>
-      <li><a href="/awards/"><span class="anno-en">awards</span> <span class="index-fig">fig.03</span></a></li>
-      <li><a href="/courseworks/"><span class="anno-en">courseworks</span> <span class="index-fig">fig.04</span></a></li>
-      <li><a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener"><span class="anno-en">cv</span> <span class="index-fig">fig.05</span></a></li>
-      <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener"><span class="anno-en">portfolio</span> <span class="index-fig">fig.06</span></a></li>
-      <li><a href="mailto:xuanyuz@design.upenn.edu"><span class="anno-en">write to me</span> <span class="index-fig">fig.07</span></a></li>
-      <li><a href="/hobbies/"><span class="anno-en">hobbies</span> <span class="index-fig">fig.08</span></a></li>
+      <li><a href="/projects/"><span>projects</span> <span class="index-fig">fig.01</span></a></li>
+      <li><a href="/publication/"><span>publication</span> <span class="index-fig">fig.02</span></a></li>
+      <li><a href="/awards/"><span>awards</span> <span class="index-fig">fig.03</span></a></li>
+      <li><a href="/courseworks/"><span>courseworks</span> <span class="index-fig">fig.04</span></a></li>
+      <li><a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener"><span>cv</span> <span class="index-fig">fig.05</span></a></li>
+      <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener"><span>portfolio</span> <span class="index-fig">fig.06</span></a></li>
+      <li><a href="mailto:xuanyuz@design.upenn.edu"><span>write to me</span> <span class="index-fig">fig.07</span></a></li>
+      <li><a href="/hobbies/"><span>hobbies</span> <span class="index-fig">fig.08</span></a></li>
     </ul>
   </div>
+</div>
 </section>
 
-<section class="notes-row" aria-label="News and updates">
-  <p class="notes-row__caption">news &amp; updates &mdash; the latest three</p>
-
-  <div class="notes-row__grid">
-    <article class="sticky-note" style="--r:-2.5deg;">
-      <span class="sticky-note__pin" aria-hidden="true"></span>
-      <span class="sticky-note__date">Jul 2026</span>
-      <p>Submitted a systematic review of 1,446 studies to <em>Landscape and Urban Planning</em> as corresponding author.</p>
-    </article>
-
-    <article class="sticky-note" style="--r:1.8deg;">
-      <span class="sticky-note__pin" aria-hidden="true"></span>
-      <span class="sticky-note__date">Jun 2026</span>
-      <p>Graduated from Zhejiang University with Outstanding Graduate and Outstanding Undergraduate Thesis honors.</p>
-    </article>
-
-    <article class="sticky-note" style="--r:-1.2deg;">
-      <span class="sticky-note__pin" aria-hidden="true"></span>
-      <span class="sticky-note__date">2026</span>
-      <p>PedSVF is under review at ACM SIGSPATIAL 2026 and was presented at Geoinformatics 2026, NUS Singapore.</p>
-    </article>
+<section class="home-section" aria-labelledby="news-title">
+  <div class="home-section__head">
+    <h2 class="home-section__title" id="news-title">News</h2>
   </div>
 
-  <p class="elsewhere-note">
-    elsewhere &rarr;
-    <a href="https://scholar.google.com/citations?user=nK7_DHMAAAAJ" target="_blank" rel="noopener">google scholar</a> &middot;
-    <a href="https://github.com/DOGZzl1xy" target="_blank" rel="noopener">github</a> &middot;
-    <a href="https://orcid.org/0009-0004-8534-0211" target="_blank" rel="noopener">orcid</a>
-  </p>
+  <ul class="news-list">
+    <li>
+      <time datetime="2026-08">Aug 2026</time>
+      <p>Started the Master of City Planning program at the University of Pennsylvania Weitzman School of Design.</p>
+    </li>
+    <li>
+      <time datetime="2026-07">Jul 2026</time>
+      <p>Submitted a systematic review of 1,446 planning studies to <em>Landscape and Urban Planning</em> as corresponding author.</p>
+    </li>
+    <li>
+      <time datetime="2026-07">Jul 2026</time>
+      <p>Presented PedSVF: Multimodal Aerial&ndash;Street Grounding for Pedestrian-Scale Sky View Factor Estimation at Geoinformatics 2026, National University of Singapore. The paper is under review at ACM SIGSPATIAL 2026.</p>
+    </li>
+    <li>
+      <time datetime="2026-06">Jun 2026</time>
+      <p>Graduated from Zhejiang University as an Outstanding Graduate, with an Outstanding Undergraduate Thesis award.</p>
+    </li>
+  </ul>
 </section>

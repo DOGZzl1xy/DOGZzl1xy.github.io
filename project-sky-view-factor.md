@@ -1,5 +1,6 @@
 ---
 layout: page
+section: projects
 permalink: /sky-view-factor/index.html
 title: Sky View Factor
 ---

@@ -1,5 +1,6 @@
 ---
 layout: page
+section: projects
 permalink: /urban-built-environment/index.html
 title: Urban Built Environment
 ---

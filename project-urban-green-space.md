@@ -1,5 +1,6 @@
 ---
 layout: page
+section: projects
 permalink: /urban-green-space/index.html
 title: Urban Green Space
 ---

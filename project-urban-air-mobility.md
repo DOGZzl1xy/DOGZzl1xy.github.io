@@ -1,5 +1,6 @@
 ---
 layout: page
+section: projects
 permalink: /urban-air-mobility/index.html
 title: Urban Air Mobility
 ---
@@ -12,7 +13,7 @@ The study builds on LPSim, a large-scale parallel simulation framework that uses
 
 This work started at the 2025 MIT-UF-NEU joint summer research program, was presented at the 2026 Transportation Research Board Annual Meeting, and is under review at IEEE Transactions on Intelligent Transportation Systems.
 
-**Preprint paper can be found <a href="https://arxiv.org/abs/2510.04186" target="_blank" rel="noopener" style="color: #e74c3c;">here</a>.**
+**Preprint paper can be found <a href="https://arxiv.org/abs/2510.04186" target="_blank" rel="noopener">here</a>.**
 
 <img src="/mypaper/urban-air-mobility/AAM_poster_and_elevator_pitch_1_web.jpg" alt="Elevator Pitch" class="img-full-width" loading="lazy" decoding="async">
 

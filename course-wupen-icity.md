@@ -1,5 +1,6 @@
 ---
 layout: page
+section: courseworks
 title: "[WUPENiCity] Field Research on Optimization of Park-and-Ride (P+R) Systems in Hangzhou"
 ---
 

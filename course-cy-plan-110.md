@@ -1,5 +1,6 @@
 ---
 layout: page
+section: courseworks
 title: "[CY PLAN 110] Introduction to City Planning"
 ---
 

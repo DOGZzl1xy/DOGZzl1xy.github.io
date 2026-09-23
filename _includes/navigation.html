@@ -1,12 +1,9 @@
 {% capture current_url %}{{ page.url | remove:'index.html' }}{% endcapture %}
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="site-brand" href="{{ site.url }}">
-      <span class="site-brand__mark">XZ</span>
-      <span class="site-brand__stack">
-        <span class="site-brand__name">{{ site.title }}</span>
-        <span class="site-brand__tag">Urban AI · Equity · Mobility</span>
-      </span>
+    <a class="site-brand" href="/">
+      <img class="site-brand__avatar" src="/images/{{ site.owner.avatar }}" alt="" width="34" height="34">
+      <span class="site-brand__name">{{ site.title }}</span>
     </a>
 
     <input class="site-nav-toggle" type="checkbox" id="site-nav-toggle">
@@ -21,31 +18,21 @@
           {% assign is_active = false %}
           {% if link.url == "/" and current_url == "/" %}
             {% assign is_active = true %}
-          {% elsif link.title == "Projects" and page.url contains '/projects/' %}
+          {% elsif link.title == "Projects" and page.section == "projects" %}
             {% assign is_active = true %}
-          {% elsif link.title == "Projects" and page.url contains '/urban-air-mobility/' %}
-            {% assign is_active = true %}
-          {% elsif link.title == "Projects" and page.url contains '/sky-view-factor/' %}
-            {% assign is_active = true %}
-          {% elsif link.title == "Projects" and page.url contains '/urban-green-space/' %}
-            {% assign is_active = true %}
-          {% elsif link.title == "Projects" and page.url contains '/urban-built-environment/' %}
+          {% elsif link.title == "Courseworks" and page.section == "courseworks" %}
             {% assign is_active = true %}
           {% elsif link.url != "/" and current_url == link.url %}
             {% assign is_active = true %}
           {% endif %}
           <li>
-            <a class="site-nav__link{% if is_active %} is-active{% endif %}" href="{{ site.url }}{{ link.url }}">
-              {{ link.title }}
-            </a>
+            <a class="site-nav__link{% if is_active %} is-active{% endif %}" href="{{ link.url }}"{% if is_active %} aria-current="page"{% endif %}>{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>
 
       {% if site.owner.cv %}
-        <a class="button button--ghost site-nav__cta" href="{{ site.owner.cv }}" target="_blank" rel="noopener">
-          CV
-        </a>
+        <a class="button button--ghost site-nav__cta" href="{{ site.owner.cv }}" target="_blank" rel="noopener">CV &#8599;</a>
       {% endif %}
     </nav>
   </div>
