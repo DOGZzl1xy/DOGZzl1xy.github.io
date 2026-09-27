@@ -1233,7 +1233,18 @@ select {
 .article-wrap .project-feature-stacked,
 .article-wrap .project-image,
 .article-wrap .project-links,
-.article-wrap .img-full-width {
+.article-wrap /* dense diagrams link to their full-size file */
+.figure-zoom {
+  display: block;
+  margin-top: 1.25rem;
+  cursor: zoom-in;
+}
+
+.figure-zoom .img-full-width {
+  margin-top: 0;
+}
+
+.img-full-width {
   margin-top: 1.25rem;
   margin-bottom: 0;
 }
