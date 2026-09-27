@@ -1,31 +1,41 @@
 /* ==========================================================================
-   Xuanyu Zhou — architect's sketchbook
-   Crisp paper · editorial serif headings · one pen-drawn illustration.
-   Line drawings are fountain-pen blue; vermilion is a markup accent only.
+   Xuanyu Zhou — drafting paper
+   White sheet · navy ink for text and line drawings · one cobalt accent.
+   Every colour lives in the tokens below; dark mode only swaps tokens.
    ========================================================================== */
 
+/* headings: Source Serif 4, instanced to opsz 20–60 / wght 400–600 and
+   subset to Latin (scripts/build-fonts.sh); body: Instrument Sans wght 400–600 */
 @font-face {
-  font-family: "Instrument Serif";
+  font-family: "Source Serif 4";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 600;
   font-display: swap;
-  src: url("/assets/fonts/instrument-serif-latin.woff2") format("woff2");
+  src: url("/assets/fonts/source-serif-4-display-latin.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Instrument Serif";
+  font-family: "Source Serif 4";
   font-style: italic;
-  font-weight: 400;
+  font-weight: 400 600;
   font-display: swap;
-  src: url("/assets/fonts/instrument-serif-italic-latin.woff2") format("woff2");
+  src: url("/assets/fonts/source-serif-4-italic-latin.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Space Grotesk";
+  font-family: "Instrument Sans";
   font-style: normal;
-  font-weight: 400 700;
+  font-weight: 400 600;
   font-display: swap;
-  src: url("/assets/fonts/space-grotesk-latin.woff2") format("woff2");
+  src: url("/assets/fonts/instrument-sans-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: italic;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/assets/fonts/instrument-sans-italic-latin.woff2") format("woff2");
 }
 
 @font-face {
@@ -45,20 +55,26 @@
 }
 
 :root {
-  --color-bg: #faf9f6;
-  --color-bg-soft: #f2f0ea;
+  color-scheme: light;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f6f8fb;        /* image wells, code, quotes — no soft text on it */
   --color-surface: #ffffff;
-  --color-ink: #15171c;
-  --color-text: #23262d;
-  --color-text-muted: #5b606b;
-  --color-text-soft: #8d919a;
-  --color-line: #e4e1d9;
-  --color-line-strong: #cdc9bf;
-  /* pen-drawn illustration: fountain-pen blue, with a lighter pencil tone */
-  --color-stroke: #2f4a72;
-  --color-pencil: #a9b7ca;
-  --color-accent: #e0572b;
-  --color-accent-soft: rgba(224, 87, 43, 0.1);
+  --color-ink: #1b2a4a;            /* navy: headings, primary text, line drawings */
+  --color-text: #1b2a4a;
+  --color-text-muted: #4a5670;     /* body copy, secondary text   7.35:1 */
+  --color-text-soft: #6a7690;      /* labels, dates, fig. numbers  4.56:1 */
+  --color-line: #edf0f5;           /* rules and the drafting grid */
+  --color-line-strong: #d5dbe5;
+  --color-grid: #edf0f5;
+  /* pen-drawn illustration: navy ink, with a lighter pencil tone for props */
+  --color-stroke: #1b2a4a;
+  --color-pencil: #aeb8c8;
+  --color-accent: #2f5bea;         /* cobalt, the only accent      5.52:1 */
+  --color-accent-soft: rgba(47, 91, 234, 0.1);
+  --color-on-accent: #ffffff;
+  --color-selection: rgba(47, 91, 234, 0.16);
+  --color-header-bg: rgba(255, 255, 255, 0.86);
+  --color-shadow: rgba(27, 42, 74, 0.28);
 
   --radius: 14px;
   --radius-sm: 8px;
@@ -66,11 +82,36 @@
   --reading-width: 760px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
 
-  --font-serif: "Instrument Serif", "Iowan Old Style", Georgia,
+  --font-serif: "Source Serif 4", "Iowan Old Style", Georgia,
     "Songti SC", "Noto Serif SC", serif;
-  --font-sans: "Space Grotesk", "Avenir Next", "Helvetica Neue",
+  --font-sans: "Instrument Sans", "Avenir Next", "Helvetica Neue",
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
   --font-mono: "Space Mono", ui-monospace, monospace;
+}
+
+/* dark mode: same roles, night-drafting palette; line drawings turn light */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: #10151c;
+    --color-bg-soft: #171e27;
+    --color-surface: #151b23;
+    --color-ink: #e4e8ec;
+    --color-text: #e4e8ec;
+    --color-text-muted: #a3adb8;
+    --color-text-soft: #8b96a3;
+    --color-line: #222a35;
+    --color-line-strong: #33404f;
+    --color-grid: #1a212b;
+    --color-stroke: #c7d2de;
+    --color-pencil: #5b6878;
+    --color-accent: #8fa8ff;
+    --color-accent-soft: rgba(143, 168, 255, 0.12);
+    --color-on-accent: #10151c;
+    --color-selection: rgba(143, 168, 255, 0.24);
+    --color-header-bg: rgba(16, 21, 28, 0.86);
+    --color-shadow: rgba(0, 0, 0, 0.5);
+  }
 }
 
 *,
@@ -101,6 +142,12 @@ img {
   display: block;
 }
 
+/* responsive-image wrappers (scripts/prepare_assets.py) stay out of layout,
+   so the <img> keeps its grid/flex placement */
+picture {
+  display: contents;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -114,12 +161,12 @@ select {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-stroke);
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
 
 ::selection {
-  background: rgba(47, 74, 114, 0.16);
+  background: var(--color-selection);
 }
 
 .visually-hidden {
@@ -155,7 +202,7 @@ select {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(250, 249, 246, 0.85);
+  background: var(--color-header-bg);
   -webkit-backdrop-filter: saturate(1.4) blur(12px);
   backdrop-filter: saturate(1.4) blur(12px);
   border-bottom: 1px solid var(--color-line);
@@ -197,7 +244,7 @@ select {
   font-size: 0.84rem;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-ink);
 }
@@ -214,6 +261,14 @@ select {
   border: 0;
 }
 
+/* the menu checkbox only exists where the menu button does (phones);
+   on desktop it would be an invisible tab stop */
+@media (min-width: 768px) {
+  .site-nav-toggle {
+    display: none;
+  }
+}
+
 .site-nav-button {
   display: none;
   align-items: center;
@@ -227,7 +282,7 @@ select {
 }
 
 .site-nav-toggle:focus-visible + .site-nav-button {
-  outline: 2px solid var(--color-stroke);
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
 
@@ -351,8 +406,8 @@ select {
 }
 
 .button--ink:hover {
-  background: var(--color-stroke);
-  border-color: var(--color-stroke);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .button--ghost {
@@ -387,8 +442,8 @@ select {
 }
 
 .arrow-link:hover {
-  color: var(--color-stroke);
-  border-color: var(--color-stroke);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 /* ==========================================================================
@@ -414,14 +469,14 @@ select {
 
 .hero h1 {
   margin: 0;
-  max-width: 15ch;
+  max-width: 16ch;
   color: var(--color-ink);
   font-family: var(--font-serif);
-  font-size: clamp(2.9rem, 6.6vw, 5rem);
+  font-size: clamp(2.5rem, 5.2vw, 4.1rem);
   text-wrap: balance;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.015em;
+  font-weight: 450;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
 }
 
 .hero h1 em {
@@ -430,9 +485,21 @@ select {
 
 /* a single pen-scribbled underline, the only hand-drawn mark outside the desk */
 .scribble {
+  position: relative;
+  display: inline-block; /* one box, so the underline never splits at a line end */
   padding-bottom: 0.06em;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M3 9 Q50 3 100 7 T197 5' fill='none' stroke='%23e0572b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
-    left bottom / 100% 0.22em no-repeat;
+}
+
+.scribble::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.04em;
+  height: 0.22em;
+  background: var(--color-accent);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M3 9 Q50 3 100 7 T197 5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M3 9 Q50 3 100 7 T197 5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  content: "";
 }
 
 .hero__lede {
@@ -505,9 +572,10 @@ select {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-serif);
-  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
-  font-weight: 400;
-  line-height: 1.05;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 450;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .home-section__hint {
@@ -519,7 +587,7 @@ select {
 /* research directions */
 .focus-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(1.5rem, 3vw, 2.5rem);
   margin: 0;
   padding: 0;
@@ -530,6 +598,19 @@ select {
   display: grid;
   align-content: start;
   gap: 0.55rem;
+}
+
+/* line icons drawn with the same pen as the desk */
+.focus-list__icon {
+  width: 46px;
+  height: 46px;
+  margin: 0 0 0.35rem -3px;
+  overflow: visible;
+  fill: none;
+  stroke: var(--color-stroke);
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .focus-list__num {
@@ -543,9 +624,9 @@ select {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.1;
+  font-size: 1.35rem;
+  font-weight: 450;
+  line-height: 1.2;
 }
 
 .focus-list p {
@@ -555,10 +636,12 @@ select {
   line-height: 1.65;
 }
 
-.focus-list a {
-  margin-top: 0.35rem;
-  justify-self: start;
-  font-size: 0.88rem;
+.focus-list h3 a {
+  transition: color 0.15s ease;
+}
+
+.focus-list h3 a:hover {
+  color: var(--color-accent);
 }
 
 /* ==========================================================================
@@ -566,13 +649,15 @@ select {
    ========================================================================== */
 
 .desk-board {
-  padding: clamp(0.75rem, 2.5vw, 2rem) clamp(0.5rem, 2vw, 1.5rem) clamp(0.5rem, 1.5vw, 1rem);
+  padding: clamp(0.75rem, 2.5vw, 1.75rem) clamp(0.5rem, 2vw, 1.5rem) 0;
   border: 1px solid var(--color-line);
   border-radius: calc(var(--radius) + 6px);
   background-color: var(--color-surface);
-  background-image: radial-gradient(rgba(47, 74, 114, 0.13) 1px, transparent 1.2px);
-  background-size: 22px 22px;
-  background-position: 11px 11px;
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -1px -1px;
 }
 
 .desk-scene-wrap {
@@ -625,15 +710,23 @@ select {
   cursor: pointer;
 }
 
-.scene-link:focus-visible {
-  outline: 2px solid var(--color-stroke);
-  outline-offset: 4px;
+/* keyboard focus: outline the object's hit area in cobalt, dashed like a
+   selection box on a drawing (browser outlines on SVG links are unreliable) */
+.scene-link:focus {
+  outline: none;
+}
+
+.scene-link:focus-visible .hit {
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-dasharray: 7 5;
+  rx: 10px;
 }
 
 /* generous invisible hit area per object (strokes alone are hard to click) */
 .scene-link .hit {
   fill: transparent;
-  stroke: none;
+  stroke: transparent;
   pointer-events: all;
 }
 
@@ -709,13 +802,13 @@ select {
 }
 
 /* typewriter terminal over the laptop screen
-   (percentages are relative to the SVG viewBox 60 60 1080 540) */
+   (percentages are relative to the SVG viewBox 60 74 1080 412) */
 .laptop-screen {
   position: absolute;
   left: 28.45%;
-  top: 17.3%;
+  top: 19.5%;
   width: 16.2%;
-  height: 19.9%;
+  height: 26.1%;
   display: flex;
   align-items: flex-start;
   padding: 0.8% 0.7%;
@@ -750,14 +843,14 @@ select {
 .desk-popup {
   position: absolute;
   left: 49%;
-  top: -2%;
+  top: -6%;
   z-index: 6;
   width: 210px;
   padding: 0.8rem 1rem 0.85rem;
   background: var(--color-surface);
   border: 1px solid var(--color-line-strong);
   border-radius: var(--radius-sm);
-  box-shadow: 0 10px 30px -12px rgba(21, 23, 28, 0.25);
+  box-shadow: 0 10px 30px -12px var(--color-shadow);
   transform: translateY(6px);
   opacity: 0;
   visibility: hidden;
@@ -787,8 +880,63 @@ select {
   transition: color 0.15s ease;
 }
 
-.desk-popup a:hover {
+.desk-popup a:hover,
+.desk-popup a:focus-visible {
   color: var(--color-accent);
+}
+
+/* desk hint: hover wording for mouse, tap wording for touch;
+   touch screens also get the selected-work links inline */
+.hint-touch {
+  display: none;
+}
+
+.desk-selected {
+  display: none;
+  margin-top: 1rem;
+}
+
+.desk-selected p {
+  margin: 0 0 0.4rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.desk-selected ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.desk-selected a {
+  font-size: 0.95rem;
+  text-decoration: underline;
+  text-decoration-color: var(--color-line-strong);
+  text-underline-offset: 3px;
+}
+
+.desk-selected a:hover {
+  color: var(--color-accent);
+}
+
+@media (hover: none) {
+  .hint-hover {
+    display: none;
+  }
+
+  .hint-touch {
+    display: inline;
+  }
+
+  .desk-selected {
+    display: block;
+  }
 }
 
 /* compact index for small screens */
@@ -1027,9 +1175,22 @@ select {
   line-height: 1.6;
 }
 
+.news-list a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-line-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.18s ease, text-decoration-color 0.18s ease;
+}
+
+.news-list a:hover {
+  color: var(--color-accent);
+  text-decoration-color: currentColor;
+}
+
 .news-list em {
   font-family: var(--font-serif);
-  font-size: 1.12em;
+  font-size: 1.02em;
 }
 
 /* ==========================================================================
@@ -1092,26 +1253,28 @@ select {
 .article-wrap h2,
 .article-wrap h3 {
   font-family: var(--font-serif);
-  font-weight: 400;
+  font-weight: 450;
 }
 
 .article-wrap h1 {
   margin-bottom: 1.25rem;
-  font-size: clamp(2.5rem, 6vw, 3.8rem);
-  line-height: 1.02;
-  letter-spacing: -0.012em;
+  font-size: clamp(2.2rem, 5vw, 3.3rem);
+  line-height: 1.06;
+  letter-spacing: -0.015em;
 }
 
 .article-wrap h2 {
   margin-top: 3.25rem;
   padding-top: 1.1rem;
   border-top: 1px solid var(--color-line);
-  font-size: clamp(1.7rem, 3.4vw, 2.2rem);
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  letter-spacing: -0.01em;
 }
 
 .article-wrap h3 {
   margin-top: 2.25rem;
-  font-size: 1.6rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
 }
 
 .article-wrap h4 {
@@ -1219,8 +1382,8 @@ select {
 }
 
 .article-wrap a:not([class]):hover {
-  color: var(--color-stroke);
-  text-decoration-color: var(--color-stroke);
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
 }
 
 .article-wrap img {
@@ -1339,7 +1502,7 @@ select {
 .work-card:hover {
   border-color: var(--color-line-strong);
   transform: translateY(-3px);
-  box-shadow: 0 18px 40px -24px rgba(21, 23, 28, 0.35);
+  box-shadow: 0 18px 40px -24px var(--color-shadow);
 }
 
 .article-wrap .work-card__media {
@@ -1371,16 +1534,33 @@ select {
   text-transform: uppercase;
 }
 
+/* card titles are h2 (page h1 -> card h2), styled like the old h3 */
+.article-wrap .work-card__title,
 .article-wrap .work-card h3 {
   margin: 0;
-  font-size: 1.55rem;
-  line-height: 1.1;
+  padding: 0;
+  border: 0;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
 .article-wrap .work-card p {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+/* one mono block for venue / role under the finding */
+.article-wrap .work-card p.work-card__meta {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0.2rem 0 0;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 
 .work-card__link {
@@ -1398,7 +1578,7 @@ select {
 }
 
 .work-card:hover .work-card__link {
-  color: var(--color-stroke);
+  color: var(--color-accent);
 }
 
 .work-card:hover .work-card__link::after {
@@ -1430,6 +1610,11 @@ select {
 
 .page-publication .article-wrap li + li {
   margin-top: 0;
+}
+
+/* the next section's h2 rule closes the list; avoid a double line */
+.page-publication .article-wrap li:last-child {
+  border-bottom: 0;
 }
 
 .page-publication .article-wrap li p {
@@ -1470,12 +1655,12 @@ select {
 
 .site-footer__title {
   margin: 0.6rem 0 0;
-  max-width: 30ch;
+  max-width: 34ch;
   color: var(--color-ink);
   font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 3.6vw, 2.5rem);
-  font-weight: 400;
-  line-height: 1.08;
+  font-size: clamp(1.5rem, 2.8vw, 2.05rem);
+  font-weight: 450;
+  line-height: 1.15;
 }
 
 .site-footer__mail {
@@ -1539,7 +1724,7 @@ select {
   }
 
   .focus-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-feature {
@@ -1565,7 +1750,7 @@ select {
     border: 1px solid var(--color-line);
     border-radius: var(--radius);
     background: var(--color-surface);
-    box-shadow: 0 18px 40px -20px rgba(21, 23, 28, 0.3);
+    box-shadow: 0 18px 40px -20px var(--color-shadow);
   }
 
   .site-nav__list {
@@ -1611,6 +1796,15 @@ select {
 
   .desk-index {
     display: block;
+  }
+
+  .desk-selected {
+    display: block;
+    margin: 0 0 1.25rem;
+  }
+
+  .focus-list {
+    grid-template-columns: 1fr;
   }
 
   .home-section__hint--desk {
@@ -1659,6 +1853,18 @@ select {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  /* no hover lifts or nudges either */
+  .work-card:hover,
+  .desk-popup,
+  .desk-scene-wrap.show-popup .desk-popup,
+  .work-card:hover .work-card__link::after {
+    transform: none;
+  }
+
+  .laptop-screen__cursor {
+    animation: none;
   }
 
   *,

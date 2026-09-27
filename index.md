@@ -34,7 +34,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <svg class="portrait__frame" viewBox="0 0 100 125" preserveAspectRatio="none" aria-hidden="true">
       <path d="M4 1.5 Q50 0.4 96.5 1.8 Q99 2 98.8 5 Q99.6 62 98.6 120 Q98.4 123.4 95 123.3 Q50 124.6 4.6 123.2 Q1.2 123 1.3 119.5 Q0.5 62 1.2 4.8 Q1.3 1.6 4 1.5" />
     </svg>
-    <img src="/images/xuanyu_web.jpg" alt="Portrait of Xuanyu Zhou" width="494" height="791" decoding="async" fetchpriority="high">
+    <picture><source type="image/webp" srcset="/assets/responsive/xuanyu_web-abcbd8eab217-320.webp 320w, /assets/responsive/xuanyu_web-abcbd8eab217-480.webp 480w, /assets/responsive/xuanyu_web-abcbd8eab217-494.webp 494w" sizes="(max-width: 900px) 200px, 300px"><img src="/images/xuanyu_web.jpg" alt="Portrait of Xuanyu Zhou" width="494" height="791" fetchpriority="high" decoding="async"></picture>
   </figure>
 </section>
 
@@ -46,18 +46,27 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
   <ul class="focus-list">
     <li>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="8" cy="38" r="3"/><circle cx="40" cy="34" r="3"/><path d="M10 35 Q22 8 38 31" stroke-dasharray="2.5 3.5"/><path d="M21 17 L29 14 L27 18 L31 21 L27 21 L24 24 L24 20 L20 19 Z"/><path d="M4 42 H44"/></svg>
       <span class="focus-list__num">01</span>
-      <h3>Built environment &amp; equity</h3>
-      <p>Green space, heat exposure, and street-level conditions across communities, read from satellite imagery, LiDAR, and street view.</p>
-    </li>
-    <li>
-      <span class="focus-list__num">02</span>
-      <h3>Mobility systems</h3>
+      <h3><a href="/urban-air-mobility/">Mobility systems</a></h3>
       <p>Simulation-first frameworks for urban air mobility and shared mobility, tested against real metropolitan demand.</p>
     </li>
     <li>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 42 V14 H15 V42"/><path d="M33 42 V19 H42 V42"/><path d="M9 20 H12 M9 26 H12 M9 32 H12 M36 25 H39 M36 31 H39"/><path d="M15 34 Q24 18 33 34" stroke-dasharray="2.5 3"/><circle cx="24" cy="10" r="3.2"/><path d="M4 42 H44"/></svg>
+      <span class="focus-list__num">02</span>
+      <h3><a href="/sky-view-factor/">Street microclimate</a></h3>
+      <p>Pedestrian-scale sky view factor, estimated from LiDAR and street-level imagery and mapped along San Francisco&rsquo;s sidewalks.</p>
+    </li>
+    <li>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 40 V28"/><path d="M18 29 C9 29 8 17 14 15 C15 9 23 9 24 15 C30 17 28 29 18 29 Z"/><path d="M28 36 H42 M30 36 V40 M40 36 V40 M28 32 H42"/><path d="M4 40 H44"/></svg>
       <span class="focus-list__num">03</span>
-      <h3>Resilience &amp; health</h3>
+      <h3><a href="/urban-green-space/">Green space &amp; equity</a></h3>
+      <p>Who has green space and who actually uses it, tracked with satellite imagery and visitation data in shrinking cities.</p>
+    </li>
+    <li>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40 V18 L17 11 L26 18 V40"/><path d="M13 24 H15 M19 24 H21 M13 31 H15 M19 31 H21"/><path d="M24 29 H29 L32 22 L36 36 L39 29 H44"/><path d="M4 40 H44"/></svg>
+      <span class="focus-list__num">04</span>
+      <h3><a href="/urban-built-environment/">Resilience &amp; health</a></h3>
       <p>Geospatial machine learning that links urban form to post-pandemic recovery, everyday vitality, and public health.</p>
     </li>
   </ul>
@@ -66,13 +75,16 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 <section class="home-section" aria-labelledby="desk-title">
   <div class="home-section__head">
     <h2 class="home-section__title" id="desk-title">On my desk</h2>
-    <p class="home-section__hint home-section__hint--desk">Everything here is a link &mdash; hover the laptop for selected projects.</p>
+    <p class="home-section__hint home-section__hint--desk">
+      <span class="hint-hover">Everything here is a link &mdash; hover the laptop for selected work.</span>
+      <span class="hint-touch">Everything here is a link &mdash; tap any object to open it.</span>
+    </p>
   </div>
 
 <div class="desk" role="navigation" aria-label="Site sections drawn as objects on a desk">
   <div class="desk-board">
   <div class="desk-scene-wrap">
-    <svg class="desk-scene" viewBox="60 60 1080 540" role="presentation">
+    <svg class="desk-scene" viewBox="60 74 1080 412" role="presentation">
 
       <!-- ==== the desk itself (back edge gaps where laptop & plant sit) ==== -->
       <g class="scene-desk">
@@ -83,9 +95,8 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
         <path pathLength="1" d="M1105 394 Q600 401 95 400" />
         <path pathLength="1" d="M95 400 L210 168" />
         <path pathLength="1" d="M95 400 L95 436 Q600 442 1105 436 L1105 394" />
-        <path pathLength="1" d="M115 438 L117 588 M138 438 L139 588" />
-        <path pathLength="1" d="M1062 437 L1063 588 M1085 437 L1086 588" />
-        <path pathLength="1" d="M139 536 L1062 532 M139 547 L1062 543" />
+        <path pathLength="1" d="M115 438 L116 486 M138 438 L138.5 486" />
+        <path pathLength="1" d="M1062 437 L1062.5 486 M1085 437 L1085.5 486" />
       </g>
 
       <!-- ==== deco: plant (back-right, clear of the corner), bird, ring, sparkle ==== -->
@@ -112,20 +123,20 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
 
       <path class="scene-sparkle" d="M700 78 L702 86 L710 88 L702 90 L700 98 L698 90 L690 88 L698 86 Z" aria-hidden="true" />
 
-      <!-- ==== fig.05 · CV folder ==== -->
-      <a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener" class="scene-link" aria-label="Download CV (PDF)">
+      <!-- ==== fig.01 · CV folder ==== -->
+      <a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener" class="scene-link" aria-label="cv fig.01 CV, PDF download">
         <rect class="hit" x="172" y="170" width="150" height="125" />
+        <text class="obj-label" x="246" y="192"><tspan>cv</tspan> <tspan class="obj-fig">fig.01</tspan></text>
         <g class="scene-obj" transform="translate(190,200)">
           <path pathLength="1" d="M4 26 Q4 20 10 20 L38 18 Q42 18 44 22 L47 26 L104 23 Q109 23 109.5 28 L112 74 Q112 79 107 79.3 L10 83 Q5 83.2 4.8 78 Z" />
           <path pathLength="1" d="M12 19 L84 16" />
           <circle pathLength="1" class="ink" cx="94" cy="66" r="5.5" />
-          <text class="svg-hand" x="40" y="60" font-size="22">CV</text>
+          <text class="svg-hand" aria-hidden="true" x="40" y="60" font-size="22">CV</text>
         </g>
-        <text class="obj-label" x="246" y="192"><tspan>cv</tspan><tspan class="obj-fig" dx="7">fig.05</tspan></text>
       </a>
 
-      <!-- ==== fig.01 · laptop → projects ==== -->
-      <a href="/projects/" class="scene-link scene-link--projects" aria-label="Research projects">
+      <!-- ==== fig.02 · laptop → projects ==== -->
+      <a href="/projects/" class="scene-link scene-link--projects" aria-label="projects fig.02: research projects">
         <rect class="hit" x="305" y="98" width="300" height="228" />
         <g class="scene-obj" transform="translate(342,138)">
           <path pathLength="1" d="M10 8 Q10 2 16 2 L206 0 Q212 0 212.5 6 L215 132 L8 135 Z" />
@@ -136,11 +147,11 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <path pathLength="1" d="M92 162 L136 160.5 L138 172 L94 173.5 Z" />
           <circle pathLength="1" class="ink" cx="-12" cy="170" r="5.5" />
         </g>
-        <text class="obj-label" x="468" y="122"><tspan>projects</tspan><tspan class="obj-fig" dx="7">fig.01</tspan></text>
+        <text class="obj-label" x="468" y="122"><tspan>projects</tspan> <tspan class="obj-fig">fig.02</tspan></text>
       </a>
 
-      <!-- ==== fig.02 · paper stack → publication ==== -->
-      <a href="/publication/" class="scene-link" aria-label="Publications">
+      <!-- ==== fig.03 · paper stack → publications ==== -->
+      <a href="/publication/" class="scene-link" aria-label="publications fig.03: publications page">
         <rect class="hit" x="612" y="182" width="155" height="132" />
         <g class="scene-obj" transform="translate(630,195)">
           <path pathLength="1" d="M8 14 L92 8 L100 78 L16 84 Z" />
@@ -149,13 +160,13 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <path pathLength="1" d="M22 38 L84 33.5" />
           <path pathLength="1" d="M24 50 L86 45.5" />
           <path pathLength="1" class="ink-stroke" d="M30 74 Q42 62 52 66 Q62 70 70 60" />
-          <text class="svg-hand" x="76" y="26" font-size="17">&dagger;</text>
+          <text class="svg-hand" aria-hidden="true" x="76" y="26" font-size="17">&dagger;</text>
         </g>
-        <text class="obj-label" x="688" y="306"><tspan>publication</tspan><tspan class="obj-fig" dx="7">fig.02</tspan></text>
+        <text class="obj-label" x="688" y="306"><tspan>publications</tspan> <tspan class="obj-fig">fig.03</tspan></text>
       </a>
 
-      <!-- ==== fig.03 · medal & certificate → awards ==== -->
-      <a href="/awards/" class="scene-link" aria-label="Awards">
+      <!-- ==== fig.04 · medal & certificate → awards ==== -->
+      <a href="/awards/" class="scene-link" aria-label="awards fig.04: awards page">
         <rect class="hit" x="758" y="178" width="158" height="140" />
         <g class="scene-obj" transform="translate(775,190)">
           <path pathLength="1" d="M0 8 L96 3 L101 62 L6 68 Z" />
@@ -166,7 +177,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <circle pathLength="1" cx="88" cy="62" r="15" />
           <path pathLength="1" class="ink" d="M88 53 L90.7 58.4 L96.5 59.2 L92.3 63.3 L93.4 69 L88 66.3 L82.6 69 L83.7 63.3 L79.5 59.2 L85.3 58.4 Z" />
         </g>
-        <text class="obj-label" x="858" y="306"><tspan>awards</tspan><tspan class="obj-fig" dx="7">fig.03</tspan></text>
+        <text class="obj-label" x="858" y="306"><tspan>awards</tspan> <tspan class="obj-fig">fig.04</tspan></text>
       </a>
 
       <!-- ==== deco: teacup (was the chinese-version link; now just set dressing) ==== -->
@@ -180,8 +191,8 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
         <path pathLength="1" d="M56 33 Q61 24 55 16" />
       </g>
 
-      <!-- ==== fig.04 · blueprint roll → courseworks ==== -->
-      <a href="/courseworks/" class="scene-link" aria-label="Course works">
+      <!-- ==== fig.05 · blueprint roll → coursework ==== -->
+      <a href="/courseworks/" class="scene-link" aria-label="coursework fig.05: coursework page">
         <rect class="hit" x="325" y="305" width="170" height="130" />
         <g class="scene-obj" transform="translate(340,318)">
           <path pathLength="1" d="M0 14 L112 6 L118 64 L8 72 Z" />
@@ -192,11 +203,11 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <path pathLength="1" class="ink" d="M76 44 Q88 40 93 47 Q96 54 87 57 Q77 59 74 52 Z" />
           <path pathLength="1" d="M98 14 L98 24 M94 18 L98 14 L102 18" />
         </g>
-        <text class="obj-label" x="426" y="424"><tspan>courseworks</tspan><tspan class="obj-fig" dx="7">fig.04</tspan></text>
+        <text class="obj-label" x="426" y="424"><tspan>coursework</tspan> <tspan class="obj-fig">fig.05</tspan></text>
       </a>
 
-      <!-- ==== fig.07 · envelope → email ==== -->
-      <a href="mailto:xuanyuz@design.upenn.edu" class="scene-link" aria-label="Email Xuanyu">
+      <!-- ==== fig.06 · envelope → email ==== -->
+      <!--email_off--><a href="mailto:xuanyuz@design.upenn.edu" class="scene-link" aria-label="write to me fig.06: email Xuanyu">
         <rect class="hit" x="558" y="286" width="145" height="148" />
         <g class="scene-obj" transform="translate(575,322)">
           <path pathLength="1" d="M0 8 L106 4 L110 62 Q110 66 106 66.2 L4 70 Q0.4 70 0.3 66 Z" />
@@ -209,11 +220,11 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
             <circle pathLength="1" class="ink" cx="53" cy="-8" r="4.5" />
           </g>
         </g>
-        <text class="obj-label" x="630" y="424"><tspan>write to me</tspan><tspan class="obj-fig" dx="7">fig.07</tspan></text>
-      </a>
+        <text class="obj-label" x="630" y="424"><tspan>write to me</tspan> <tspan class="obj-fig">fig.06</tspan></text>
+      </a><!--/email_off-->
 
-      <!-- ==== fig.06 · portfolio tube ==== -->
-      <a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener" class="scene-link" aria-label="Digital portfolio (PDF)">
+      <!-- ==== fig.07 · portfolio tube ==== -->
+      <a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener" class="scene-link" aria-label="portfolio fig.07: digital portfolio, PDF">
         <rect class="hit" x="722" y="312" width="170" height="122" />
         <g class="scene-obj" transform="translate(735,330)">
           <path pathLength="1" d="M18 6 L142 0 Q150 0 150.5 8 L153 44 Q153.5 52 145 52.5 L24 58" />
@@ -223,11 +234,11 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <path pathLength="1" d="M62 4 L62 -4 Q62 -9 67 -9 L97 -10.5 Q102 -11 102 -6 L102 2" />
           <circle pathLength="1" class="ink" cx="122" cy="28" r="6" />
         </g>
-        <text class="obj-label" x="812" y="424"><tspan>portfolio</tspan><tspan class="obj-fig" dx="7">fig.06</tspan></text>
+        <text class="obj-label" x="812" y="424"><tspan>portfolio</tspan> <tspan class="obj-fig">fig.07</tspan></text>
       </a>
 
-      <!-- ==== fig.09 · hobbies: gamepad + shuttlecock ==== -->
-      <a href="/hobbies/" class="scene-link" aria-label="Hobbies">
+      <!-- ==== fig.08 · hobbies: gamepad + shuttlecock ==== -->
+      <a href="/hobbies/" class="scene-link" aria-label="hobbies fig.08: hobbies page">
         <rect class="hit" x="925" y="315" width="145" height="119" />
         <g class="scene-obj" transform="translate(940,330)">
           <path pathLength="1" d="M6 20 Q4 6 18 5 L74 1.5 Q88 0.5 90 13 Q94 34 85 38 Q77 42 72 34 L66 26 L36 28.5 L32 38 Q28 46 19 42 Q8 37 6 20 Z" />
@@ -237,7 +248,7 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
           <circle pathLength="1" cx="112" cy="42" r="4.5" />
           <path pathLength="1" d="M109 39 L101 26 M112 38 L109 24 M115 39 L117 25" />
         </g>
-        <text class="obj-label" x="998" y="424"><tspan>hobbies</tspan><tspan class="obj-fig" dx="7">fig.08</tspan></text>
+        <text class="obj-label" x="998" y="424"><tspan>hobbies</tspan> <tspan class="obj-fig">fig.08</tspan></text>
       </a>
 
     </svg>
@@ -246,25 +257,37 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     <span class="laptop-screen" aria-hidden="true"><span class="laptop-screen__prompt">$</span><span class="laptop-screen__text"></span><span class="laptop-screen__cursor"></span></span>
 
     <!-- hover popup: selected projects -->
-    <div class="desk-popup" role="note">
+    <div class="desk-popup" role="group" aria-label="Selected work">
       <p>selected work &rarr;</p>
       <a href="/urban-air-mobility/">urban air mobility</a>
+      <a href="/sky-view-factor/">sky view factor</a>
       <a href="/urban-green-space/">urban green space</a>
       <a href="/urban-built-environment/">urban built environment</a>
     </div>
   </div>
   </div>
 
+  <!-- touch screens can't hover the laptop, so the popup's links are shown inline -->
+  <nav class="desk-selected" aria-label="Selected work">
+    <p>selected work &rarr;</p>
+    <ul>
+      <li><a href="/urban-air-mobility/">urban air mobility</a></li>
+      <li><a href="/sky-view-factor/">sky view factor</a></li>
+      <li><a href="/urban-green-space/">urban green space</a></li>
+      <li><a href="/urban-built-environment/">urban built environment</a></li>
+    </ul>
+  </nav>
+
   <!-- compact index shown on small screens instead of the scene -->
   <div class="desk-index">
     <ul>
-      <li><a href="/projects/"><span>projects</span> <span class="index-fig">fig.01</span></a></li>
-      <li><a href="/publication/"><span>publication</span> <span class="index-fig">fig.02</span></a></li>
-      <li><a href="/awards/"><span>awards</span> <span class="index-fig">fig.03</span></a></li>
-      <li><a href="/courseworks/"><span>courseworks</span> <span class="index-fig">fig.04</span></a></li>
-      <li><a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener"><span>cv</span> <span class="index-fig">fig.05</span></a></li>
-      <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener"><span>portfolio</span> <span class="index-fig">fig.06</span></a></li>
-      <li><a href="mailto:xuanyuz@design.upenn.edu"><span>write to me</span> <span class="index-fig">fig.07</span></a></li>
+      <li><a href="https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf" target="_blank" rel="noopener"><span>cv</span> <span class="index-fig">fig.01</span></a></li>
+      <li><a href="/projects/"><span>projects</span> <span class="index-fig">fig.02</span></a></li>
+      <li><a href="/publication/"><span>publications</span> <span class="index-fig">fig.03</span></a></li>
+      <li><a href="/awards/"><span>awards</span> <span class="index-fig">fig.04</span></a></li>
+      <li><a href="/courseworks/"><span>coursework</span> <span class="index-fig">fig.05</span></a></li>
+      <!--email_off--><li><a href="mailto:xuanyuz@design.upenn.edu"><span>write to me</span> <span class="index-fig">fig.06</span></a></li><!--/email_off-->
+      <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener"><span>portfolio</span> <span class="index-fig">fig.07</span></a></li>
       <li><a href="/hobbies/"><span>hobbies</span> <span class="index-fig">fig.08</span></a></li>
     </ul>
   </div>
@@ -283,11 +306,11 @@ description: Urban analytics researcher exploring equity, mobility, resilience, 
     </li>
     <li>
       <time datetime="2026-07">Jul 2026</time>
-      <p>Submitted a systematic review of 1,446 planning studies to <em>Landscape and Urban Planning</em> as corresponding author.</p>
+      <p>Submitted a <a href="/publication/#journal-papers">systematic review</a> of 1,446 planning studies to <em>Landscape and Urban Planning</em> as corresponding author.</p>
     </li>
     <li>
       <time datetime="2026-07">Jul 2026</time>
-      <p>Presented PedSVF: Multimodal Aerial&ndash;Street Grounding for Pedestrian-Scale Sky View Factor Estimation at Geoinformatics 2026, National University of Singapore. The paper is under review at ACM SIGSPATIAL 2026.</p>
+      <p>Presented <a href="/sky-view-factor/">PedSVF: Multimodal Aerial&ndash;Street Grounding for Pedestrian-Scale Sky View Factor Estimation</a> at Geoinformatics 2026, National University of Singapore.</p>
     </li>
     <li>
       <time datetime="2026-06">Jun 2026</time>

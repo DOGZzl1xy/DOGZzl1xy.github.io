@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /publication/index.html
-title: Publication
+title: Publications
+description: "Papers by Xuanyu Zhou on urban air mobility, street-level sensing, green space, and the built environment and health, plus a thesis on pluvial flood risk in Hangzhou."
 body_class: page-publication
 ---
 
@@ -26,15 +27,13 @@ body_class: page-publication
 
 - <span class="pub-title"><a href="https://arxiv.org/abs/2510.04186v1" target="_blank" rel="noopener">From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility</a></span><br>Xuan Jiang~, **Xuanyu Zhou**, Yibo Zhao, Shangqing Cao, Haoze He, Jinhua Zhao, Mark Hansen, Raja Sengupta<br>Transportation Research Board Annual Meeting<br>Washington, D.C., January 2026<br>
 
-- <span class="pub-title">PedSVF: Multimodal Aerial-Street Grounding for Pedestrian-Scale Sky View Factor Estimation</span><br>Yuye Zhou, **Xuanyu Zhou**, Julian Stangl, Peimin Chen, Maryam Hosseini, Lu Liang~<br>34th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL 2026, Under Review)<br>
-
 - <span class="pub-title">Perceiving the Street from Where People Stand: Pedestrian-Centered Multi-View-Factor Mapping via Street View Imagery and Monocular 3D Reconstruction</span><br>Yuye Zhou, **Xuanyu Zhou**, Lu Liang~<br>33rd International Conference on Geoinformatics (Geoinformatics 2026)<br>National University of Singapore, Singapore, July 2026<br>
   
 - <span class="pub-title">Greening the Gap: Examining Urban Greenery Equity in Shrinking Cities</span><br>**Xuanyu Zhou**, Mingze Chen~<br>Association of Collegiate Schools of Planning Annual Meeting<br>Seattle, USA, November 2024<br>
 
 ## Degree Thesis
 
-**Title: Study on Urban Pluvial Flood Risk and Planning Response in Hangzhou under Shared Socioeconomic Pathways**
+**Title: Study on Urban Pluvial Flood Risk and Planning Response in Hangzhou under Shared Socioeconomic Pathways**<br>
 Supervisor: <a href="https://person.zju.edu.cn/en/yonghuali" target="_blank" rel="noopener">Prof. Yonghua Li</a>
 
 Using Hangzhou as a case study, this thesis asks how urban pluvial flood risk evolves under four Shared Socioeconomic Pathway (SSP) climate scenarios, and whether current planning measures can still mitigate flooding under future climates. Bias-corrected CMIP6 precipitation (BCC-CSM2-MR, corrected with Empirical Quantile Mapping) was converted into design storms through IDF curve fitting and the Chicago method, then used to drive a two-dimensional HEC-RAS hydraulic model across nine combined climate-planning scenarios. Mean annual maximum daily precipitation rises 33%-49% relative to the baseline in all four scenarios. Planning measures cut the total inundated area by about half and clearly compress deep-water zones, but they do little for shallow inundation and shift risk into some localized areas. Exposure also differs by land use: parks take the deepest water while serving as stormwater retention, residential land mostly sees widespread shallow flooding, and transportation hubs show node-level vulnerability.
