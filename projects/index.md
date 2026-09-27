@@ -42,7 +42,7 @@ Four directions I keep coming back to: mobility simulation, street-level microcl
       <p class="work-card__meta"><span>ACSP 2024 &middot; Seattle</span><span>Role &middot; first author, led the study end to end</span></p>
       <a href="/urban-green-space/" class="work-card__link">View project</a>
     </div>
-    <picture><source type="image/webp" srcset="/assets/responsive/framework-ff19ec617844-320.webp 320w, /assets/responsive/framework-ff19ec617844-480.webp 480w, /assets/responsive/framework-ff19ec617844-568.webp 568w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/mypaper/urban-green-space/framework.png" alt="Urban green space research framework" loading="lazy" decoding="async" width="568" height="240"></picture>
+    <picture><source type="image/webp" srcset="/assets/responsive/framework_full-f71a44743a72-320.webp 320w, /assets/responsive/framework_full-f71a44743a72-480.webp 480w, /assets/responsive/framework_full-f71a44743a72-640.webp 640w, /assets/responsive/framework_full-f71a44743a72-960.webp 960w, /assets/responsive/framework_full-f71a44743a72-1280.webp 1280w, /assets/responsive/framework_full-f71a44743a72-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/mypaper/urban-green-space/framework_full.png" alt="Urban green space research framework" loading="lazy" decoding="async" width="3518" height="1488"></picture>
   </article>
 
   <article class="work-card">

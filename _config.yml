@@ -69,6 +69,7 @@ exclude:                         # Folders/files ignored during build
   - "tmp"
   - "vendor"
   - "portfolio/SVF/DATA_2022_2024_final.csv"
+  - "portfolio/SVF/svf-points.min.json"   # source for svf-points.v2.json (scripts/pack_svf_points.py)
   - "README.md"
   - "LICENSE"
   - "scripts"

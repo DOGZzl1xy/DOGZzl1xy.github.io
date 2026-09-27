@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <meta name="description" content="Interactive pedestrian-scale Sky View Factor comparison for San Francisco using LiDAR, street-view imagery, and generated point clouds.">
-    <title>Sky View Factor</title>
+    <title>Sky View Factor &#8211; Xuanyu Zhou</title>
+    <link rel="canonical" href="https://xuanyuzhou.org/portfolio/SVF/">
+    <link rel="icon" href="/images/fav.ico" sizes="any">
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- basemap tiles come from OpenStreetMap; connect early -->
+    <link rel="preconnect" href="https://tile.openstreetmap.org">
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="svf-points.v2.json" as="fetch" type="application/json" crossorigin>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css?v=4">
+    <!-- Leaflet 1.9.4, self-hosted (same files and hashes as the unpkg build) -->
+    <link rel="stylesheet" href="vendor/leaflet.css">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 
 <body>
@@ -36,42 +41,39 @@
                 <p id="data-status" role="status" aria-live="polite">Loading map data…</p>
             </div>
 
-            <div id="info-panel">
-                <h3>Project Info</h3>
+            <section id="info-panel">
+                <h2>Project Info</h2>
                 <p>
                     Traditional SVF calculation often uses Google Street View imagery captured from the roadway.
                     We introduce a human-centric method that moves the measurement location to the sidewalk.
                 </p>
-                <div id="project-description">
-                    <!-- Project description will go here -->
-                </div>
                 <hr>
-                <div class="legend-item">
-                    <span class="color-box" style="background: #c0392b;"></span> Positive difference (red)
+                <div class="legend" id="legend-difference">
+                    <div class="legend-item"><span class="color-box color-box--pos"></span> Positive difference (red)</div>
+                    <div class="legend-item"><span class="color-box color-box--neg"></span> Negative difference (blue)</div>
                 </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background: #2e6da4;"></span> Negative difference (blue)
+                <div class="legend" id="legend-single">
+                    <div class="legend-item">
+                        <span class="color-box color-box--low"></span>&rarr;<span class="color-box color-box--high"></span>
+                        Single sources: low &rarr; high SVF
+                    </div>
                 </div>
-                <div class="legend-item">
-                    <span class="color-box" style="background: #bdd0e4;"></span>&rarr;<span class="color-box" style="background: #21496f; margin-left: 10px;"></span> Single sources: low &rarr; high SVF
-                </div>
-                <p class="instruction">Hover over points to see details.</p>
-            </div>
+                <p class="instruction">
+                    <span class="instruction--hover">Hover over points to see details.</span>
+                    <span class="instruction--touch">Tap a point to see details.</span>
+                </p>
+            </section>
         </div>
 
         <div id="map"></div>
     </main>
 
-    <div id="tooltip" class="hidden">
+    <div id="tooltip" class="hidden" role="status">
         <div id="tooltip-content"></div>
     </div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-    <!-- Main Application -->
-    <script src="main.js?v=8"></script>
+    <script src="vendor/leaflet.js" defer></script>
+    <script src="main.js?v=9" defer></script>
 </body>
 
 </html>
