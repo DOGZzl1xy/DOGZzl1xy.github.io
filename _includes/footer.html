@@ -1,18 +1,23 @@
 <footer class="site-footer">
   <div>
+    {% if is_zh %}
+    <span class="eyebrow">联系我</span>
+    <p class="site-footer__title">欢迎在城市量化分析与 Urban AI 方向的研究合作和工作机会上与我联系。</p>
+    {% else %}
     <span class="eyebrow">Get in touch</span>
     <p class="site-footer__title">Open to research collaborations and roles in urban analytics and Urban AI.</p>
+    {% endif %}
     <!--email_off--><a class="site-footer__mail" href="mailto:xuanyuz@design.upenn.edu">xuanyuz@design.upenn.edu</a><!--/email_off-->
   </div>
 
   <ul class="site-footer__links">
-    {% if site.owner.cv %}<li><a href="{{ site.owner.cv }}" target="_blank" rel="noopener">CV &#8599;</a></li>{% endif %}
+    {% if cv_url %}<li><a href="{{ cv_url }}" target="_blank" rel="noopener">{% if is_zh %}简历{% else %}CV{% endif %} &#8599;</a></li>{% endif %}
     {% if site.owner.scholar %}<li><a href="{{ site.owner.scholar }}" target="_blank" rel="noopener">Google Scholar &#8599;</a></li>{% endif %}
     {% if site.owner.github %}<li><a href="https://github.com/{{ site.owner.github }}" target="_blank" rel="noopener">GitHub &#8599;</a></li>{% endif %}
     {% if site.owner.ORCID %}<li><a href="{{ site.owner.ORCID }}" target="_blank" rel="noopener">ORCID &#8599;</a></li>{% endif %}
-    <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener">Portfolio &#8599;</a></li>
-    <li><a href="/hobbies/">Hobbies</a></li>
+    <li><a href="https://personal-web-tangyuan.oss-cn-hangzhou.aliyuncs.com/Portfolio_Xuanyu_Zhou.pdf" target="_blank" rel="noopener">{% if is_zh %}作品集{% else %}Portfolio{% endif %} &#8599;</a></li>
+    <li><a href="{{ lang_base }}/hobbies/">{% if is_zh %}兴趣爱好{% else %}Hobbies{% endif %}</a></li>
   </ul>
 
-  <p class="site-footer__meta">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}</p>
+  <p class="site-footer__meta">&copy; {{ site.time | date: '%Y' }} {% if is_zh %}{{ site.owner.name_zh }}{% else %}{{ site.owner.name }}{% endif %}</p>
 </footer>

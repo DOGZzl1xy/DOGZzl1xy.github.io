@@ -4,6 +4,7 @@
 title: Xuanyu Zhou  # Main site title (appears in browser tab & RSS)
 tagline: Urban analytics, equity, mobility, and AI for planning.
 description: Xuanyu Zhou is an urban analytics researcher working across equity, mobility, resilience, remote sensing, and machine learning.
+description_zh: 周轩宇，城市量化研究者，关注城市公平、交通出行、城市韧性、遥感与机器学习。
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
@@ -16,7 +17,9 @@ owner:
   name: Xuanyu Zhou
   affiliation: University of Pennsylvania
   avatar: fav.png
+  name_zh: 周轩宇
   cv: https://xuanyuzhou.org/file/Xuanyu_Zhou_CV.pdf
+  cv_zh:      # Chinese CV PDF; while empty, Chinese pages show no CV link
   github: DOGZzl1xy
   scholar: https://scholar.google.com/citations?user=nK7_DHMAAAAJ
   ORCID: https://orcid.org/0009-0004-8534-0211
@@ -24,18 +27,23 @@ owner:
 
 # --------------------------------------------------
 #  TOP NAVIGATION BAR
-#  `external: true` opens the link in a new tab.
+#  Chinese pages use `title_zh` and the same url under /cn/.
 # --------------------------------------------------
 links:
   - title: About Me
+    title_zh: 有关于我
     url: /
   - title: Projects
+    title_zh: 项目
     url: /projects/
   - title: Publications
+    title_zh: 论文
     url: /publication/
   - title: Awards
+    title_zh: 奖项
     url: /awards/
   - title: Coursework
+    title_zh: 课程作业
     url: /courseworks/
 
 
@@ -85,9 +93,14 @@ plugins:
 
 # --------------------------------------------------
 #  FRONT MATTER DEFAULTS
-#  (keeps the unlinked archive page out of sitemap.xml)
+#  (keeps the unlinked archive page out of sitemap.xml;
+#   everything under cn/ is the Chinese mirror of the same path)
 # --------------------------------------------------
 defaults:
+  - scope:
+      path: "cn"
+    values:
+      lang: zh
   - scope:
       path: "along-the-way.html"
     values:

@@ -1,5 +1,6 @@
+{%- include lang.html -%}
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="{% if is_zh %}zh-CN{% else %}en{% endif %}">
 <head>
 {% include head.html %}
 </head>
