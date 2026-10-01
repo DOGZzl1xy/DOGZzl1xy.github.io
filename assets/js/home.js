@@ -52,7 +52,13 @@
   /* ---- typewriter on the laptop screen ------------------------------ */
   var screenText = document.querySelector(".laptop-screen__text");
   if (screenText) {
-    var phrases = [
+    var phrases = document.documentElement.lang === "zh-CN" ? [
+      "绘制城市",
+      "空中交通仿真",
+      "绿地公平",
+      "行人尺度 svf",
+      "大模型 x 规划"
+    ] : [
       "mapping cities",
       "uam simulation",
       "green space equity",

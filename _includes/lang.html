@@ -1,0 +1,33 @@
+{%- comment -%}
+  Language context for one page. Chinese pages live under /cn/ at the same
+  path as their English twin, so the counterpart URL is just /cn added or
+  removed; when no twin exists, the switcher falls back to that language's
+  homepage. Sets: is_zh, lang_base, site_name, cv_url, alt_page, alt_href.
+{%- endcomment -%}
+{%- assign is_zh = false -%}
+{%- if page.lang == 'zh' -%}{%- assign is_zh = true -%}{%- endif -%}
+{%- assign this_url = page.url | remove: 'index.html' -%}
+{%- if is_zh -%}
+  {%- assign lang_base = '/cn' -%}
+  {%- assign site_name = site.owner.name_zh -%}
+  {%- assign cv_url = site.owner.cv_zh -%}
+  {%- assign alt_url = this_url | remove_first: '/cn' -%}
+  {%- assign alt_home = '/' -%}
+{%- else -%}
+  {%- assign lang_base = '' -%}
+  {%- assign site_name = site.title -%}
+  {%- assign cv_url = site.owner.cv -%}
+  {%- assign alt_url = this_url | prepend: '/cn' -%}
+  {%- assign alt_home = '/cn/' -%}
+{%- endif -%}
+{%- comment -%} permalinks mix "/x/" and "/x/index.html", so compare without index.html {%- endcomment -%}
+{%- assign alt_page = nil -%}
+{%- for p in site.pages -%}
+  {%- assign p_url = p.url | remove: 'index.html' -%}
+  {%- if p_url == alt_url -%}{%- assign alt_page = p -%}{%- break -%}{%- endif -%}
+{%- endfor -%}
+{%- if alt_page -%}
+  {%- assign alt_href = alt_url -%}
+{%- else -%}
+  {%- assign alt_href = alt_home -%}
+{%- endif -%}

@@ -1,19 +1,23 @@
 <meta charset="utf-8">
-{% capture page_title %}{% if page.title and page.title != site.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}{% endcapture %}
-{% assign page_description = page.description | default: site.description | strip_newlines | strip %}
+{% capture page_title %}{% if page.title and page.title != site.title and page.title != site_name %}{{ page.title }} &#8211; {% endif %}{{ site_name }}{% endcapture %}
+{% if is_zh %}{% assign default_description = site.description_zh %}{% else %}{% assign default_description = site.description %}{% endif %}
+{% assign page_description = page.description | default: default_description | strip_newlines | strip %}
 {% comment %} one URL for canonical and og:url: absolute, no trailing index.html {% endcomment %}
 {% assign canonical = page.url | remove: 'index.html' | prepend: site.url %}
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_description }}">
 {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 <link rel="canonical" href="{{ canonical }}">
-<!-- Open Graph meta -->
-<meta property="og:locale" content="en_US">
+{% if alt_page %}{% assign alt_canonical = alt_href | prepend: site.url %}{% if is_zh %}{% assign en_href = alt_canonical %}{% assign zh_href = canonical %}{% else %}{% assign en_href = canonical %}{% assign zh_href = alt_canonical %}{% endif %}<link rel="alternate" hreflang="en" href="{{ en_href }}">
+<link rel="alternate" hreflang="zh-CN" href="{{ zh_href }}">
+<link rel="alternate" hreflang="x-default" href="{{ en_href }}">
+{% endif %}<!-- Open Graph meta -->
+<meta property="og:locale" content="{% if is_zh %}zh_CN{% else %}en_US{% endif %}">
 <meta property="og:type" content="{% if page.layout == 'home' %}profile{% else %}website{% endif %}">
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:description" content="{{ page_description }}">
 <meta property="og:url" content="{{ canonical }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ site_name }}">
 <meta property="og:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/xuanyu_web.jpg{% endif %}">
 <meta name="twitter:card" content="summary">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +37,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": {{ site.owner.name | jsonify }},
+  "alternateName": {{ site.owner.name_zh | jsonify }},
   "url": {{ site.url | append: '/' | jsonify }},
   "image": {{ site.url | append: '/images/xuanyu_web.jpg' | jsonify }},
   "affiliation": {
