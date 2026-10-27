@@ -2,15 +2,24 @@
 layout: page
 permalink: /courseworks/index.html
 title: Coursework
-description: "Studio and course projects by Xuanyu Zhou from Zhejiang University and UC Berkeley, from GIS analysis of bike-share equity to landscape design and regulatory planning."
+description: "Studio and course projects by Xuanyu Zhou from Penn, UC Berkeley, and Zhejiang University, from shade-aware walking routes and GIS analysis of bike-share equity to landscape design and regulatory planning."
 body_class: page-wide
 ---
 
 # Coursework
 
-Studio and course projects from Zhejiang University and UC Berkeley, from GIS analysis to landscape and regulatory planning.
+Studio and course projects from Penn, UC Berkeley, and Zhejiang University, from geospatial data science and GIS analysis to landscape and regulatory planning.
 
 <div class="card-grid">
+
+  <article class="work-card">
+    <div class="work-card__body">
+      <span class="work-card__tag">MUSA 5500 &middot; University of Pennsylvania</span>
+      <h2 class="work-card__title">Shade or Shortcut</h2>
+      <a href="https://dogzzl1xy.github.io/shade-or-shortcut/" class="work-card__link">View project</a>
+    </div>
+    <picture><source type="image/webp" srcset="/assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-320.webp 320w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-480.webp 480w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-640.webp 640w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-960.webp 960w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-1280.webp 1280w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/courseworks_file/shade-or-shortcut/shade_or_shortcut_cover_web.jpg" alt="Center City Philadelphia sidewalks in sun and shade at 15:00 on June 21" fetchpriority="high" decoding="async" width="1600" height="1000"></picture>
+  </article>
 
   <article class="work-card">
     <div class="work-card__body">
@@ -18,7 +27,7 @@ Studio and course projects from Zhejiang University and UC Berkeley, from GIS an
       <h2 class="work-card__title">Introduction to City Planning</h2>
       <a href="/course-cy-plan-110.html" class="work-card__link">View project</a>
     </div>
-    <picture><source type="image/webp" srcset="/assets/responsive/BayWheel_Map_web-0ec2a16cae55-320.webp 320w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-480.webp 480w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-640.webp 640w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-960.webp 960w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-1280.webp 1280w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/courseworks_file/course-BayWheel/BayWheel_Map_web.jpg" alt="Bay Wheels GIS analysis" fetchpriority="high" decoding="async" width="1600" height="1097"></picture>
+    <picture><source type="image/webp" srcset="/assets/responsive/BayWheel_Map_web-0ec2a16cae55-320.webp 320w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-480.webp 480w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-640.webp 640w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-960.webp 960w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-1280.webp 1280w, /assets/responsive/BayWheel_Map_web-0ec2a16cae55-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/courseworks_file/course-BayWheel/BayWheel_Map_web.jpg" alt="Bay Wheels GIS analysis" loading="lazy" decoding="async" width="1600" height="1097"></picture>
   </article>
 
   <article class="work-card">
