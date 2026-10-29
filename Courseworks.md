@@ -23,6 +23,15 @@ Studio and course projects from Penn, UC Berkeley, and Zhejiang University, from
 
   <article class="work-card">
     <div class="work-card__body">
+      <span class="work-card__tag">MUSA 5080 &middot; University of Pennsylvania</span>
+      <h2 class="work-card__title">Public Policy Analytics</h2>
+      <a href="/course-musa-5080.html" class="work-card__link">View project</a>
+    </div>
+    <picture><source type="image/webp" srcset="/assets/responsive/musa5080_cover_web-1be487e012da-320.webp 320w, /assets/responsive/musa5080_cover_web-1be487e012da-480.webp 480w, /assets/responsive/musa5080_cover_web-1be487e012da-640.webp 640w, /assets/responsive/musa5080_cover_web-1be487e012da-960.webp 960w, /assets/responsive/musa5080_cover_web-1be487e012da-1280.webp 1280w, /assets/responsive/musa5080_cover_web-1be487e012da-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/courseworks_file/musa-5080/musa5080_cover_web.jpg" alt="Charts and maps of California, Philadelphia and Chicago from MUSA 5080 assignments" loading="lazy" decoding="async" width="1600" height="1000"></picture>
+  </article>
+
+  <article class="work-card">
+    <div class="work-card__body">
       <span class="work-card__tag">CY PLAN 110 &middot; UC Berkeley</span>
       <h2 class="work-card__title">Introduction to City Planning</h2>
       <a href="/course-cy-plan-110.html" class="work-card__link">View project</a>
