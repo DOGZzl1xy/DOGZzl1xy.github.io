@@ -73,6 +73,9 @@ kramdown:
 # --------------------------------------------------
 #  INCLUDE / EXCLUDE Lists
 # --------------------------------------------------
+include:                         # Jekyll skips "_" files unless listed
+  - "_headers"                   # cache rules read by Cloudflare (see the file)
+
 exclude:                         # Folders/files ignored during build
   - "tmp"
   - "vendor"
