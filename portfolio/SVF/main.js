@@ -7,6 +7,8 @@ const CONFIG = {
     hoverRadius: 10,
     hoverCellSize: 24,
     bins: 24,
+    // bars in the sidebar histogram (which doubles as the colour legend)
+    histBuckets: 36,
     // OpenStreetMap tiles; style.css tones them to the site palette (and inverts them in dark mode)
     tiles: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
 };
@@ -21,9 +23,13 @@ let ctx;
 let drawRequestId = null;
 let currentMetric = 'difference';
 let dataPoints = [];
-// per metric: the colour bin of every point (-1 = no value), and each bin's colour / radius
+// per metric: the value range the colours span, the colour bin of every point
+// (-1 = no value), each bin's colour / radius, and the order bins are painted in
+let domains = {};
 let pointBins = {};
 let palettes = {};
+let drawOrders = {};
+let histograms = {};
 let hoveredPoint = null;
 let hoveredScreenPoint = null;
 let hoverGrid = new Map();
@@ -35,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadData();
     darkQuery.addEventListener('change', () => {
         buildPalettes();
+        renderLegend();
         requestDraw();
     });
 });
@@ -115,7 +122,9 @@ async function loadData() {
             throw new Error(`Data request failed with status ${response.status}`);
         }
         dataPoints = decodePoints(await response.json());
+        buildDomains();
         buildPalettes();
+        renderLegend();
         setDataStatus(`${dataPoints.length.toLocaleString()} locations loaded.`);
         requestDraw();
     } catch (error) {
@@ -157,6 +166,7 @@ function setupControls() {
         currentMetric = event.target.value;
         document.body.dataset.metric = currentMetric;
         clearHover();
+        renderLegend();
         requestDraw();
     });
 }
@@ -164,7 +174,8 @@ function setupControls() {
 /* ---- colours --------------------------------------------------------------
    Points are grouped into CONFIG.bins colour bins per metric, so drawing is one
    path + one fill per bin instead of a fillStyle change per point. Colours come
-   from the --svf-* tokens in style.css (light and dark). */
+   from the --svf-* tokens in style.css (light and dark); the same bins colour
+   the sidebar histogram, so map and legend cannot drift apart. */
 
 function readColor(name) {
     const hex = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -176,54 +187,174 @@ function mix(a, b, t) {
     return a.map((v, i) => Math.round(v + (b[i] - v) * t));
 }
 
+// The range each metric's colours span. SVF itself runs 0..1. The difference is
+// taken from the data (1st..99th percentile, rounded outwards to 0.01): in the
+// San Francisco set every value is positive and 98% fall within 0.04..0.28, so
+// a fixed -1..1 scale would paint the whole city in one pale tone.
+function buildDomains() {
+    const values = dataPoints.map((p) => p.difference).filter(Number.isFinite).sort((a, b) => a - b);
+    const at = (q) => values[Math.floor(q * (values.length - 1))];
+    const lo = Math.floor(at(0.01) * 100) / 100;
+    const hi = Math.ceil(at(0.99) * 100) / 100;
+
+    if (lo < 0 && hi > 0) {
+        const m = Math.max(-lo, hi);
+        domains.difference = { min: -m, max: m, diverging: true };
+    } else {
+        domains.difference = { min: lo, max: hi, diverging: false };
+    }
+    ['lidar_svf', 'gsv_svf', 'KR_PC_SVF'].forEach((m) => { domains[m] = { min: 0, max: 1, diverging: false }; });
+
+    METRICS.forEach((m) => {
+        const bins = new Int8Array(dataPoints.length);
+        const counts = new Array(CONFIG.histBuckets).fill(0);
+        const { min, max } = domains[m];
+        let sum = 0;
+        let n = 0;
+        dataPoints.forEach((p, i) => {
+            const value = p[m];
+            bins[i] = binFor(m, value);
+            if (!Number.isFinite(value)) return;
+            const t = Math.min(1, Math.max(0, (value - min) / (max - min)));
+            counts[Math.min(CONFIG.histBuckets - 1, Math.floor(t * CONFIG.histBuckets))] += 1;
+            sum += value;
+            n += 1;
+        });
+        pointBins[m] = bins;
+        histograms[m] = { counts, mean: n ? sum / n : NaN, n };
+    });
+}
+
 function buildPalettes() {
     const zero = readColor('--svf-zero');
     const pos = readColor('--svf-pos');
+    const deep = readColor('--svf-pos-deep');
     const neg = readColor('--svf-neg');
     const low = readColor('--svf-low');
     const high = readColor('--svf-high');
-    const half = CONFIG.bins / 2;
+    const entry = (c, alpha, emphasis) => ({
+        color: `rgba(${c[0]}, ${c[1]}, ${c[2]}, ${alpha})`,
+        solid: `rgb(${c[0]}, ${c[1]}, ${c[2]})`,
+        radius: CONFIG.pointRadius + emphasis * 1.5,
+        emphasis
+    });
 
-    // difference: emphasis curve keeps small differences visible; bins 0..half-1 negative, half.. positive
+    // difference. One-sided data: paper tone -> red -> deep red along the range.
+    // Data on both sides of zero: cobalt <- paper -> red, symmetric about zero.
+    const diverging = domains.difference && domains.difference.diverging;
     palettes.difference = [];
     for (let b = 0; b < CONFIG.bins; b += 1) {
-        const magnitude = ((b % half) + 0.5) / half;
-        const c = mix(zero, b < half ? neg : pos, magnitude);
-        palettes.difference.push({
-            color: `rgba(${c[0]}, ${c[1]}, ${c[2]}, ${0.65 + 0.3 * magnitude})`,
-            radius: CONFIG.pointRadius + Math.pow(magnitude, 1 / 0.55) * 1.5
-        });
+        const t = (b + 0.5) / CONFIG.bins;
+        if (diverging) {
+            const magnitude = Math.abs(2 * t - 1);
+            palettes.difference.push(entry(mix(zero, t < 0.5 ? neg : pos, magnitude), 0.65 + 0.3 * magnitude, magnitude));
+        } else {
+            const c = t < 0.6 ? mix(zero, pos, t / 0.6) : mix(pos, deep, (t - 0.6) / 0.4);
+            palettes.difference.push(entry(c, 0.7 + 0.25 * t, t));
+        }
     }
 
     // single sources: low -> high SVF along one ramp
     const ramp = [];
     for (let b = 0; b < CONFIG.bins; b += 1) {
         const t = (b + 0.5) / CONFIG.bins;
-        const c = mix(low, high, t);
-        ramp.push({ color: `rgba(${c[0]}, ${c[1]}, ${c[2]}, ${0.45 + 0.4 * t})`, radius: CONFIG.pointRadius + t * 1.5 });
+        ramp.push(entry(mix(low, high, t), 0.45 + 0.4 * t, t));
     }
     ['lidar_svf', 'gsv_svf', 'KR_PC_SVF'].forEach((m) => { palettes[m] = ramp; });
 
-    // bin assignment only depends on the data, so compute it once
-    if (!pointBins.difference && dataPoints.length) {
-        METRICS.forEach((m) => {
-            const bins = new Int8Array(dataPoints.length);
-            dataPoints.forEach((p, i) => { bins[i] = binFor(m, p[m]); });
-            pointBins[m] = bins;
-        });
-    }
+    // paint the quiet bins first, so the strongest values end up on top where points overlap
+    METRICS.forEach((m) => {
+        drawOrders[m] = palettes[m].map((_, b) => b).sort((a, b) => palettes[m][a].emphasis - palettes[m][b].emphasis);
+    });
 }
 
 function binFor(metric, value) {
     if (!Number.isFinite(value)) return -1;
-    const last = CONFIG.bins - 1;
-    if (metric === 'difference') {
-        const half = CONFIG.bins / 2;
-        const magnitude = Math.pow(Math.min(1, Math.abs(value)), 0.55);
-        const step = Math.min(half - 1, Math.floor(magnitude * half));
-        return value < 0 ? step : half + step;
+    const { min, max } = domains[metric];
+    const t = (value - min) / (max - min);
+    return Math.min(CONFIG.bins - 1, Math.max(0, Math.floor(t * CONFIG.bins)));
+}
+
+/* ---- legend ---------------------------------------------------------------
+   A histogram of every location's value for the selected source, each bar in
+   the colour its points have on the map, over a strip of the full colour ramp:
+   the legend and the distribution in one. Hovering a point marks its value. */
+
+const LEGEND = { width: 300, top: 14, barsHeight: 50, stripHeight: 6, gap: 3 };
+const LEGEND_TITLES = {
+    difference: 'Difference in SVF: roadway − sidewalk',
+    lidar_svf: 'Airborne LiDAR SVF (0 = no sky, 1 = open sky)',
+    gsv_svf: 'Google Street View SVF (0 = no sky, 1 = open sky)',
+    KR_PC_SVF: 'Generated point cloud SVF (0 = no sky, 1 = open sky)'
+};
+
+function legendX(metric, value) {
+    const { min, max } = domains[metric];
+    return Math.min(1, Math.max(0, (value - min) / (max - min))) * LEGEND.width;
+}
+
+function renderLegend() {
+    const svg = document.getElementById('legend-chart');
+    const hist = histograms[currentMetric];
+    const palette = palettes[currentMetric];
+    if (!svg || !hist || !palette) return;
+
+    const { min, max } = domains[currentMetric];
+    const { width, top, barsHeight, stripHeight, gap } = LEGEND;
+    const base = top + barsHeight;
+    const peak = Math.max(...hist.counts);
+    const bucketWidth = width / CONFIG.histBuckets;
+    const parts = [];
+
+    hist.counts.forEach((count, i) => {
+        if (!count) return;
+        const h = Math.max(1, (count / peak) * barsHeight);
+        const bin = Math.min(CONFIG.bins - 1, Math.floor(((i + 0.5) / CONFIG.histBuckets) * CONFIG.bins));
+        parts.push(`<rect x="${(i * bucketWidth + 0.5).toFixed(2)}" y="${(base - h).toFixed(2)}" width="${(bucketWidth - 1).toFixed(2)}" height="${h.toFixed(2)}" fill="${palette[bin].solid}"/>`);
+    });
+
+    const binWidth = width / CONFIG.bins;
+    palette.forEach((p, b) => {
+        parts.push(`<rect x="${(b * binWidth).toFixed(2)}" y="${base + gap}" width="${(binWidth + 0.5).toFixed(2)}" height="${stripHeight}" fill="${p.solid}"/>`);
+    });
+
+    // ticks at round values inside the range
+    const step = (max - min) <= 0.5 ? 0.05 : 0.25;
+    const tickY = base + gap + stripHeight;
+    for (let k = Math.ceil((min - 1e-9) / step); k * step <= max + 1e-9; k += 1) {
+        const value = k * step;
+        const x = legendX(currentMetric, value);
+        const anchor = x < 8 ? 'start' : x > width - 8 ? 'end' : 'middle';
+        parts.push(`<path class="legend-tick" d="M${x.toFixed(2)} ${tickY} v4"/>`);
+        parts.push(`<text class="legend-label" x="${x.toFixed(2)}" y="${tickY + 14}" text-anchor="${anchor}">${value.toFixed(2)}</text>`);
     }
-    return Math.min(last, Math.max(0, Math.floor(value * CONFIG.bins)));
+
+    if (Number.isFinite(hist.mean)) {
+        const x = legendX(currentMetric, hist.mean);
+        const anchor = x < 40 ? 'start' : x > width - 40 ? 'end' : 'middle';
+        parts.push(`<path class="legend-mean" d="M${x.toFixed(2)} ${top - 2} V${base}"/>`);
+        parts.push(`<text class="legend-label legend-label--mean" x="${x.toFixed(2)}" y="${top - 5}" text-anchor="${anchor}">mean ${hist.mean.toFixed(2)}</text>`);
+    }
+
+    parts.push(`<path id="legend-marker" class="legend-marker" d="M0 ${base + gap - 1} l-4 -7 h8 z" visibility="hidden"/>`);
+    svg.innerHTML = parts.join('');
+
+    document.getElementById('legend-title').textContent = LEGEND_TITLES[currentMetric];
+    const clipped = currentMetric === 'difference'
+        ? ` Values outside ${min.toFixed(2)}–${max.toFixed(2)} take the end colours.` : '';
+    document.getElementById('legend-note').textContent =
+        `Bars: how many of the ${hist.n.toLocaleString()} locations have each value, in the colour they have on the map.${clipped}`;
+}
+
+function markLegend(value) {
+    const marker = document.getElementById('legend-marker');
+    if (!marker) return;
+    if (!Number.isFinite(value)) {
+        marker.setAttribute('visibility', 'hidden');
+        return;
+    }
+    marker.setAttribute('transform', `translate(${legendX(currentMetric, value).toFixed(2)} 0)`);
+    marker.setAttribute('visibility', 'visible');
 }
 
 /* ---- drawing ------------------------------------------------------------- */
@@ -255,6 +386,9 @@ function drawLayer() {
     const west = bounds.getWest();
     const east = bounds.getEast();
     const paths = palette.map(() => new Path2D());
+    // dots shrink when zoomed out (so the street pattern shows instead of one
+    // merged blob) and grow a little when zoomed in
+    const zoomScale = Math.min(2, Math.max(0.5, Math.pow(2, (map.getZoom() - 14) / 2)));
     let visibleCount = 0;
 
     for (let i = 0; i < dataPoints.length; i += 1) {
@@ -269,7 +403,7 @@ function drawLayer() {
             continue;
         }
 
-        const r = palette[bin].radius;
+        const r = palette[bin].radius * zoomScale;
         paths[bin].moveTo(screenPoint.x + r, screenPoint.y);
         paths[bin].arc(screenPoint.x, screenPoint.y, r, 0, Math.PI * 2);
 
@@ -282,9 +416,9 @@ function drawLayer() {
         }
     }
 
-    paths.forEach((path, bin) => {
+    drawOrders[currentMetric].forEach((bin) => {
         ctx.fillStyle = palette[bin].color;
-        ctx.fill(path);
+        ctx.fill(paths[bin]);
     });
 
     if (hoveredScreenPoint) {
@@ -361,6 +495,7 @@ function clearHover(redraw = true) {
     hoveredPoint = null;
     hoveredScreenPoint = null;
     document.getElementById('tooltip').classList.add('hidden');
+    markLegend(NaN);
 
     if (hadHover && redraw) {
         requestDraw();
@@ -370,6 +505,8 @@ function clearHover(redraw = true) {
 function updateTooltip(x, y) {
     const tooltip = document.getElementById('tooltip');
     const content = document.getElementById('tooltip-content');
+
+    markLegend(hoveredPoint ? hoveredPoint[currentMetric] : NaN);
 
     if (!hoveredPoint) {
         tooltip.classList.add('hidden');
