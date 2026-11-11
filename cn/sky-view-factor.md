@@ -18,6 +18,10 @@ description: "在人行道而不是车行道上测量天空可视因子：旧金
 
 下方的交互演示展示了旧金山全市人行道尺度的 SVF 分布。
 
+<a class="figure-link" href="/portfolio/SVF/" title="打开交互地图"><picture><source type="image/webp" srcset="/assets/responsive/svf-map-preview-4921d9e4b3c8-320.webp 320w, /assets/responsive/svf-map-preview-4921d9e4b3c8-480.webp 480w, /assets/responsive/svf-map-preview-4921d9e4b3c8-640.webp 640w, /assets/responsive/svf-map-preview-4921d9e4b3c8-960.webp 960w, /assets/responsive/svf-map-preview-4921d9e4b3c8-1264.webp 1264w" sizes="(max-width: 800px) calc(100vw - 2.5rem), 760px"><img class="img-full-width" src="/images/svf-map-preview.jpg" alt="旧金山地图：15,630 个街道位置按车行道与人行道天空可视因子之差由浅红到深红着色，深红色集中在城市东北部。" loading="lazy" decoding="async" width="1264" height="790"></picture></a>
+
+<p class="figure-caption">旧金山 15,630 个位置的车行道与人行道 SVF 之差：红色越深，差值越大。点击地图可进入交互页面。底图 &copy; OpenStreetMap contributors。</p>
+
 <div class="project-links">
-    <a href="/portfolio/SVF/index.html" class="learn-more-btn">查看演示</a>
+    <a href="/portfolio/SVF/" class="learn-more-btn">查看演示</a>
 </div>

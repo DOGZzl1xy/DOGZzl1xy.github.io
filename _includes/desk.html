@@ -87,7 +87,7 @@
           <path pathLength="1" class="ink-stroke" d="M30 74 Q42 62 52 66 Q62 70 70 60" />
           <text class="svg-hand" aria-hidden="true" x="76" y="26" font-size="17">&dagger;</text>
         </g>
-        <text class="obj-label" x="688" y="306"><tspan>{% if is_zh %}论文{% else %}publications{% endif %}</tspan> <tspan class="obj-fig">{% if is_zh %}图03{% else %}fig.03{% endif %}</tspan></text>
+        <text class="obj-label" x="688" y="300"><tspan>{% if is_zh %}论文{% else %}publications{% endif %}</tspan> <tspan class="obj-fig">{% if is_zh %}图03{% else %}fig.03{% endif %}</tspan></text>
       </a>
 
       <!-- ==== fig.04 · medal & certificate → awards ==== -->
@@ -102,7 +102,7 @@
           <circle pathLength="1" cx="88" cy="62" r="15" />
           <path pathLength="1" class="ink" d="M88 53 L90.7 58.4 L96.5 59.2 L92.3 63.3 L93.4 69 L88 66.3 L82.6 69 L83.7 63.3 L79.5 59.2 L85.3 58.4 Z" />
         </g>
-        <text class="obj-label" x="858" y="306"><tspan>{% if is_zh %}奖项{% else %}awards{% endif %}</tspan> <tspan class="obj-fig">{% if is_zh %}图04{% else %}fig.04{% endif %}</tspan></text>
+        <text class="obj-label" x="858" y="300"><tspan>{% if is_zh %}奖项{% else %}awards{% endif %}</tspan> <tspan class="obj-fig">{% if is_zh %}图04{% else %}fig.04{% endif %}</tspan></text>
       </a>
 
       <!-- ==== deco: teacup (was the chinese-version link; now just set dressing) ==== -->
@@ -132,17 +132,18 @@
       </a>
 
       <!-- ==== fig.06 · envelope → email ==== -->
-      <!--email_off--><a href="mailto:xuanyuz@design.upenn.edu" class="scene-link" aria-label="{% if is_zh %}写信给我 图06：给我写邮件{% else %}write to me fig.06: email Xuanyu{% endif %}">
+      <!--email_off--><a href="mailto:xuanyuz@design.upenn.edu" class="scene-link scene-link--mail" aria-label="{% if is_zh %}写信给我 图06：给我写邮件{% else %}write to me fig.06: email Xuanyu{% endif %}">
         <rect class="hit" x="558" y="286" width="145" height="148" />
+        <!-- the open flap stays low enough to clear the "publications" label above it -->
         <g class="scene-obj" transform="translate(575,322)">
           <path pathLength="1" d="M0 8 L106 4 L110 62 Q110 66 106 66.2 L4 70 Q0.4 70 0.3 66 Z" />
           <g class="env-closed">
             <path pathLength="1" d="M1 9 Q28 26 54 38 Q80 24 105 5" />
           </g>
           <g class="env-open">
-            <path pathLength="1" d="M1 8 Q26 -14 53 -28 Q81 -14 105 4" />
+            <path pathLength="1" d="M1 8 Q27 -4 53 -14 Q80 -5 105 4" />
             <path pathLength="1" d="M24 4 L84 1.5 M28 12 L72 10" />
-            <circle pathLength="1" class="ink" cx="53" cy="-8" r="4.5" />
+            <circle pathLength="1" class="ink" cx="53" cy="-3" r="3.5" />
           </g>
         </g>
         <text class="obj-label" x="630" y="424"><tspan>{% if is_zh %}写信给我{% else %}write to me{% endif %}</tspan> <tspan class="obj-fig">{% if is_zh %}图06{% else %}fig.06{% endif %}</tspan></text>

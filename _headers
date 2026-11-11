@@ -1,0 +1,28 @@
+# Response headers for the Cloudflare-hosted site (xuanyuzhou.org).
+# Cloudflare reads this file from the root of the built site; GitHub Pages
+# ignores it. Pages themselves keep Cloudflare's default (always revalidate),
+# so a deploy is visible at once; only files whose URL changes when their
+# content changes are cached for long.
+
+# WebP copies: the file name carries a hash of the image (scripts/prepare_assets.py)
+/assets/responsive/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS and JS are requested as main.css?v=<build time>, so every deploy asks for a new URL
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts keep their file names when rebuilt (scripts/build-fonts.sh), so 30 days, not forever
+/assets/fonts/*
+  Cache-Control: public, max-age=2592000
+
+# SVF map data: the version is in the file name (scripts/pack_svf_points.py)
+/portfolio/SVF/svf-points.v2.json
+  Cache-Control: public, max-age=31536000, immutable
+
+# Leaflet 1.9.4, vendored; a new version would get a new folder or file name
+/portfolio/SVF/vendor/*
+  Cache-Control: public, max-age=2592000

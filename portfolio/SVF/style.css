@@ -39,8 +39,10 @@
     --color-accent: #2f5bea;
     --color-shadow: rgba(27, 42, 74, 0.2);
 
-    /* data colours: diverging red / cobalt around the paper tone, navy ramp for single sources */
+    /* data colours. Difference: paper tone -> red -> deep red (cobalt is only
+       used if a data set has negative differences); navy ramp for single sources */
     --svf-pos: #c8364a;
+    --svf-pos-deep: #6d0f2c;
     --svf-neg: #2f5bea;
     --svf-zero: #ffffff;
     --svf-low: #c3d0ee;
@@ -67,6 +69,7 @@
         --color-shadow: rgba(0, 0, 0, 0.5);
 
         --svf-pos: #ff8f8f;
+        --svf-pos-deep: #fff1e6;
         --svf-neg: #8fa8ff;
         --svf-zero: #5d6877;
         --svf-low: #2b3b5e;
@@ -231,36 +234,56 @@ select:focus {
     margin: 18px 0;
 }
 
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 8px;
+/* histogram legend, drawn by main.js (renderLegend): bars and ramp use the
+   same colours as the points; text and rules use the site tokens */
+.legend-title {
+    margin: 0 0 10px !important;
+    color: var(--color-ink);
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
-.color-box {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 4px;
-    border-radius: 50%;
+#legend-chart {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
 }
 
-.color-box--pos { background: var(--svf-pos); }
-.color-box--neg { background: var(--svf-neg); }
-.color-box--low { background: var(--svf-low); }
-.color-box--high { background: var(--svf-high); margin-left: 4px; }
+.legend-label {
+    fill: var(--color-text-soft);
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+}
 
-/* the legend follows the selected source (main.js sets data-metric on body):
-   the inactive group keeps readable label-grey text, only its swatches fade */
-body[data-metric="difference"] #legend-single,
-body:not([data-metric="difference"]) #legend-difference {
+.legend-label--mean {
+    fill: var(--color-ink);
+}
+
+.legend-tick,
+.legend-mean {
+    fill: none;
+    stroke: var(--color-text-soft);
+    stroke-width: 1;
+}
+
+.legend-mean {
+    stroke: var(--color-ink);
+    stroke-dasharray: 3 2;
+}
+
+.legend-marker {
+    fill: var(--color-accent);
+    stroke: var(--color-surface);
+    stroke-width: 1;
+}
+
+.legend-note {
+    margin-top: 8px !important;
     color: var(--color-text-soft);
-}
-
-body[data-metric="difference"] #legend-single .color-box,
-body:not([data-metric="difference"]) #legend-difference .color-box {
-    opacity: 0.4;
+    font-size: 0.78rem;
+    line-height: 1.5;
 }
 
 .instruction {
@@ -395,7 +418,21 @@ body:not([data-metric="difference"]) #legend-difference .color-box {
     }
 }
 
+/* same cross-fade as the rest of the site when arriving from / leaving for it */
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.22s;
+}
+
 @media (prefers-reduced-motion: reduce) {
+    @view-transition {
+        navigation: none;
+    }
+
     #tooltip,
     select {
         transition: none;
