@@ -32,25 +32,25 @@ description: 周轩宇，宾夕法尼亚大学城市规划硕士在读，用规�
 
   <ul class="focus-list">
     <li>
-      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="8" cy="38" r="3"/><circle cx="40" cy="34" r="3"/><path d="M10 35 Q22 8 38 31" stroke-dasharray="2.5 3.5"/><path d="M21 17 L29 14 L27 18 L31 21 L27 21 L24 24 L24 20 L20 19 Z"/><path d="M4 42 H44"/></svg>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><circle pathLength="1" cx="8" cy="38" r="3"/><circle pathLength="1" cx="40" cy="34" r="3"/><path d="M10 35 Q22 8 38 31" stroke-dasharray="2.5 3.5"/><path pathLength="1" d="M21 17 L29 14 L27 18 L31 21 L27 21 L24 24 L24 20 L20 19 Z"/><path pathLength="1" d="M4 42 H44"/></svg>
       <span class="focus-list__num">01</span>
       <h3><a href="/cn/urban-air-mobility/">交通出行系统</a></h3>
       <p>以仿真为基础，构建城市空中交通与共享出行的分析框架，并用真实的都市圈出行需求加以检验。</p>
     </li>
     <li>
-      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 42 V14 H15 V42"/><path d="M33 42 V19 H42 V42"/><path d="M9 20 H12 M9 26 H12 M9 32 H12 M36 25 H39 M36 31 H39"/><path d="M15 34 Q24 18 33 34" stroke-dasharray="2.5 3"/><circle cx="24" cy="10" r="3.2"/><path d="M4 42 H44"/></svg>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M6 42 V14 H15 V42"/><path pathLength="1" d="M33 42 V19 H42 V42"/><path pathLength="1" d="M9 20 H12 M9 26 H12 M9 32 H12 M36 25 H39 M36 31 H39"/><path d="M15 34 Q24 18 33 34" stroke-dasharray="2.5 3"/><circle pathLength="1" cx="24" cy="10" r="3.2"/><path pathLength="1" d="M4 42 H44"/></svg>
       <span class="focus-list__num">02</span>
       <h3><a href="/cn/sky-view-factor/">街道微气候</a></h3>
       <p>基于激光雷达和街景图像估算行人尺度的天空可视因子，并沿旧金山的人行道绘制成图。</p>
     </li>
     <li>
-      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 40 V28"/><path d="M18 29 C9 29 8 17 14 15 C15 9 23 9 24 15 C30 17 28 29 18 29 Z"/><path d="M28 36 H42 M30 36 V40 M40 36 V40 M28 32 H42"/><path d="M4 40 H44"/></svg>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M18 40 V28"/><path pathLength="1" d="M18 29 C9 29 8 17 14 15 C15 9 23 9 24 15 C30 17 28 29 18 29 Z"/><path pathLength="1" d="M28 36 H42 M30 36 V40 M40 36 V40 M28 32 H42"/><path pathLength="1" d="M4 40 H44"/></svg>
       <span class="focus-list__num">03</span>
       <h3><a href="/cn/urban-green-space/">绿地与公平</a></h3>
       <p>在收缩城市中，借助卫星影像和到访数据，追踪谁拥有绿地、谁又真正在使用它。</p>
     </li>
     <li>
-      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40 V18 L17 11 L26 18 V40"/><path d="M13 24 H15 M19 24 H21 M13 31 H15 M19 31 H21"/><path d="M24 29 H29 L32 22 L36 36 L39 29 H44"/><path d="M4 40 H44"/></svg>
+      <svg class="focus-list__icon" viewBox="0 0 48 48" aria-hidden="true"><path pathLength="1" d="M8 40 V18 L17 11 L26 18 V40"/><path pathLength="1" d="M13 24 H15 M19 24 H21 M13 31 H15 M19 31 H21"/><path pathLength="1" d="M24 29 H29 L32 22 L36 36 L39 29 H44"/><path pathLength="1" d="M4 40 H44"/></svg>
       <span class="focus-list__num">04</span>
       <h3><a href="/cn/urban-built-environment/">韧性与健康</a></h3>
       <p>用地理空间机器学习，把城市形态与疫情后的恢复、日常活力和公共健康联系起来。</p>

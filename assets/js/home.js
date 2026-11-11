@@ -1,57 +1,122 @@
-/* Home page effects: first-visit beige opening, SVG line-drawing entrance,
-   laptop typewriter, projects popup, and a hand-drawn burst on click.
+/* Home page effects: first-visit opening, SVG line-drawing entrances (desk and
+   research icons, each when it scrolls into view), laptop typewriter, projects
+   popup, and a hand-drawn burst on click.
    Everything is skipped when the visitor prefers reduced motion. */
 (function () {
   "use strict";
 
+  var root = document.documentElement;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var canObserve = "IntersectionObserver" in window;
 
-  /* ---- SVG line-drawing entrance ----------------------------------- */
-  var startInkAnim = function () {
-    var scene = document.querySelector(".desk-scene");
-    if (!scene || reduceMotion) return;
-    var groups = scene.querySelectorAll(".scene-link, .scene-desk, .scene-deco");
-    groups.forEach(function (group, i) {
-      group.style.setProperty("--i", i);
-      var strokes = group.querySelectorAll("path[pathLength], circle[pathLength], ellipse[pathLength]");
-      strokes.forEach(function (el, j) {
-        el.style.setProperty("--i", i);
-        el.style.setProperty("--j", j);
-      });
-    });
-    document.body.classList.add("ink-anim");
+  /* run `play` once, the first time `el` is at least `ratio` visible */
+  var whenVisible = function (el, ratio, play) {
+    if (!canObserve) { play(); return; }
+    var io = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        io.disconnect();
+        play();
+      }
+    }, { threshold: ratio });
+    io.observe(el);
   };
 
-  /* ---- first-visit opening: bird walks a pencil line ---------------- */
-  var overlay = document.getElementById("intro-overlay");
-  var introSeen = false;
-  try {
-    introSeen = localStorage.getItem("xz-intro-played") === "1";
-  } catch (e) { /* private mode etc. */ }
+  /* ---- SVG line-drawing entrance ------------------------------------
+     prepareInk() hides the strokes straight away (body.ink-ready), so nothing
+     is seen drawn before its animation; startInk() then waits for the desk /
+     each research icon to scroll into view before drawing it. */
+  var scene = document.querySelector(".desk-scene");
+  var iconItems = document.querySelectorAll(".focus-list li");
 
-  if (overlay && !reduceMotion && !introSeen) {
-    overlay.hidden = false;
-    try { localStorage.setItem("xz-intro-played", "1"); } catch (e) {}
+  var prepareInk = function () {
+    if (reduceMotion) return;
+    if (scene) {
+      var groups = scene.querySelectorAll(".scene-link, .scene-desk, .scene-deco");
+      groups.forEach(function (group, i) {
+        group.style.setProperty("--i", i);
+        group.querySelectorAll("[pathLength]").forEach(function (el, j) {
+          el.classList.add("ink-line");
+          el.style.setProperty("--j", j);
+        });
+      });
+      var sparkle = scene.querySelector(".scene-sparkle");
+      if (sparkle) sparkle.style.setProperty("--i", groups.length);
+    }
+    iconItems.forEach(function (item) {
+      item.querySelectorAll(".focus-list__icon [pathLength]").forEach(function (el, j) {
+        el.classList.add("ink-line");
+        el.style.setProperty("--j", j);
+      });
+      item.querySelectorAll(".focus-list__icon [stroke-dasharray]").forEach(function (el) {
+        el.classList.add("ink-dash");
+      });
+    });
+    document.body.classList.add("ink-ready");
+  };
+
+  var startInk = function () {
+    if (reduceMotion) return;
+    if (scene) {
+      whenVisible(scene, 0.35, function () {
+        document.body.classList.add("ink-anim");
+      });
+    }
+    // icons that come into view together (one desktop row) draw left to right:
+    // one observer reports them in document order, --i staggers the batch
+    var inkIcon = function (item, i) {
+      item.style.setProperty("--i", i);
+      item.classList.add("is-inked");
+    };
+    if (!canObserve) {
+      iconItems.forEach(inkIcon);
+    } else if (iconItems.length) {
+      var iconObserver = new IntersectionObserver(function (entries) {
+        entries.filter(function (entry) { return entry.isIntersecting; })
+          .forEach(function (entry, i) {
+            iconObserver.unobserve(entry.target);
+            inkIcon(entry.target, i);
+          });
+      }, { threshold: 0.5 });
+      iconItems.forEach(function (item) { iconObserver.observe(item); });
+    }
+  };
+
+  prepareInk();
+
+  /* ---- first-visit opening: bird walks a pencil line ----------------
+     The inline script in head.html decides whether it plays (html.intro-on)
+     and the timeline itself is CSS; here: remember it, allow click-to-skip,
+     and remove the overlay afterwards. */
+  var overlay = document.getElementById("intro-overlay");
+
+  if (overlay && root.classList.contains("intro-on")) {
+    try { localStorage.setItem("xz-intro-played", "1"); } catch (e) { /* private mode etc. */ }
 
     var introDone = false;
-    var endIntro = function () {
+    var endIntro = function (skipped) {
       if (introDone) return;
       introDone = true;
-      overlay.classList.add("is-done");
-      startInkAnim();
-      window.setTimeout(function () { overlay.remove(); }, 500);
+      if (skipped) overlay.classList.add("is-done");
+      startInk();
+      window.setTimeout(function () {
+        overlay.remove();
+        root.classList.remove("intro-on");
+      }, skipped ? 300 : 400);
     };
 
-    overlay.addEventListener("click", endIntro);
-    window.setTimeout(endIntro, 2150);
+    overlay.addEventListener("click", function () { endIntro(true); });
+    window.setTimeout(function () { endIntro(false); }, 1250); // = intro-out delay in main.css
   } else {
     if (overlay) overlay.remove();
-    startInkAnim();
+    startInk();
   }
 
-  /* ---- typewriter on the laptop screen ------------------------------ */
+  /* ---- typewriter on the laptop screen ------------------------------
+     Only ticks while the screen is on show: not below the fold, not in a
+     background tab, and not on phones, where the desk is hidden. */
+  var screenEl = document.querySelector(".laptop-screen");
   var screenText = document.querySelector(".laptop-screen__text");
-  if (screenText) {
+  if (screenEl && screenText) {
     var phrases = document.documentElement.lang === "zh-CN" ? [
       "绘制城市",
       "空中交通仿真",
@@ -66,14 +131,19 @@
       "llms x planning"
     ];
 
-    if (reduceMotion) {
+    if (reduceMotion || !canObserve) {
       screenText.textContent = phrases[0];
     } else {
       var phraseIndex = 0;
       var charIndex = 0;
       var deleting = false;
+      var onScreen = false;
+      var timer = null;
 
       var tick = function () {
+        timer = null;
+        if (!onScreen || document.hidden) return; // resumed by the observers below
+
         var phrase = phrases[phraseIndex];
         var delay;
 
@@ -95,10 +165,20 @@
         }
 
         screenText.textContent = phrase.slice(0, charIndex);
-        window.setTimeout(tick, delay);
+        timer = window.setTimeout(tick, delay);
       };
 
-      window.setTimeout(tick, 1100);
+      var resume = function (delay) {
+        if (timer === null && onScreen && !document.hidden) {
+          timer = window.setTimeout(tick, delay);
+        }
+      };
+
+      new IntersectionObserver(function (entries) {
+        onScreen = entries[entries.length - 1].isIntersecting;
+        resume(1100); // first run: let the laptop finish drawing
+      }).observe(screenEl);
+      document.addEventListener("visibilitychange", function () { resume(300); });
     }
   }
 
@@ -171,10 +251,12 @@
         wrap.appendChild(burst);
         window.setTimeout(function () { burst.remove(); }, 320);
 
-        // Same-tab navigations wait a beat so the burst is visible.
+        // Plain same-tab clicks wait a beat so the burst is visible. Ctrl/Cmd/
+        // Shift/Alt-clicks (new tab, new window, download) are left to the browser.
         var href = link.getAttribute("href") || "";
+        var modified = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
         var sameTab = link.getAttribute("target") !== "_blank" && href.indexOf("mailto:") !== 0;
-        if (sameTab && href) {
+        if (sameTab && href && !modified && !event.defaultPrevented) {
           event.preventDefault();
           window.setTimeout(function () { window.location = href; }, 210);
         }
