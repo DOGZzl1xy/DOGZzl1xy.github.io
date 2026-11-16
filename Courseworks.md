@@ -14,11 +14,20 @@ Studio and course projects from Penn, UC Berkeley, and Zhejiang University, from
 
   <article class="work-card">
     <div class="work-card__body">
+      <span class="work-card__tag">MUSA 6950 &middot; University of Pennsylvania</span>
+      <h2 class="work-card__title">How Philadelphia Grows</h2>
+      <a href="https://musa6950-philly-growth.xuanyuzhou.org/" class="work-card__link">View project</a>
+    </div>
+    <picture><source type="image/webp" srcset="/assets/responsive/philly_growth_cover_web-561ad2bbaf28-320.webp 320w, /assets/responsive/philly_growth_cover_web-561ad2bbaf28-480.webp 480w, /assets/responsive/philly_growth_cover_web-561ad2bbaf28-640.webp 640w, /assets/responsive/philly_growth_cover_web-561ad2bbaf28-960.webp 960w, /assets/responsive/philly_growth_cover_web-561ad2bbaf28-1280.webp 1280w, /assets/responsive/philly_growth_cover_web-561ad2bbaf28-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/courseworks_file/musa-6950/philly_growth_cover_web.jpg" alt="Isometric view of one Philadelphia block with its new buildings in orange, beside icons for the project's three sources: aerial image, LiDAR and street image" fetchpriority="high" decoding="async" width="1600" height="1000"></picture>
+  </article>
+
+  <article class="work-card">
+    <div class="work-card__body">
       <span class="work-card__tag">MUSA 5500 &middot; University of Pennsylvania</span>
       <h2 class="work-card__title">Shade or Shortcut</h2>
       <a href="https://dogzzl1xy.github.io/shade-or-shortcut/" class="work-card__link">View project</a>
     </div>
-    <picture><source type="image/webp" srcset="/assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-320.webp 320w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-480.webp 480w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-640.webp 640w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-960.webp 960w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-1280.webp 1280w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/courseworks_file/shade-or-shortcut/shade_or_shortcut_cover_web.jpg" alt="Center City Philadelphia sidewalks in sun and shade at 15:00 on June 21" fetchpriority="high" decoding="async" width="1600" height="1000"></picture>
+    <picture><source type="image/webp" srcset="/assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-320.webp 320w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-480.webp 480w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-640.webp 640w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-960.webp 960w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-1280.webp 1280w, /assets/responsive/shade_or_shortcut_cover_web-22cfe8a8959a-1600.webp 1600w" sizes="(max-width: 767px) calc(100vw - 4.5rem), 450px"><img class="work-card__media" src="/courseworks_file/shade-or-shortcut/shade_or_shortcut_cover_web.jpg" alt="Center City Philadelphia sidewalks in sun and shade at 15:00 on June 21" loading="lazy" decoding="async" width="1600" height="1000"></picture>
   </article>
 
   <article class="work-card">
